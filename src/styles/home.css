@@ -1,0 +1,19 @@
+.home {
+  height: 100vh;
+  background-color: #00adb5;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.home h1 {
+  color: white;
+  font-weight: 600;
+}
+.home h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
