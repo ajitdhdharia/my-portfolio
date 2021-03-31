@@ -3,6 +3,7 @@ import React from "react";
 function About() {
   return (
     <div>
+    {/* NavBar */}
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <ul class="navbar-nav mx-auto d-inline-flex flex-row">
@@ -24,6 +25,8 @@ function About() {
           </ul>
         </div>
       </nav>
+      
+      {/* About */}
     </div>
   );
 }
