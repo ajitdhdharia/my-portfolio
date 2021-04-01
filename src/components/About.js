@@ -60,7 +60,7 @@ function About() {
 
       {/* About */}
       <section className="about">
-        <div className="container pt-4">
+        <div className="container pt-4 pb-4">
           <div>
             <h3>About</h3>
             <hr></hr>

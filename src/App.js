@@ -1,6 +1,8 @@
 
 import Home from "./components/Home";
 import About from "./components/About"
+import Skills from "./components/Skills";
+
 import "./styles/app.css";
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <div>
       <Home></Home>
       <About></About>
+      <Skills></Skills>
     </div>
   );
 }
