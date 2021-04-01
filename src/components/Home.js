@@ -4,7 +4,7 @@ import "../styles/home.css";
 
 function Home() {
   return (
-    <header className="home">
+    <header className="home" id="home">
       <h1>AJIT DHDHARIA</h1>
       <h3>An Application Developer</h3>
       <video autoPlay loop muted>
