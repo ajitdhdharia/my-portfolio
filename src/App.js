@@ -2,6 +2,8 @@
 import Home from "./components/Home";
 import About from "./components/About"
 import Skills from "./components/Skills";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
 
 import "./styles/app.css";
 
@@ -11,6 +13,8 @@ function App() {
       <Home></Home>
       <About></About>
       <Skills></Skills>
+      <Project></Project>
+      <Contact></Contact>
     </div>
   );
 }
