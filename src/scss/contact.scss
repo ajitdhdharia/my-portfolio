@@ -1,0 +1,51 @@
+@import "./variables";
+
+.contact {
+  background-color: $light-black;
+  border-radius: 0.5rem 0.5rem 0 0;
+  h3 {
+    color: #ffffff;
+    padding-top: 2rem;
+  }
+
+  hr {
+    border: 2px solid #ffffff;
+    margin: 0 47% 1.5rem;
+    @media only screen and (max-width: $breakpoint-mobile) {
+      margin: 0 40% 2rem;
+    }
+  }
+
+  p {
+    color: $primary;
+  }
+
+  .my-contact {
+    color: #ffffff;
+    padding-bottom: 2rem;
+
+    a {
+      color: #ffffff;
+    }
+  }
+
+  .contact-form {
+    margin: 0 35%;
+    @media only screen and (max-width: $breakpoint-mobile) {
+        margin: 0 10%;
+      }
+    .message {
+      height: 200px;
+    }
+    .submit-button{
+        border: 1px solid $primary;
+        color: $primary;
+        margin-top:1rem;
+        margin-bottom: 3rem;
+        &:hover{
+            background-color: $primary;
+            color: #ffffff;
+        }
+    }
+  }
+}

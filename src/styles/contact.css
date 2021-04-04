@@ -1,0 +1,48 @@
+.contact {
+  background-color: #393e46;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.contact h3 {
+  color: #ffffff;
+  padding-top: 2rem;
+}
+.contact hr {
+  border: 2px solid #ffffff;
+  margin: 0 47% 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .contact hr {
+    margin: 0 40% 2rem;
+  }
+}
+.contact p {
+  color: #00adb5;
+}
+.contact .my-contact {
+  color: #ffffff;
+  padding-bottom: 2rem;
+}
+.contact .my-contact a {
+  color: #ffffff;
+}
+.contact .contact-form {
+  margin: 0 35%;
+}
+@media only screen and (max-width: 600px) {
+  .contact .contact-form {
+    margin: 0 10%;
+  }
+}
+.contact .contact-form .message {
+  height: 200px;
+}
+.contact .contact-form .submit-button {
+  border: 1px solid #00adb5;
+  color: #00adb5;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.contact .contact-form .submit-button:hover {
+  background-color: #00adb5;
+  color: #ffffff;
+}

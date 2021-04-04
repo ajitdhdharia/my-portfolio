@@ -1,0 +1,12 @@
+.footer-items {
+  background-color: #222831;
+  padding-top: 2rem;
+}
+.footer-items .footer-copyright {
+  color: #ffffff;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+}
+.footer-items .footer-copyright span {
+  color: #00adb5;
+}
