@@ -17,6 +17,16 @@
 #skills .skills-back-block h3 {
   padding-top: 2rem;
   font-weight: 500;
+  color: #ffffff;
+}
+#skills .skills-back-block hr {
+  border: 2px solid #ffffff;
+  margin: 0 47% 3rem;
+}
+@media only screen and (max-width: 600px) {
+  #skills .skills-back-block hr {
+    margin: 0 40% 2rem;
+  }
 }
 #skills .skills-card-group {
   margin-top: -300px;

@@ -23,6 +23,7 @@ function Skills() {
       <section className="conatiner pt-4 pb-4">
         <div className="skills-back-block">
           <h3>Skills</h3>
+          <hr></hr>
         </div>
         <div className="skills-card-group pl-5 pr-5">
           <div className="card-group">

@@ -1,0 +1,54 @@
+@import "./variables";
+
+@keyframes animation {
+    from {background-color: $primary;}
+    to {background-color:#ffffff}
+  }
+  
+
+.project-card {
+background:linear-gradient(0deg, rgba(0, 173, 181, 0.85), rgba(0, 173, 181, 0.85)), url(https://miro.medium.com/max/3840/1*zZTBh4IWpCBiD3nTiMd4EQ.jpeg);
+background-size: cover;
+
+  .project-card-body {
+    opacity: 0;
+    padding: 0.5rem;
+    h5 {
+      font-family: $secondaryFont;
+      font-weight: 400;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 3rem;
+      color: $primary;
+      font-style: italic;
+      font-weight: 300;
+    }
+
+    button {
+      background-color: none;
+      border: 1px solid $primary;
+      color: $primary;
+      border-radius: 0;
+      font-family: $secondaryFont;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      &:hover {
+        background-color: $primary;
+        color: #ffffff;
+        border-radius: 0;
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    background: #ffffff;
+    border: 0;
+    
+  }
+}

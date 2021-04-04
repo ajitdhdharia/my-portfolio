@@ -1,0 +1,34 @@
+@import "../variables";
+
+.project {
+  hr {
+    border: 2px solid $black;
+    margin: 0 47% 3rem;
+    @media only screen and (max-width: $breakpoint-mobile) {
+      margin: 0 40% 2rem;
+    }
+  }
+
+  .project-tab {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tab-button {
+      background: none;
+      color: #000000;
+      border: none;
+      font-family: $secondaryFont;
+      margin: 0 1rem;
+      font-weight: 400;
+      &:hover {
+        background-color: $primary;
+        border-radius: 0.2rem;
+        color: #ffffff;
+      }
+      @media only screen and (max-width: $breakpoint-mobile) {
+        margin: 0;
+      }
+    }
+  }
+}
