@@ -41,7 +41,7 @@ function Project() {
   }
 
   return (
-    <div className="container mt-5 mb-5 project">
+    <div className="container mt-5 mb-5 project" id="project">
       {/* Project section Navbar */}
       <div>
         <h3>Projects</h3>

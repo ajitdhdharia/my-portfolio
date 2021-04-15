@@ -25,39 +25,6 @@ const adaptability = (
 function About() {
   return (
     <div id="about">
-      {/* NavBar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid">
-          <ul className="navbar-nav mx-auto d-inline-flex flex-row">
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#home">
-                Home
-              </a>
-            </li>
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#about">
-                About
-              </a>
-            </li>
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#skills">
-                Skills
-              </a>
-            </li>
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#project">
-                Project
-              </a>
-            </li>
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#contact">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
       {/* About */}
       <section className="about">
         <div className="container pt-4 pb-4">
@@ -67,12 +34,16 @@ function About() {
           </div>
           <div className="row">
             <div className="col-md-6 col-lg-3">
-              {responsive}
+            <div>
+            {responsive}
+            </div>
               <h5>Responsive</h5>
               <p>My layouts will work on any device, big or small.</p>
             </div>
             <div className="col-md-6 col-lg-3">
-              {dynamic}
+            <div>
+            {dynamic}
+            </div>
               <h5>Dynamic</h5>
               <p>
                 Websites don't have to be static, I love making pages come to
@@ -80,7 +51,9 @@ function About() {
               </p>
             </div>
             <div className="col-md-6 col-lg-3">
-              {quickLearner}
+            <div>
+            {quickLearner}
+            </div>
               <h5>Quick Learner</h5>
               <p>
                 With amazing quick-learning skill, I learn new technologies
@@ -88,7 +61,9 @@ function About() {
               </p>
             </div>
             <div className="col-md-6 col-lg-3">
-              {adaptability}
+            <div>
+            {adaptability}
+            </div>
               <h5>Adaptability</h5>
               <p>
                 With rapid change in the IT world, I'm always on the lookout for

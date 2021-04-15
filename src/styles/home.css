@@ -1,3 +1,13 @@
+@keyframes slide-right {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .home {
   height: 100vh;
   width: auto;
@@ -5,48 +15,59 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Slab", serif;
+  background-color: #222831;
 }
-.home video {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -2;
+.home .title-home {
+  animation: slide-right 1s ease-out 0s;
 }
-.home::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #00adb5;
-  opacity: 0.9;
-  z-index: -1;
-}
-.home h1 {
-  color: white;
-  font-weight: 600;
-  font-size: 4rem;
-}
-.home h3 {
+.home .title-home h1 {
   color: white;
   font-weight: 300;
-  font-size: 2.7rem;
-  line-height: 0;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+.home .title-home h1 span {
+  font-weight: 400;
+  font-size: 3.5rem;
+  color: #ff2e63;
+}
+.home .title-home h3 {
+  color: white;
+  font-weight: 200;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.home .title-home a {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-weight: 200;
+  padding: 0.5rem 1.5rem 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition-property: all;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-in-out;
+}
+.home .title-home a:hover {
+  background-color: #ff2e63;
+  color: #ffffff;
+  border: none;
+  font-size: 1.05rem;
 }
 @media only screen and (max-width: 600px) {
-  .home h1 {
-    font-size: 2.5rem;
+  .home .title-home h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
   }
-  .home h3 {
-    font-size: 1.7rem;
+  .home .title-home h1 span {
+    font-size: 2rem;
+  }
+  .home .title-home h3 {
+    font-size: 1.3rem;
+    text-align: center;
   }
 }
+
+/*# sourceMappingURL=home.css.map */

@@ -1,15 +1,16 @@
 import React from "react";
-import BackgroundVideo from "../assets/background-video.mp4";
 import "../styles/home.css";
 
 function Home() {
   return (
     <header className="home" id="home">
-      <h1>AJIT DHDHARIA</h1>
-      <h3>An Application Developer</h3>
-      <video autoPlay loop muted>
-        <source src={BackgroundVideo} type="video/mp4"></source>
-      </video>
+      <div className="title-home">
+        <h1>
+          Hi, I'm <span>Ajit Dhdharia</span>
+        </h1>
+        <h3>A Front-end Web Developer</h3>
+        <a href="#project">View my work</a>
+      </div>
     </header>
   );
 }

@@ -1,57 +1,76 @@
-@import 'variables';
+@import "variables";
 
-.home{
-    height: 100vh;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Roboto Condensed', sans-serif;
-    video {
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        z-index: -2; 
-    }
-    &::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        background-color: $primary;
-        opacity: 0.9;
-        z-index: -1;
-    }
+@keyframes slide-right {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.home {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $primaryFont;
+  background-color: $dark-black;
+  .title-home{
+    animation: slide-right 1s ease-out 0s;
     h1 {
-        color: white;
-        font-weight: 600;
-        font-size: 4rem;
-        
+      color: white;
+      font-weight: $light;
+      font-size: 3rem;
+      margin-bottom: 0;
+      span {
+        font-weight: $regular;
+        font-size: 3.5rem;
+        color: $secondary;
+      }
     }
     h3 {
-        color: white;
-        font-weight: 300;
-        font-size: 2.7rem;
-        line-height: 0;
+      color: white;
+      font-weight: $extra-light;
+      font-size: 2rem;
+      text-align: right;
+      margin-bottom: 2rem;
     }
-    
+    a {
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        font-weight: $extra-light;
+        padding: 0.5rem 1.5rem 0.75rem 1.5rem;
+        text-decoration: none;
+        border-radius: 3px;
+        transition-property: all;
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in-out;
+        &:hover{
+            background-color: $secondary;
+            color: #ffffff;
+            border: none;
+            font-size: 1.05rem;
+        }
+  }
+  @media only screen and (max-width: $breakpoint-mobile) {
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      span {
+        font-size: 2rem;
+      }
+    }
+    h3 {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
 
-    @media only screen and (max-width: $breakpoint-mobile){
-        h1 {
-            font-size: 2.5rem;
-        }
-        h3 {
-            font-size: 1.7rem;
-        }
-    }
+  
+  }
 }

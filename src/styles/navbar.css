@@ -1,0 +1,14 @@
+.custom-nav {
+  background-color: #393e46 !important;
+}
+.custom-nav span {
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+}
+.custom-nav span:hover {
+  color: #ff2e63;
+  font-size: 1.05rem;
+}
+
+/*# sourceMappingURL=navbar.css.map */
