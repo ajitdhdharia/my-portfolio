@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/contact.css";
 function Contact() {
   return (
-      <div className="contact">
+      <div className="contact" id="contact">
         <div>
           <h3>Contacts</h3>
           <hr></hr>
