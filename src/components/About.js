@@ -54,34 +54,42 @@ function About() {
           </div>
           {/* About carousel */}
           <div className="row">
-            <div className="col-md-6 col-lg-3">
-              <div>{responsive}</div>
-              <h5>Responsive</h5>
-              <p>My layouts will work on any device, big or small.</p>
+            <div className="col-md-6 col-lg-3 ">
+              <div className="flip-x">
+                {responsive}
+                <h5>Responsive</h5>
+                <p>My layouts will work on any device, big or small.</p>
+              </div>
             </div>
             <div className="col-md-6 col-lg-3">
-              <div>{dynamic}</div>
+              <div className="flip-x">
+              {dynamic}
               <h5>Dynamic</h5>
               <p>
                 Websites don't have to be static, I love making pages come to
                 life.
               </p>
+              </div>  
             </div>
             <div className="col-md-6 col-lg-3">
-              <div>{quickLearner}</div>
+              <div className="flip-x">
+              {quickLearner}
               <h5>Quick Learner</h5>
               <p>
                 With amazing quick-learning skill, I learn new technologies
                 fast.
               </p>
+              </div>
             </div>
             <div className="col-md-6 col-lg-3">
-              <div>{adaptability}</div>
+              <div className="flip-x">
+              {adaptability}
               <h5>Adaptability</h5>
               <p>
-                With rapid change in the IT world, I'm always on the lookout for
-                new tools and ways of doing things.
+                I'm always on the lookout for new tools and ways of doing
+                things.
               </p>
+              </div>
             </div>
           </div>
         </div>
