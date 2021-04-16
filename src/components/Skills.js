@@ -25,45 +25,38 @@ function Skills() {
           <h3>Skills</h3>
           <hr></hr>
         </div>
-        <div className="skills-card-group pl-5 pr-5">
+        <div className="skill-card">
+        <div className="skills-card-group">
           <div className="card-group">
             <div className="card">
-              <div className="mt-4">{frontEnd}</div>
+              <div className="mt-5 pt-3 mb-4">{frontEnd}</div>
               <div className="card-body">
                 <h5 className="card-title">Front-end Developer</h5>
                 <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
+                I like to strike a balance between functional and aesthetic design, and ensuring web design is optimized for smartphones.
                 </p>
                 <h6>
-                Languages I speak:
+                Things I know
                 </h6>
                 <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
+                Javascript, JAVA, HTML, CSS, Sass, XML, Reactjs, jQuery, React-Bootstrap, Bootstrap 4
                 </p>
                 <h6>
-                Languages I speak:
-                </h6>
-                <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
-                </p>
-                <h6>
-                Languages I speak:
+                Tools
                 </h6>
                 <p className="tools">
+                <span>Visual Studio Code</span>
+                <span>Atom</span>
+                <span>Sublime</span>
+                <span>Atom</span>
                 <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
+                <span>IntelliJ</span>
+                <span>Agile methodology-SCRUM</span>
                 </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
             <div className="card">
-              <div className="mt-4">{backEnd}</div>
+              <div className="mt-5 pt-3 mb-4">{backEnd}</div>
               <div className="card-body">
                 <h5 className="card-title">Back-end Developer</h5>
                 <p className="card-text">
@@ -73,66 +66,52 @@ function Skills() {
                 Things I know:
                 </h6>
                 <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
+                NodeJs, ExpressJs, MySQL, Firebase, MongoDB, SqLite, JSON, NPM, JAVA, Google Map API.
                 </p>
                 <h6>
-                Languages I speak:
-                </h6>
-                <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
-                </p>
-                <h6>
-                Languages I speak:
+                Tools
                 </h6>
                 <p className="tools">
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
+                <span>Visual Studio Code</span>
+                <span>Git</span>
+                <span>GitHub</span>
+                <span>Terminal</span>
+                <span>Netlify</span>
+                <span>Mailchimp</span>
+                <span>Agile methodology-SCRUM</span>
                 </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
             <div className="card">
-              <div className="mt-4">{design}</div>
+              <div className="mt-5 pt-3 mb-4">{design}</div>
               <div className="card-body">
                 <h5 className="card-title">Designer + Others</h5>
                 <p className="card-text">
-                I love to design web/mobile graphics, logos, edit videos and other resources.
+                I love to design web/mobile vector graphics, Motion graphics and edit videos.
                 </p>
                 <h6>
-                Things I know:
+                Things I know
                 </h6>
                 <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
-                </p>
-                <h6>
-                Languages I speak:
-                </h6>
-                <p className="card-text">
-                I like to code things from scratch, and enjoy bringing ideas to life in the browser and mobile.
+                UI, UML, Video editing, Vector graphics, Motion graphics
                 </p>
                 <h6>
                 Languages I speak:
                 </h6>
                 <p className="tools">
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
-                <span>Android Studio</span>
+                <span>Adobe XD</span>
+                <span>Photoshop</span>
+                <span>Illustrator</span>
+                <span>Adobe Premiere pro</span>
+                <span>Final Cut Pro X</span>
+                <span>After Effects</span>
+                <span>Slack</span>
+                <span>Notion</span>
                 </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     </div>
