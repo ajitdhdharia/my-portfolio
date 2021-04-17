@@ -1,9 +1,9 @@
 @keyframes animation {
   from {
-    background-color: #00adb5;
+    transform: translateY(-5px);
   }
   to {
-    background-color: #ffffff;
+    transform: translateY(10px);
   }
 }
 .each-project {
@@ -23,6 +23,10 @@
   min-height: 250px;
   opacity: 0;
   padding: 0.5rem;
+  transform: translateY(-5px);
+}
+.each-project .project-card .project-card-body:hover {
+  animation: animation 0.3s ease-out 0.1s 1 forwards;
 }
 .each-project .project-card .project-card-body h5 {
   font-family: "Roboto", sans-serif;
