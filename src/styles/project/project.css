@@ -1,6 +1,9 @@
+.project {
+  background-color: #eeeeee;
+}
 .project hr {
-  border: 2px solid 900;
-  margin: 0 47% 3rem;
+  border: 2px solid #222831;
+  margin: 0 45% 1.5rem;
 }
 @media only screen and (max-width: 600px) {
   .project hr {
@@ -17,12 +20,12 @@
   background: none;
   color: #000000;
   border: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
   margin: 0 1rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 .project .project-tab .tab-button:hover {
-  background-color: #00adb5;
+  background-color: #ff2e63;
   border-radius: 0.2rem;
   color: #ffffff;
 }

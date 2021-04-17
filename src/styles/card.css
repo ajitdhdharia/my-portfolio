@@ -6,27 +6,30 @@
     background-color: #ffffff;
   }
 }
-.project-card {
+.each-project {
+  padding: 5px 5px;
+}
+.each-project .project-card {
   background: linear-gradient(0deg, rgba(0, 173, 181, 0.85), rgba(0, 173, 181, 0.85)), url(https://miro.medium.com/max/3840/1*zZTBh4IWpCBiD3nTiMd4EQ.jpeg);
   background-size: cover;
 }
-.project-card .project-card-body {
+.each-project .project-card .project-card-body {
   opacity: 0;
   padding: 0.5rem;
 }
-.project-card .project-card-body h5 {
+.each-project .project-card .project-card-body h5 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.project-card .project-card-body p {
+.each-project .project-card .project-card-body p {
   margin-bottom: 3rem;
   color: #00adb5;
   font-style: italic;
   font-weight: 300;
 }
-.project-card .project-card-body a {
+.each-project .project-card .project-card-body a {
   background-color: none;
   border: 1px solid #00adb5;
   color: #00adb5;
@@ -35,15 +38,15 @@
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
-.project-card .project-card-body a:hover {
+.each-project .project-card .project-card-body a:hover {
   background-color: #00adb5;
   color: #ffffff;
   border-radius: 0;
 }
-.project-card .project-card-body:hover {
+.each-project .project-card .project-card-body:hover {
   opacity: 1;
 }
-.project-card:hover {
+.each-project .project-card:hover {
   background: #ffffff;
   border: 0;
 }

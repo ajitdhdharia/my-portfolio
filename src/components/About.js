@@ -29,7 +29,7 @@ function About() {
       <section className="about">
         <div className="container pt-4 pb-4">
           <div>
-            <h3>About</h3>
+            <h3>ABOUT</h3>
             <hr></hr>
           </div>
           <div className="row about-top">

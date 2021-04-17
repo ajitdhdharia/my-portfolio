@@ -1,9 +1,10 @@
 @import "../variables";
 
 .project {
+  background-color: $grey;
   hr {
-    border: 2px solid $black;
-    margin: 0 47% 3rem;
+    border: 2px solid #222831;
+    margin: 0 45% 1.5rem;
     @media only screen and (max-width: $breakpoint-mobile) {
       margin: 0 40% 2rem;
     }
@@ -18,11 +19,11 @@
       background: none;
       color: #000000;
       border: none;
-      font-family: $secondaryFont;
+      font-family: $primaryFont;
       margin: 0 1rem;
-      font-weight: 400;
+      font-weight: $light;
       &:hover {
-        background-color: $primary;
+        background-color: $secondary;
         border-radius: 0.2rem;
         color: #ffffff;
       }

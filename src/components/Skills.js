@@ -22,7 +22,7 @@ function Skills() {
     <div id="skills">
       <section className="conatiner pt-4 pb-4">
         <div className="skills-back-block">
-          <h3>Skills</h3>
+          <h3>SKILLS</h3>
           <hr></hr>
         </div>
         <div className="skill-card">
@@ -96,7 +96,7 @@ function Skills() {
                 UI, UML, Video editing, Vector graphics, Motion graphics
                 </p>
                 <h6>
-                Languages I speak:
+                Tools
                 </h6>
                 <p className="tools">
                 <span>Adobe XD</span>

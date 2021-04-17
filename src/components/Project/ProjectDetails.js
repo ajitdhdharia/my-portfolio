@@ -17,7 +17,7 @@ const ProjectDetails = [
     id: 3,
     category: "web",
     title: "Keeper - a Notes App",
-    description: "ReactJs/Javascript/HTML/CSS/Bootstrap",
+    description: "ReactJs/Javascript/HTML/CSS/Bootstrap/Sass",
     link: "https://github.com/ajitdhdharia/keepClone",
   },
   {
