@@ -9,11 +9,18 @@
 .each-project {
   padding: 5px 5px;
 }
+@media only screen and (max-width: 600px) {
+  .each-project {
+    padding: 10px 30px;
+  }
+}
 .each-project .project-card {
   background: linear-gradient(0deg, rgba(0, 173, 181, 0.85), rgba(0, 173, 181, 0.85)), url(https://miro.medium.com/max/3840/1*zZTBh4IWpCBiD3nTiMd4EQ.jpeg);
   background-size: cover;
 }
 .each-project .project-card .project-card-body {
+  box-sizing: border-box;
+  min-height: 250px;
   opacity: 0;
   padding: 0.5rem;
 }

@@ -9,8 +9,11 @@
   }
 }
 
-.each-project{
+.each-project {
   padding: 5px 5px;
+  @media only screen and (max-width: $breakpoint-mobile) {
+        padding: 10px 30px;
+  }
   .project-card {
     background: linear-gradient(
         0deg,
@@ -19,8 +22,10 @@
       ),
       url(https://miro.medium.com/max/3840/1*zZTBh4IWpCBiD3nTiMd4EQ.jpeg);
     background-size: cover;
-  
+
     .project-card-body {
+      box-sizing: border-box;
+      min-height: 250px;
       opacity: 0;
       padding: 0.5rem;
       h5 {
@@ -35,7 +40,7 @@
         font-style: italic;
         font-weight: 300;
       }
-  
+
       a {
         background-color: none;
         border: 1px solid $primary;
@@ -50,16 +55,13 @@
           border-radius: 0;
         }
       }
-  
       &:hover {
         opacity: 1;
       }
     }
-  
     &:hover {
       background: #ffffff;
       border: 0;
     }
   }
-  
 }
