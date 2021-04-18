@@ -37,7 +37,7 @@ function About() {
               <img src="profile-picture-flip.png" alt="profile"></img>
             </div>
             <div className="col-md-12 col-lg-6 about-me">
-              <h4>Who is this guy?</h4>
+              
               <p>
                 I am a front-end application developer located in Canada. I am
                 proficient in front-end development for web based and mobile
