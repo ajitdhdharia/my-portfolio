@@ -1,5 +1,5 @@
 .contact {
-  background-color: #393e46;
+  background-color: #433fd1;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .contact h3 {
@@ -16,7 +16,7 @@
   }
 }
 .contact p {
-  color: #00adb5;
+  color: #433fd1;
 }
 .contact .my-contact {
   color: #ffffff;
@@ -37,13 +37,13 @@
   height: 200px;
 }
 .contact .contact-form .submit-button {
-  border: 1px solid #00adb5;
-  color: #00adb5;
+  border: 1px solid #433fd1;
+  color: #433fd1;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 .contact .contact-form .submit-button:hover {
-  background-color: #00adb5;
+  background-color: #433fd1;
   color: #ffffff;
 }
 

@@ -36,21 +36,21 @@
 }
 .each-project .project-card .project-card-body p {
   margin-bottom: 3rem;
-  color: #00adb5;
+  color: #433fd1;
   font-style: italic;
   font-weight: 300;
 }
 .each-project .project-card .project-card-body a {
   background-color: none;
-  border: 1px solid #00adb5;
-  color: #00adb5;
+  border: 1px solid #433fd1;
+  color: #433fd1;
   border-radius: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
 .each-project .project-card .project-card-body a:hover {
-  background-color: #00adb5;
+  background-color: #433fd1;
   color: #ffffff;
   border-radius: 0;
 }

@@ -1,76 +1,63 @@
 @import "variables";
 
-@keyframes slide-right {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 .home {
   height: 100vh;
   width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center; //flex-center mixin
   flex-direction: column;
-  font-family: $primaryFont;
-  background-color: $dark-black;
-  .title-home{
-    animation: slide-right 1s ease-out 0s;
+  font-family: $font;
+  background-color: $primary-color;
+
+  .title-home {
+
     h1 {
-      color: white;
+      color: $bg-color;
       font-weight: $light;
       font-size: 3rem;
       margin-bottom: 0;
+      @media only screen and (max-width: $breakpoint-mobile) {
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+
       span {
         font-weight: $regular;
         font-size: 3.5rem;
-        color: $secondary;
+        color: $bg-color;
+        @media only screen and (max-width: $breakpoint-mobile) {
+          font-size: 2rem;
+        }
       }
     }
+
     h3 {
-      color: white;
-      font-weight: $extra-light;
+      color: $bg-color;
+      font-weight: $light;
       font-size: 2rem;
       text-align: right;
       margin-bottom: 2rem;
-    }
-    a {
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        font-weight: $extra-light;
-        padding: 0.5rem 1.5rem 0.75rem 1.5rem;
-        text-decoration: none;
-        border-radius: 3px;
-        transition-property: all;
-        transition-duration: 0.1s;
-        transition-timing-function: ease-in-out;
-        &:hover{
-            background-color: $secondary;
-            color: #ffffff;
-            border: none;
-            font-size: 1.05rem;
-        }
-  }
-  @media only screen and (max-width: $breakpoint-mobile) {
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-      span {
-        font-size: 2rem;
+      @media only screen and (max-width: $breakpoint-mobile) {
+        font-size: 1.3rem;
+        text-align: center;
       }
     }
-    h3 {
-      font-size: 1.3rem;
-      text-align: center;
-    }
-  }
 
-  
+    a {
+      color: $bg-color;
+      border: 2px solid $bg-color;
+      font-weight: $light;
+      padding: 0.5rem 1.5rem 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 3px;
+      transition-property: all;
+      transition-duration: 0.1s;
+      transition-timing-function: ease-in-out;
+      &:hover {
+        background-color: $tertiary-color;
+        color: #ffffff;
+        border: none;
+        font-size: 1.05rem;
+      }
+    }
   }
 }

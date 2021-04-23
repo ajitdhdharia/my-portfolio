@@ -7,7 +7,7 @@
   }
 }
 .about .flip-x:hover {
-  animation: flipX 0.2s ease-out forwards;
+  transition: scale(1.5) 0.4s;
 }
 .about h3 {
   margin: 1rem 0 0.5rem;
@@ -41,7 +41,7 @@
   margin-bottom: 5rem;
 }
 .about .about-top img {
-  border: 3px solid #00adb5;
+  border: 3px solid #433fd1;
   border-radius: 50%;
   width: 50%;
   height: auto;
@@ -76,10 +76,10 @@
 .about .about-top .about-me a {
   text-align: left;
   text-decoration: none;
-  color: #ff2e63;
+  color: #3abf5d;
 }
 .about .about-top .about-me a:hover {
-  color: #00adb5;
+  color: #433fd1;
   font-size: 1.02rem;
 }
 @media only screen and (max-width: 600px) {

@@ -6,17 +6,13 @@ function NavBar() {
   return (
   <div>
       {/* NavBar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-nav">
+      <nav className="navbar navbar-expand-lg navbar-dark custom-nav">
+      <a class="navbar-brand brand-custom" href="#home">Ajit  Dhdharia</a>
         <div className="container-fluid">
-          <ul className="navbar-nav mx-auto d-inline-flex flex-row">
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#home">
-                <span>Home</span>
-              </a>
-            </li>
-            <li className="nav-item px-2">
-              <a className="nav-link" href="#about">
-              <span>About</span>
+          <ul className="navbar-nav ml-auto d-inline-flex flex-row">
+          <li className="nav-item px-2">
+              <a className="nav-link" href="#project">
+              <span>Projects</span>
               </a>
             </li>
             <li className="nav-item px-2">
@@ -25,8 +21,8 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item px-2">
-              <a className="nav-link" href="#project">
-              <span>Projects</span>
+              <a className="nav-link" href="#about">
+              <span>About</span>
               </a>
             </li>
             <li className="nav-item px-2">

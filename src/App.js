@@ -1,7 +1,5 @@
-
 import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import About from "./components/About"
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project/Project";
 import Contact from "./components/Contact";
@@ -13,10 +11,9 @@ function App() {
   return (
     <div>
       <Home></Home>
-      <Navbar></Navbar>
-      <About></About>
-      <Skills></Skills>
       <Project></Project>
+      <Skills></Skills>
+      <About></About>
       <Contact></Contact>
       <Footer></Footer>
     </div>

@@ -1,13 +1,3 @@
-@keyframes slide-right {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 .home {
   height: 100vh;
   width: auto;
@@ -15,34 +5,48 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: "Roboto Slab", serif;
-  background-color: #222831;
-}
-.home .title-home {
-  animation: slide-right 1s ease-out 0s;
+  font-family: "Roboto", sans-serif;
+  background-color: #433fd1;
 }
 .home .title-home h1 {
-  color: white;
+  color: #eceffa;
   font-weight: 300;
   font-size: 3rem;
   margin-bottom: 0;
 }
+@media only screen and (max-width: 600px) {
+  .home .title-home h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
 .home .title-home h1 span {
   font-weight: 400;
   font-size: 3.5rem;
-  color: #ff2e63;
+  color: #eceffa;
+}
+@media only screen and (max-width: 600px) {
+  .home .title-home h1 span {
+    font-size: 2rem;
+  }
 }
 .home .title-home h3 {
-  color: white;
-  font-weight: 200;
+  color: #eceffa;
+  font-weight: 300;
   font-size: 2rem;
   text-align: right;
   margin-bottom: 2rem;
 }
+@media only screen and (max-width: 600px) {
+  .home .title-home h3 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
 .home .title-home a {
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  font-weight: 200;
+  color: #eceffa;
+  border: 2px solid #eceffa;
+  font-weight: 300;
   padding: 0.5rem 1.5rem 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 3px;
@@ -51,23 +55,10 @@
   transition-timing-function: ease-in-out;
 }
 .home .title-home a:hover {
-  background-color: #ff2e63;
+  background-color: #d53d9c;
   color: #ffffff;
   border: none;
   font-size: 1.05rem;
-}
-@media only screen and (max-width: 600px) {
-  .home .title-home h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  .home .title-home h1 span {
-    font-size: 2rem;
-  }
-  .home .title-home h3 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=home.css.map */

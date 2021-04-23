@@ -1,14 +1,23 @@
 .custom-nav {
-  background-color: #393e46 !important;
+  background-color: #433fd1;
+  padding: 1rem 10% 1rem 2rem;
+}
+.custom-nav .brand-custom {
+  padding: 0.2rem;
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
 }
 .custom-nav span {
-  color: #ffffff;
-  font-family: "Roboto Slab", serif;
+  color: #eceffa;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
+  transition: all 0.02s ease-out 0.05s;
 }
 .custom-nav span:hover {
-  color: #ff2e63;
-  font-size: 1.05rem;
+  color: #d53d9c;
+}
+.custom-nav span:active {
+  color: #d53d9c;
 }
 
 /*# sourceMappingURL=navbar.css.map */
