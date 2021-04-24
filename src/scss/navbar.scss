@@ -1,14 +1,20 @@
 @import "./variables";
 
 .custom-nav {
-    background-color: $secondary-color !important;
+    background-color: $text-header !important;
+    box-shadow: 0 2px 10px $text-header;
     span {
-      color: #ffffff;
+      color: $bg-color;
       font-family: $primaryFont;
       font-weight: $light;
+      transition: all 0.2s ease-in-out 0.05s;
       &:hover{
-        color: $secondary-color;
-        font-size: 1.05rem;
+        color: $cta-color;
+        font-weight: $regular;
+        font-size: 1.02rem;
+      }
+      &:focus {
+        color: $cta-color;
       }
     }
   }

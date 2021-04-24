@@ -1,14 +1,20 @@
 .custom-nav {
-  background-color: #222831 !important;
+  background-color: #393e46 !important;
+  box-shadow: 0 2px 10px #393e46;
 }
 .custom-nav span {
-  color: #ffffff;
+  color: #eeeeee;
   font-family: Roboto, sans-serif;
   font-weight: 300;
+  transition: all 0.2s ease-in-out 0.05s;
 }
 .custom-nav span:hover {
-  color: #222831;
-  font-size: 1.05rem;
+  color: #ff2e63;
+  font-weight: 400;
+  font-size: 1.02rem;
+}
+.custom-nav span:focus {
+  color: #ff2e63;
 }
 
 /*# sourceMappingURL=navbar.css.map */

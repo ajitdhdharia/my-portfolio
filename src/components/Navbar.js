@@ -15,8 +15,8 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item px-2">
-              <a className="nav-link" href="#about">
-              <span>About</span>
+              <a className="nav-link" href="#project">
+              <span>Projects</span>
               </a>
             </li>
             <li className="nav-item px-2">
@@ -25,8 +25,8 @@ function NavBar() {
               </a>
             </li>
             <li className="nav-item px-2">
-              <a className="nav-link" href="#project">
-              <span>Projects</span>
+              <a className="nav-link" href="#about">
+              <span>About</span>
               </a>
             </li>
             <li className="nav-item px-2">

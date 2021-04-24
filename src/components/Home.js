@@ -9,7 +9,7 @@ function Home() {
           Hi, I'm <span>AJIT DHDHARIA</span>
         </h1>
         <h3>A front-end Developer</h3>
-        <a href="#project">View my work</a>
+        <a href="#project">MY PORTFOLIO</a>
       </div>
     </header>
   );

@@ -39,7 +39,7 @@ function Project() {
   }
 
   return (
-    <div className="project mt-5 pt-5 pb-5" id="project">
+    <div className="project pt-5 pb-5" id="project">
       <div className="container">
         {/* Project section Navbar */}
         <div>
