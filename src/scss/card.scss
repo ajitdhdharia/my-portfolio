@@ -33,27 +33,27 @@
         animation: animation 0.3s ease-out 0.1s 1 forwards;
       }
       h5 {
-        font-family: $secondaryFont;
+        font-family: $primaryFont;
         font-weight: 400;
         margin-top: 2rem;
         margin-bottom: 1rem;
       }
       p {
         margin-bottom: 3rem;
-        color: $primary;
+        color: $primary-color;
         font-style: italic;
         font-weight: 300;
       }
       a {
         background-color: none;
-        border: 1px solid $primary;
-        color: $primary;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         border-radius: 0;
-        font-family: $secondaryFont;
+        font-family: $primaryFont;
         font-weight: 300;
         margin-bottom: 1.5rem;
         &:hover {
-          background-color: $primary;
+          background-color: $primary-color;
           color: #ffffff;
           border-radius: 0;
         }

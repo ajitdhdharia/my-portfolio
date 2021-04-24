@@ -1,7 +1,7 @@
 @import "./variables";
 
 .contact {
-  background-color: $light-black;
+  background-color: $secondary-color;
   border-radius: 0.5rem 0.5rem 0 0;
   h3 {
     color: #ffffff;
@@ -17,7 +17,7 @@
   }
 
   p {
-    color: $primary;
+    color: $primary-color;
   }
 
   .my-contact {
@@ -38,12 +38,12 @@
       height: 200px;
     }
     .submit-button{
-        border: 1px solid $primary;
-        color: $primary;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         margin-top:1rem;
         margin-bottom: 3rem;
         &:hover{
-            background-color: $primary;
+            background-color: $primary-color;
             color: #ffffff;
         }
     }

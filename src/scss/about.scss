@@ -43,7 +43,7 @@
   .about-top {
     margin-bottom: 5rem;
     img {
-      border: 3px solid $primary;
+      border: 3px solid $primary-color;
       border-radius: 50%;
       width: 50%;
       height: auto;
@@ -73,9 +73,9 @@
       a {
         text-align: left;
         text-decoration: none;
-        color: $secondary;
+        color: $primary-color;
         &:hover {
-          color: $primary;
+          color: $primary-color;
           font-size: 1.02rem;
         }
         @media only screen and (max-width: $breakpoint-mobile) {

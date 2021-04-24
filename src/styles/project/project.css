@@ -20,12 +20,12 @@
   background: none;
   color: #000000;
   border: none;
-  font-family: "Roboto Slab", serif;
+  font-family: Roboto, sans-serif;
   margin: 0 1rem;
   font-weight: 300;
 }
 .project .project-tab .tab-button:hover {
-  background-color: #ff2e63;
+  background-color: #00adb5;
   border-radius: 0.2rem;
   color: #ffffff;
 }

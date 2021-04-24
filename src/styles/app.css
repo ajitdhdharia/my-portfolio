@@ -1,7 +1,13 @@
 * {
   text-align: center;
-  font-family: "Roboto Slab", serif;
+  font-family: Roboto, sans-serif;
   scroll-behavior: smooth;
+}
+
+.stick-top {
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 /*# sourceMappingURL=app.css.map */

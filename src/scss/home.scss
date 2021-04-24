@@ -14,47 +14,45 @@
 .home {
   height: 100vh;
   width: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center;
   flex-direction: column;
   font-family: $primaryFont;
-  background-color: $dark-black;
+  background-color: $secondary-color;
   .title-home{
     animation: slide-right 1s ease-out 0s;
     h1 {
-      color: white;
-      font-weight: $light;
+      color: $bg-color;
+      font-weight: $thin;
       font-size: 3rem;
       margin-bottom: 0;
       span {
-        font-weight: $regular;
-        font-size: 3.5rem;
-        color: $secondary;
+        font-weight: $light;
+        font-size: 3.3rem;
+        color: $primary-color;
       }
     }
     h3 {
-      color: white;
-      font-weight: $extra-light;
+      color: $bg-color;
+      font-weight: $thin;
       font-size: 2rem;
-      text-align: right;
+      text-align: center;
       margin-bottom: 2rem;
     }
     a {
-        color: #ffffff;
-        border: 2px solid #ffffff;
-        font-weight: $extra-light;
+        color: $primary-color;
+        border: 2px solid $primary-color;
+        font-weight: $light;
         padding: 0.5rem 1.5rem 0.75rem 1.5rem;
         text-decoration: none;
         border-radius: 3px;
-        transition-property: all;
-        transition-duration: 0.1s;
-        transition-timing-function: ease-in-out;
+        box-shadow: 0 0 10px $primary-color;
+        transition: all 0.2s ease-in-out 0.05s;
         &:hover{
-            background-color: $secondary;
-            color: #ffffff;
-            border: none;
+            background-color: $secondary-color;
+            color: $cta-color;
+            border: 2px solid $cta-color;
             font-size: 1.05rem;
+            box-shadow: 0 0 10px $cta-color;
         }
   }
   @media only screen and (max-width: $breakpoint-mobile) {

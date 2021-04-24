@@ -13,10 +13,12 @@ function App() {
   return (
     <div>
       <Home></Home>
+      <div className="stick-top">
       <Navbar></Navbar>
-      <About></About>
-      <Skills></Skills>
+      </div>
       <Project></Project>
+      <Skills></Skills>
+      <About></About>
       <Contact></Contact>
       <Footer></Footer>
     </div>

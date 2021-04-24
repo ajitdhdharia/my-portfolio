@@ -1,27 +1,30 @@
-
 //Colors
-$dark-black: #222831;
-$light-black: #393e46;
-$primary: #00adb5;
-$secondary: #ff2e63;
-$grey: #eeeeee;
+$primary-color: #00adb5;
+$secondary-color: #222831;
+$cta-color: #ff2e63;
+$bg-color: #eeeeee;
+$text-header: #393e46;
+@mixin text-body {
+  color: #393e46;
+  opacity: 0.8;
+}
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 //Fonts Family
-$primaryFont: 'Roboto Slab', serif;
-$secondaryFont: 'Roboto', sans-serif;
+$primaryFont: Roboto, sans-serif;
 
 //Font weight
 $thin: 100;
-$extra-light: 200;
 $light: 300;
 $regular: 400;
 $medium: 500;
-$semi-bold: 600;
 $bold: 700;
-$extra-bold: 800;
 $black: 900;
-
 
 $breakpoint-mobile: 600px;
 $breakpoint-tablet: 768px;

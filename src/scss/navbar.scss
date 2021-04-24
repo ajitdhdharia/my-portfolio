@@ -1,13 +1,13 @@
 @import "./variables";
 
 .custom-nav {
-    background-color: $light-black !important;
+    background-color: $secondary-color !important;
     span {
       color: #ffffff;
       font-family: $primaryFont;
       font-weight: $light;
       &:hover{
-        color: $secondary;
+        color: $secondary-color;
         font-size: 1.05rem;
       }
     }
