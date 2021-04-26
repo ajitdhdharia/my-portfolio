@@ -1,25 +1,24 @@
 import React from "react";
 
-// FONTAWESOME
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMobileAlt,
-  faTachometerAlt,
-  faShapes,
-  faLaptopHouse,
-} from "@fortawesome/free-solid-svg-icons";
+//Material UI Icons
+import DevicesRoundedIcon from "@material-ui/icons/DevicesRounded";
+import DynamicFeedRoundedIcon from "@material-ui/icons/DynamicFeedRounded";
+import SpeedRoundedIcon from "@material-ui/icons/SpeedRounded";
+import TransformRoundedIcon from "@material-ui/icons/TransformRounded";
 
 import "../styles/about.css";
 
 const responsive = (
-  <FontAwesomeIcon icon={faMobileAlt} size="5x" color="#00adb5" />
+  <DevicesRoundedIcon style={{ transform: "scale(3)", color: "#00adb5", marginBottom: "1rem"}} />
 );
-const dynamic = <FontAwesomeIcon icon={faShapes} size="5x" color="#00adb5" />;
+const dynamic = (
+  <DynamicFeedRoundedIcon style={{ transform: "scale(3)", color: "#00adb5", marginBottom: "1rem" }} />
+);
 const quickLearner = (
-  <FontAwesomeIcon icon={faTachometerAlt} size="5x" color="#00adb5" />
+  <SpeedRoundedIcon style={{ transform: "scale(3)", color: "#00adb5", marginBottom: "1rem" }} />
 );
 const adaptability = (
-  <FontAwesomeIcon icon={faLaptopHouse} size="5x" color="#00adb5" />
+  <TransformRoundedIcon style={{ transform: "scale(3)", color: "#00adb5", marginBottom: "1rem" }} />
 );
 
 function About() {
@@ -37,8 +36,7 @@ function About() {
               <img src="profile-picture-flip.png" alt="profile"></img>
             </div>
             <div className="col-md-12 col-lg-6 about-me">
-              
-              <p>
+              <p style={{marginTop: "1rem"}}>
                 I am a front-end application developer located in Canada. I am
                 proficient in front-end development for web based and mobile
                 based applications.
@@ -56,39 +54,41 @@ function About() {
           <div className="row">
             <div className="col-md-6 col-lg-3 ">
               <div className="flip-x">
-                {responsive}
+                <div>{responsive}</div>
+
                 <h5>Responsive</h5>
                 <p>My layouts will work on any device, big or small.</p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="flip-x">
-              {dynamic}
-              <h5>Dynamic</h5>
-              <p>
-                Websites don't have to be static, I love making pages come to
-                life.
-              </p>
-              </div>  
-            </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="flip-x">
-              {quickLearner}
-              <h5>Quick Learner</h5>
-              <p>
-                With amazing quick-learning skill, I learn new technologies
-                fast.
-              </p>
+                <div>{dynamic}</div>
+
+                <h5>Dynamic</h5>
+                <p>
+                  Websites don't have to be static, I love making pages come to
+                  life.
+                </p>
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
               <div className="flip-x">
-              {adaptability}
-              <h5>Adaptability</h5>
-              <p>
-                I'm always on the lookout for new tools and ways of doing
-                things.
-              </p>
+                <div>{quickLearner}</div>
+                <h5>Quick Learner</h5>
+                <p>
+                  With amazing quick-learning skill, I learn new technologies
+                  fast.
+                </p>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-3">
+              <div className="flip-x">
+                <div>{adaptability}</div>
+                <h5>Adaptability</h5>
+                <p>
+                  I'm always on the lookout for new tools and ways of doing
+                  things.
+                </p>
               </div>
             </div>
           </div>

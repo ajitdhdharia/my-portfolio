@@ -1,24 +1,14 @@
 @import "./variables";
 
-@keyframes flipX {
-  from {
-    font-size: 1rem;
-  }
-  to {
-    font-size: 1.1rem;
-  }
-}
+
 
 .about {
   background-color: $bg-color;
   padding-top: 3rem;
-  .flip-x {
-    &:hover{
-      animation: flipX 0.2s ease-out forwards;
-    }
-  }
+  border-radius: 20px 20px 0 0;
   h3 {
     margin: 1rem 0 0.5rem;
+    color: $text-header;
   }
   hr {
     border: 2px solid #222831;
@@ -27,16 +17,12 @@
       margin: 0 40% 2rem;
     }
   }
-  h4 {
-    margin-top: 2rem;
-    font-weight: 500;
-    text-align: left;
-  }
   h5 {
     margin-top: 1rem;
   }
   p {
     font-weight: 300;
+    @include text-body;
     @media only screen and (max-width: $breakpoint-mobile) {
       margin: 0 0 2rem;
     }
@@ -86,4 +72,14 @@
       }
     }
   }
+.flip-x {
+  transform: scale(1);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.01s;
+  &:hover{
+    transform: scale(1.1);
+  }
+}
 }

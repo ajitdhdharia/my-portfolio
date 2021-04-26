@@ -10,10 +10,10 @@
 #skills .skills-back-block h3 {
   margin-top: 3rem;
   font-weight: 500;
-  color: #ffffff;
+  color: #eeeeee;
 }
 #skills .skills-back-block hr {
-  border: 2px solid #ffffff;
+  border: 2px solid #eeeeee;
   margin: 0 48% 3rem;
 }
 @media only screen and (max-width: 600px) {
@@ -42,6 +42,8 @@
   margin-bottom: 2rem;
   font-size: 0.92rem;
   padding: 0 2.2rem;
+  color: #393e46;
+  opacity: 0.8;
 }
 @media only screen and (max-width: 600px) {
   #skills p {

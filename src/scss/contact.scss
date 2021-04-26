@@ -1,15 +1,14 @@
 @import "./variables";
 
 .contact {
-  background-color: $secondary-color;
+  background-color: $text-header;
   border-radius: 0.5rem 0.5rem 0 0;
   h3 {
-    color: #ffffff;
-    padding-top: 2rem;
+    color: $bg-color;
   }
 
   hr {
-    border: 2px solid #ffffff;
+    border: 2px solid $bg-color;
     margin: 0 47% 1.5rem;
     @media only screen and (max-width: $breakpoint-mobile) {
       margin: 0 40% 2rem;
@@ -21,31 +20,37 @@
   }
 
   .my-contact {
-    color: #ffffff;
+    color: $bg-color;
     padding-bottom: 2rem;
 
     a {
-      color: #ffffff;
+      color: $bg-color;
     }
   }
 
   .contact-form {
     margin: 0 35%;
     @media only screen and (max-width: $breakpoint-mobile) {
-        margin: 0 10%;
-      }
-    .message {
-      height: 200px;
+      margin: 0 10%;
     }
-    .submit-button{
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        margin-top:1rem;
-        margin-bottom: 3rem;
-        &:hover{
-            background-color: $primary-color;
-            color: #ffffff;
-        }
+    .form-content {
+      input {
+        text-align: left;
+      }
+      .message {
+        height: 200px;
+      }
+    }
+
+    .submit-button {
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      margin-top: 1rem;
+      margin-bottom: 3rem;
+      &:hover {
+        background-color: $primary-color;
+        color: #ffffff;
+      }
     }
   }
 }

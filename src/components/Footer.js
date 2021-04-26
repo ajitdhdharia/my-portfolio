@@ -1,6 +1,6 @@
 import React from "react";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 import "../styles/footer.css";
 function Footer() {
@@ -13,7 +13,7 @@ function Footer() {
               width: "50px",
               height: "50px",
               color: "#00adb5",
-              marginRight: "1rem",
+              marginRight: "1rem"
             }}
           />
         </a>

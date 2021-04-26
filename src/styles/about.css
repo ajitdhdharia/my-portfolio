@@ -1,20 +1,11 @@
-@keyframes flipX {
-  from {
-    font-size: 1rem;
-  }
-  to {
-    font-size: 1.1rem;
-  }
-}
 .about {
   background-color: #eeeeee;
   padding-top: 3rem;
-}
-.about .flip-x:hover {
-  animation: flipX 0.2s ease-out forwards;
+  border-radius: 20px 20px 0 0;
 }
 .about h3 {
   margin: 1rem 0 0.5rem;
+  color: #393e46;
 }
 .about hr {
   border: 2px solid #222831;
@@ -25,16 +16,13 @@
     margin: 0 40% 2rem;
   }
 }
-.about h4 {
-  margin-top: 2rem;
-  font-weight: 500;
-  text-align: left;
-}
 .about h5 {
   margin-top: 1rem;
 }
 .about p {
   font-weight: 300;
+  color: #393e46;
+  opacity: 0.8;
 }
 @media only screen and (max-width: 600px) {
   .about p {
@@ -90,6 +78,16 @@
   .about .about-top .about-me a {
     text-align: center;
   }
+}
+.about .flip-x {
+  transform: scale(1);
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0.01s;
+}
+.about .flip-x:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -1,14 +1,14 @@
 import React from "react";
 
 //Material UI Icons
-import DevicesRoundedIcon from '@material-ui/icons/DevicesRounded';
+import CodeRoundedIcon from '@material-ui/icons/CodeRounded';
 import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
 import ColorLensOutlinedIcon from '@material-ui/icons/ColorLensOutlined';
 
 // STYLESHEET
 import "../styles/skills.css";
 
-const frontEnd = <DevicesRoundedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
+const frontEnd = <CodeRoundedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
 const backEnd = <StorageRoundedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
 const design = <ColorLensOutlinedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
 
@@ -34,7 +34,7 @@ function Skills() {
                 <h6>
                 Things I know
                 </h6>
-                <p className="card-text">
+                <p className="card-text" style={{fontWeight: "400"}}>
                 <strong>Javascript, JAVA, HTML, CSS, Sass, XML, Reactjs, jQuery, React-Bootstrap, Bootstrap 4</strong>
                 </p>
                 <h6>
@@ -61,7 +61,7 @@ function Skills() {
                 <h6>
                 Things I know:
                 </h6>
-                <p className="card-text">
+                <p className="card-text" style={{fontWeight: "400"}}>
                 <strong>NodeJs, ExpressJs, MySQL, Firebase, MongoDB, SqLite, JSON, NPM, JAVA, Google Map API.</strong>
                 </p>
                 <h6>
@@ -88,7 +88,7 @@ function Skills() {
                 <h6>
                 Things I know
                 </h6>
-                <p className="card-text">
+                <p className="card-text" style={{fontWeight: "400"}}>
                 <strong>UI, UML, Video editing, Vector graphics, Motion graphics.</strong>
                 </p>
                 <h6>
