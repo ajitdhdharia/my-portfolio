@@ -1,26 +1,22 @@
 import React from "react";
 
-// FONTAWESOME
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLaptopCode,
-  faServer,
-  faPalette,
-} from "@fortawesome/free-solid-svg-icons";
+//Material UI Icons
+import DevicesRoundedIcon from '@material-ui/icons/DevicesRounded';
+import StorageRoundedIcon from '@material-ui/icons/StorageRounded';
+import ColorLensOutlinedIcon from '@material-ui/icons/ColorLensOutlined';
 
 // STYLESHEET
 import "../styles/skills.css";
 
-const frontEnd = (
-  <FontAwesomeIcon icon={faLaptopCode} size="4x" color="#00adb5" />
-);
-const backEnd = <FontAwesomeIcon icon={faServer} size="4x" color="#00adb5" />;
-const design = <FontAwesomeIcon icon={faPalette} size="4x" color="#00adb5" />;
+const frontEnd = <DevicesRoundedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
+const backEnd = <StorageRoundedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
+const design = <ColorLensOutlinedIcon style={{transform: "scale(3)", color: "#00adb5"}}/>
+
 
 function Skills() {
   return (
     <div id="skills">
-      <section className="conatiner pt-4 pb-4">
+      <section className="conatiner">
         <div className="skills-back-block">
           <h3>SKILLS</h3>
           <hr></hr>
@@ -39,7 +35,7 @@ function Skills() {
                 Things I know
                 </h6>
                 <p className="card-text">
-                Javascript, JAVA, HTML, CSS, Sass, XML, Reactjs, jQuery, React-Bootstrap, Bootstrap 4
+                <strong>Javascript, JAVA, HTML, CSS, Sass, XML, Reactjs, jQuery, React-Bootstrap, Bootstrap 4</strong>
                 </p>
                 <h6>
                 Tools
@@ -66,7 +62,7 @@ function Skills() {
                 Things I know:
                 </h6>
                 <p className="card-text">
-                NodeJs, ExpressJs, MySQL, Firebase, MongoDB, SqLite, JSON, NPM, JAVA, Google Map API.
+                <strong>NodeJs, ExpressJs, MySQL, Firebase, MongoDB, SqLite, JSON, NPM, JAVA, Google Map API.</strong>
                 </p>
                 <h6>
                 Tools
@@ -93,7 +89,7 @@ function Skills() {
                 Things I know
                 </h6>
                 <p className="card-text">
-                UI, UML, Video editing, Vector graphics, Motion graphics
+                <strong>UI, UML, Video editing, Vector graphics, Motion graphics.</strong>
                 </p>
                 <h6>
                 Tools

@@ -1,5 +1,29 @@
+#skills {
+  margin-bottom: 6rem;
+}
+#skills .skills-back-block {
+  background-color: #00adb5;
+  padding-top: 2rem;
+  width: 100%;
+  height: 400px;
+}
+#skills .skills-back-block h3 {
+  margin-top: 3rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+#skills .skills-back-block hr {
+  border: 2px solid #ffffff;
+  margin: 0 48% 3rem;
+}
+@media only screen and (max-width: 600px) {
+  #skills .skills-back-block hr {
+    margin: 0 40% 2rem;
+  }
+}
 #skills .skill-card {
   margin: 0 6rem;
+  padding-top: 6rem;
   border-radius: 6px;
   box-shadow: 0.5px 0.5px 5px #00adb5;
 }
@@ -28,25 +52,6 @@
 #skills .tools {
   display: flex;
   flex-direction: column;
-}
-#skills .skills-back-block {
-  background-color: #00adb5;
-  width: 100%;
-  height: 400px;
-}
-#skills .skills-back-block h3 {
-  padding-top: 2rem;
-  font-weight: 500;
-  color: #ffffff;
-}
-#skills .skills-back-block hr {
-  border: 2px solid #ffffff;
-  margin: 0 48% 3rem;
-}
-@media only screen and (max-width: 600px) {
-  #skills .skills-back-block hr {
-    margin: 0 40% 2rem;
-  }
 }
 #skills .skills-card-group {
   margin-top: -300px;

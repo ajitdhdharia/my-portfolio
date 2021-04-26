@@ -1,8 +1,28 @@
 @import "./variables";
 
 #skills {
+  margin-bottom: 6rem;
+  .skills-back-block {
+    background-color: $primary-color;
+    padding-top: 2rem;
+    width: 100%;
+    height: 400px;
+    h3 {
+      margin-top: 3rem;
+      font-weight: 500;
+      color: #ffffff;
+    }
+    hr {
+      border: 2px solid #ffffff;
+      margin: 0 48% 3rem;
+      @media only screen and (max-width: $breakpoint-mobile) {
+        margin: 0 40% 2rem;
+      }
+    }
+  }
   .skill-card {
     margin: 0 6rem;
+    padding-top: 6rem;
     border-radius: 6px;
     box-shadow: 0.5px 0.5px 5px $primary-color;
     @media only screen and (max-width: $breakpoint-mobile) {
@@ -29,23 +49,7 @@
     display: flex;
     flex-direction: column;
   }
-  .skills-back-block {
-    background-color: $primary-color;
-    width: 100%;
-    height: 400px;
-    h3 {
-      padding-top: 2rem;
-      font-weight: 500;
-      color: #ffffff;
-    }
-    hr {
-      border: 2px solid #ffffff;
-      margin: 0 48% 3rem;
-      @media only screen and (max-width: $breakpoint-mobile) {
-        margin: 0 40% 2rem;
-      }
-    }
-  }
+  
 
   .skills-card-group {
     margin-top: -300px;

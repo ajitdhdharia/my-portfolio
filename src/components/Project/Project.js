@@ -11,6 +11,7 @@ function createCard(ProjectDetail) {
       name={ProjectDetail.title}
       description={ProjectDetail.description}
       link={ProjectDetail.link}
+      imageURL={ProjectDetail.imageURL}
     />
   );
 }
@@ -32,15 +33,17 @@ function Project() {
     return ProjectDetail.category === "others";
   });
 
+  //useState for tab content.
   const [currentState, setState] = useState(1);
 
   function tabClick(index) {
     setState(index);
   }
 
+  
   return (
-    <div className="project pt-5 pb-5" id="project">
-      <div className="container">
+    <div className="project py-5" id="project">
+      <div className="container pb-5">
         {/* Project section Navbar */}
         <div>
           <h3>PROJECTS</h3>

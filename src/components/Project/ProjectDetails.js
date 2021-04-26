@@ -2,9 +2,11 @@ const ProjectDetails = [
   {
     id: 1,
     category: "web",
-    title: "QuickTab",
-    description: "ReactJs/Javascript/HTML/SASS/CSS/Bootstrap/Firebase",
-    link: "https://quicktab.ca/",
+    title: "React-Dock",
+    description: "ReactJs/Javascript/SASS/Bootstrap",
+    link: "https://github.com/ajitdhdharia/React-Dock",
+    imageURL: "https://images.ctfassets.net/23aumh6u8s0i/3vCAkDy9os54mkVdD09lps/2b5386b4302f7ce38c4f6a69d6379dc0/reactjs",
+    isActive: true
   },
   {
     id: 2,
@@ -12,6 +14,8 @@ const ProjectDetails = [
     title: "My Portfolio",
     description: "ReactJs/Javascript/HTML/CSS/SASS/Bootstrap",
     link: "https://github.com/ajitdhdharia/my-portfolio",
+    imageURL: "https://miro.medium.com/max/900/0*wWJX8OOwL_t-E-B-.png",
+    isActive: true
   },
   {
     id: 3,
@@ -19,6 +23,8 @@ const ProjectDetails = [
     title: "Keeper - a Notes App",
     description: "ReactJs/Javascript/HTML/CSS/Bootstrap/Sass",
     link: "https://github.com/ajitdhdharia/keepClone",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 4,
@@ -26,6 +32,8 @@ const ProjectDetails = [
     title: "Contacts",
     description: "ReactJs/Javascript/HTML/CSS/Bootstrap",
     link: "https://github.com/ajitdhdharia/ContactCards",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 5,
@@ -33,6 +41,8 @@ const ProjectDetails = [
     title: "Drumkit",
     description: "Javascript/jQuery/HTML/CSS/Bootstrap",
     link: "https://github.com/ajitdhdharia/drumKit",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 6,
@@ -40,6 +50,8 @@ const ProjectDetails = [
     title: "Dice Game",
     description: "Javascript/jQuery/HTML/CSS/Bootstrap",
     link: "https://github.com/ajitdhdharia/diceGame",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 7,
@@ -47,6 +59,8 @@ const ProjectDetails = [
     title: "TinDog",
     description: "HTML/CSS/Bootstrap",
     link: "https://github.com/ajitdhdharia/TinDog",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 8,
@@ -54,6 +68,8 @@ const ProjectDetails = [
     title: "InfinityJobs Portal",
     description: "Android/JAVA/XML",
     link: "https://github.com/ajitdhdharia/InfinityJobPortal",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 9,
@@ -61,6 +77,8 @@ const ProjectDetails = [
     title: "GoCars",
     description: "Android/JAVA/XML",
     link: "https://github.com/ajitdhdharia/GOCars",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 10,
@@ -68,6 +86,8 @@ const ProjectDetails = [
     title: "MyCafe",
     description: "Android/JAVA/XML",
     link: "https://github.com/ajitdhdharia/MyCafe",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 11,
@@ -75,6 +95,8 @@ const ProjectDetails = [
     title: "GoCars Design",
     description: "Adobe XD/Adobe Illustrator/Adobe Photoshop",
     link: "https://github.com/ajitdhdharia/MyCafe",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   },
   {
     id: 12,
@@ -82,6 +104,8 @@ const ProjectDetails = [
     title: "InfinityJobs Portal Design",
     description: "Adobe XD/Adobe Illustrator/Adobe Photoshop",
     link: "https://github.com/ajitdhdharia/MyCafe",
+    imageURL: "https://www.inovex.de/blog/wp-content/uploads/2022/01/one-year-of-react-native.png",
+    isActive: true
   }
 ];
 

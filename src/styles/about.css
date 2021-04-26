@@ -6,6 +6,10 @@
     font-size: 1.1rem;
   }
 }
+.about {
+  background-color: #eeeeee;
+  padding-top: 3rem;
+}
 .about .flip-x:hover {
   animation: flipX 0.2s ease-out forwards;
 }

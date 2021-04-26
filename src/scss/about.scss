@@ -10,6 +10,8 @@
 }
 
 .about {
+  background-color: $bg-color;
+  padding-top: 3rem;
   .flip-x {
     &:hover{
       animation: flipX 0.2s ease-out forwards;

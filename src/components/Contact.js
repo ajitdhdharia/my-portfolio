@@ -3,7 +3,7 @@ import "../styles/contact.css";
 function Contact() {
   return (
       <div className="contact" id="contact">
-        <div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#eeeeee" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,80C480,64,600,64,720,74.7C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>        <div>
           <h3>Contacts</h3>
           <hr></hr>
           <p>Have a question or want to work together?</p>

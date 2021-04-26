@@ -1,65 +1,74 @@
 @import "./variables";
 
-@keyframes animation {
+// Animations
+@keyframes glow {
   from {
-    transform: translateY(-5px);
+    box-shadow: 0 0 10px $primary-color;
   }
   to {
-    transform: translateY(10px);
+    box-shadow: 0 0 20px $primary-color;
   }
 }
 
+
 .each-project {
-  padding: 5px 5px;
+  padding: 0;
+  border-radius: 5px;
+  overflow: hidden;
   @media only screen and (max-width: $breakpoint-mobile) {
     padding: 10px 30px;
   }
   .project-card {
-    
-    background-size: cover;
-
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+    &:hover{
+      opacity: 1;
+    }
     .project-card-body {
-      box-sizing: border-box;
-      min-height: 250px;
-      opacity: 0;
+      border-radius: 5px;
+
+  min-height: 240px;
+      @include flex-center;
+      flex-direction: column;
+      // opacity: 0;
       padding: 0.5rem;
-      transform: translateY(-5px);
       &:hover {
-        animation: animation 0.3s ease-out 0.1s 1 forwards;
+        // opacity: 1;
+        background-color: $secondary-color;
       }
       h5 {
         font-family: $primaryFont;
-        font-weight: 400;
-        margin-top: 2rem;
+        color: $bg-color;
+        font-weight: $regular;
+        margin-top: 1rem;
         margin-bottom: 1rem;
       }
       p {
-        margin-bottom: 3rem;
+        margin-bottom: 1rem !important;
         color: $primary-color;
         font-style: italic;
-        font-weight: 300;
+        font-weight: $light;
       }
-      a {
-        background-color: none;
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        border-radius: 0;
-        font-family: $primaryFont;
-        font-weight: 300;
-        margin-bottom: 1.5rem;
-        &:hover {
-          background-color: $primary-color;
-          color: #ffffff;
-          border-radius: 0;
+      .card-buttons {
+        a {
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          box-shadow: 0 0 10px $primary-color;
+          border-radius: 25px;
+          font-family: $primaryFont;
+          font-weight: $light;
+          margin: 1rem;
+          padding: 4px 20px;
+          animation: glow 0.5s ease-in-out 0.05s infinite alternate;
+          &:hover {
+            border: 1px solid $cta-color;
+            color: $cta-color;
+            box-shadow: 0 0 10px $cta-color;
+            animation: none;
+          }
         }
-      }
-      &:hover {
-        opacity: 1;
-      }
-    }
-    &:hover {
-      background: #ffffff;
-      border: 0;
+      }  
     }
   }
 }
