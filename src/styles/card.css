@@ -16,6 +16,16 @@
     padding: 10px 30px;
   }
 }
+.each-project .card-overlay {
+  background-color: #00adb5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  border-radius: 10px;
+}
 .each-project .project-card {
   border-radius: 5px;
   overflow: hidden;
