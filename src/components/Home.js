@@ -8,7 +8,7 @@ function Home() {
         <h1>
           Hi, I'm <span>AJIT DHDHARIA</span>
         </h1>
-        <h3>A front-end Developer</h3>
+        <h3>AN APPLICATION DEVELOPER</h3>
         <a href="#project">MY PORTFOLIO</a>
       </div>
     </header>

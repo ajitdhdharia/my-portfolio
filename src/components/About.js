@@ -37,8 +37,8 @@ function About() {
             </div>
             <div className="col-md-12 col-lg-6 about-me">
               <p style={{marginTop: "1rem"}}>
-                I am a front-end application developer located in Canada. I am
-                proficient in front-end development for web based and mobile
+                I am an application developer located in Canada. I am
+                proficient in development for web based and mobile
                 based applications.
               </p>
               <p>
