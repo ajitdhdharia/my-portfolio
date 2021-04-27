@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer-items">
       <div className="footer-social">
-        <a href="https://www.linkedin.com/in/ajitdhdharia/">
+        <a href="https://www.linkedin.com/in/ajitdhdharia/" target="_blank">
           <LinkedInIcon
             style={{
               width: "50px",
@@ -17,7 +17,7 @@ function Footer() {
             }}
           />
         </a>
-        <a href="https://github.com/ajitdhdharia">
+        <a href="https://github.com/ajitdhdharia" target="_blank">
           <GitHubIcon
             style={{
               width: "45px",

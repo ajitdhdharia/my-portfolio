@@ -17,10 +17,10 @@ function Card(props) {
               <h5 className="card-title">{props.name}</h5>
               <p className="card-text w-100">{props.description}</p>
               <div className="card-buttons">
-                <a href={props.link} className="btn">
+                <a href={props.link} className="btn" target="_blank">
                   Demo
                 </a>
-                <a href={props.link} className="btn">
+                <a href={props.link} className="btn" target="_blank">
                   Code
                 </a>
               </div>
