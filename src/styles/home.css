@@ -26,10 +26,6 @@
   flex-direction: column;
   font-family: Roboto, sans-serif;
   background-color: #222831;
-  background: url("https://i.gifer.com/Ir4.gif");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 .home .home-content {
   padding: 0 5%;
