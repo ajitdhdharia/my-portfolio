@@ -1,13 +1,17 @@
 @import "./variables";
 * {
-    text-align: center;
-    font-family: $primaryFont;
-    scroll-behavior: smooth;
-
+  text-align: center;
+  font-family: $primaryFont;
+  scroll-behavior: smooth;
 }
 
-.stick-top{
+.stick-top {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  @media only screen and (max-width: $breakpoint-mobile) {
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 1;
+  }
 }

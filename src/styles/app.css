@@ -7,7 +7,14 @@
 .stick-top {
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  .stick-top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

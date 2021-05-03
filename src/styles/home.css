@@ -17,9 +17,8 @@
   }
 }
 .home {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
   width: auto;
   display: flex;
   justify-content: center;
@@ -27,8 +26,15 @@
   flex-direction: column;
   font-family: Roboto, sans-serif;
   background-color: #222831;
+  background: url("https://i.gifer.com/Ir4.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .home .home-content {
+  padding: 0 5%;
+  margin: 0 auto;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,12 +42,13 @@
 }
 @media only screen and (max-width: 600px) {
   .home .home-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
 .home .home-content .title-home {
+  width: 100%;
   animation: slide-right 1s ease-out 0s;
-  text-align: left;
+  padding: 3rem;
 }
 @media only screen and (max-width: 600px) {
   .home .home-content .title-home {
@@ -51,9 +58,11 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    animation: none;
   }
 }
 .home .home-content .title-home h1 {
+  text-align: left;
   color: #eeeeee;
   font-weight: 100;
   font-size: 3rem;
@@ -64,18 +73,37 @@
   font-size: 3.3rem;
   color: #00adb5;
 }
-.home .home-content .title-home h3 {
-  color: #eeeeee;
-  font-weight: 100;
-  font-size: 2rem;
-  text-align: left;
-  margin-bottom: 2rem;
+@media only screen and (max-width: 600px) {
+  .home .home-content .title-home h1 {
+    text-align: center;
+  }
 }
-.home .home-content .title-home a {
+.home .home-content .title-home p {
+  color: #eeeeee;
+  text-align: left;
+  font-weight: 100;
+  padding-right: 15%;
+}
+@media only screen and (max-width: 600px) {
+  .home .home-content .title-home p {
+    text-align: center;
+  }
+}
+.home .home-content .title-home .cta {
+  display: flex;
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 600px) {
+  .home .home-content .title-home .cta {
+    flex-direction: column;
+  }
+}
+.home .home-content .title-home .cta a {
+  margin-right: 1rem;
+  letter-spacing: 0.5px;
   color: #00adb5;
   border: 2px solid #00adb5;
   font-weight: 300;
-  margin: 0 3rem 0 0;
   padding: 0.5rem 1.5rem 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 3px;
@@ -83,16 +111,17 @@
   transition: all 0.2s ease-in-out 0.05s;
   animation: glow 0.5s ease-in-out 0.05s infinite alternate;
 }
-.home .home-content .title-home a:hover {
+.home .home-content .title-home .cta a:hover {
   background-color: #222831;
   color: #ff2e63;
   border: 2px solid #ff2e63;
   box-shadow: 0 0 10px #ff2e63;
   animation: none;
+  transform: scale(1.05);
 }
 @media only screen and (max-width: 600px) {
-  .home .home-content .title-home a {
-    margin: 1rem 0;
+  .home .home-content .title-home .cta a {
+    margin-top: 0.5rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -114,27 +143,34 @@
   flex-direction: column;
 }
 .home .home-content .graphics img {
-  padding-left: 5rem;
-  width: 45rem;
+  width: 100%;
   height: auto;
+  padding: 1rem;
 }
 @media only screen and (max-width: 600px) {
   .home .home-content .graphics img {
     padding-left: 1rem;
-    width: 20rem;
     height: auto;
   }
 }
 .home .home-content .graphics .social-links {
   position: absolute;
   bottom: 2rem;
-  right: 5rem;
+  right: 1rem;
 }
 @media only screen and (max-width: 600px) {
   .home .home-content .graphics .social-links {
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 0.5rem;
+    right: 1rem;
   }
+}
+.home .home-content .graphics .social-links .social-icons {
+  color: #00adb5;
+  margin-left: 1rem;
+  transition: all 0.2s ease-in-out 0.05s;
+}
+.home .home-content .graphics .social-links .social-icons:hover {
+  transform: scale(1.3);
 }
 
 /*# sourceMappingURL=home.css.map */
