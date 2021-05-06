@@ -10,7 +10,8 @@ function createCard(ProjectDetail) {
       key={ProjectDetail.id}
       name={ProjectDetail.title}
       description={ProjectDetail.description}
-      link={ProjectDetail.link}
+      demoURL={ProjectDetail.demoURL}
+      codeURL={ProjectDetail.codeURL}
       imageURL={ProjectDetail.imageURL}
     />
   );
@@ -40,7 +41,6 @@ function Project() {
     setState(index);
   }
 
-  
   return (
     <div className="project py-5" id="project">
       <div className="container pb-5">
@@ -99,9 +99,7 @@ function Project() {
               currentState === 1 ? "tab-pane fade show active" : "tab-pane fade"
             }
           >
-            <div className="row ">
-            {ProjectDetails.map(createCard)}
-            </div>
+            <div className="row ">{ProjectDetails.map(createCard)}</div>
           </div>
           <div
             className={
