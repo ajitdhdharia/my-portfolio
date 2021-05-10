@@ -22,7 +22,7 @@ function Home() {
           <div className="cta">
             <a href="#project">VIEW MY WORK</a>
             <a
-              href="https://drive.google.com/file/d/1ngSIsBmTd4lkPSiL0HgRABkWYXtUYh4z/view?usp=sharing"
+              href="https://drive.google.com/file/d/1k8Hd6R7jgy4wGR5H3TvOe1FTN6B2RnYr/view?usp=sharing"
               target="_blank"
             >
               VIEW RESUME
