@@ -93,7 +93,7 @@ const ProjectDetails = [
     description: "Android/JAVA/XML",
     demoURL:
       "https://xd.adobe.com/view/8ad141e6-3305-409c-856e-273a783511cc-df82/grid/",
-    codeURL: "https://github.com/ajitdhdharia/InfinityJobPortal",
+    codeURL: "https://github.com/sardars270/InfinityJobsPortal/tree/master",
     imageURL:
       "https://i.pinimg.com/originals/ff/97/64/ff9764757240bd364299545a7b3f7c46.png",
     isActive: true,
