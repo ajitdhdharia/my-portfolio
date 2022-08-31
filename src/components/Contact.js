@@ -1,6 +1,47 @@
-import React from "react";
+import React, {useState} from "react";
 import "../styles/contact.css";
-function Contact() {
+
+
+const Contact = () => {
+  const [enteredEmail, setEnteredEmail] = useState('');
+  const [enteredName, setEnteredName] = useState('');
+  const [enteredPhone, setEnteredPhone] = useState('');
+  const [enteredMessage, setEnteredMessage] = useState('');
+
+  // const [userInput, setUserInput] = useState({
+  //   enteredEmail: '',
+  //   enteredName: '',
+  //   enteredPhone: '',
+  //   enteredMessage: ''
+  // });
+
+  const emailHandler = e => {
+    setEnteredEmail(e.target.value);
+  }
+
+  const nameHandler = e => {
+    setEnteredName(e.target.value);
+  }
+
+  const phoneHandler = e => {
+    setEnteredPhone(e.target.value);
+  }
+
+  const messageHandler = e => {
+    setEnteredMessage(e.target.value);
+  }
+
+  const submitHandler = e => {
+    e.preventDefault();
+    const contactData = {
+      email: enteredEmail,
+      name: enteredName,
+      phone: enteredPhone,
+      message: enteredMessage
+    };
+    console.log(contactData);
+  }
+
   return (
     <div className="contact" id="contact">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
@@ -15,11 +56,12 @@ function Contact() {
         <hr></hr>
         <p>Have a question or want to work together?</p>
         <div className="my-contact">
-          <span>+1 514-247-1415 |</span>
+          <a href='tel:+1-514-247-1415'>Click to call Us!</a>
+          <span> | </span>
           <a href="mailto: dhdhariaajit@gmail.com"> dhdhariaajit@gmail.com</a>
         </div>
       </div>
-      <form className="contact-form">
+      <form className="contact-form" onSubmit={submitHandler}>
       <div className="form-content">
       <div className="user-details">
         <div className="mb-2">
@@ -28,6 +70,7 @@ function Contact() {
             className="form-control"
             id="contactEmail"
             placeholder="Your Email"
+            onChange={emailHandler}
           />
         </div>
         <div className="mb-2">
@@ -36,6 +79,7 @@ function Contact() {
             className="form-control"
             id="contactName"
             placeholder="Your Name"
+            onChange={nameHandler}
           />
         </div>
         <div className="mb-2">
@@ -44,6 +88,7 @@ function Contact() {
             className="form-control"
             id="contactPhone"
             placeholder="Your Mobile"
+            onChange={phoneHandler}
           />
         </div>
         </div>
@@ -54,6 +99,7 @@ function Contact() {
             id="contactMessage"
             placeholder="Your Message"
             style={{textAlign: "center"}}
+            onChange={messageHandler}
           />
         </div>
         </div>
