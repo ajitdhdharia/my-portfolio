@@ -1,12 +1,11 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../styles/contact.css";
 
-
 const Contact = () => {
-  const [enteredEmail, setEnteredEmail] = useState('');
-  const [enteredName, setEnteredName] = useState('');
-  const [enteredPhone, setEnteredPhone] = useState('');
-  const [enteredMessage, setEnteredMessage] = useState('');
+  const [enteredEmail, setEnteredEmail] = useState("");
+  const [enteredName, setEnteredName] = useState("");
+  const [enteredPhone, setEnteredPhone] = useState("");
+  const [enteredMessage, setEnteredMessage] = useState("");
 
   // const [userInput, setUserInput] = useState({
   //   enteredEmail: '',
@@ -15,32 +14,37 @@ const Contact = () => {
   //   enteredMessage: ''
   // });
 
-  const emailHandler = e => {
+  const emailHandler = (e) => {
     setEnteredEmail(e.target.value);
-  }
+  };
 
-  const nameHandler = e => {
+  const nameHandler = (e) => {
     setEnteredName(e.target.value);
-  }
+  };
 
-  const phoneHandler = e => {
+  const phoneHandler = (e) => {
     setEnteredPhone(e.target.value);
-  }
+  };
 
-  const messageHandler = e => {
+  const messageHandler = (e) => {
     setEnteredMessage(e.target.value);
-  }
+  };
 
-  const submitHandler = e => {
+  const submitHandler = (e) => {
     e.preventDefault();
     const contactData = {
       email: enteredEmail,
       name: enteredName,
       phone: enteredPhone,
-      message: enteredMessage
+      message: enteredMessage,
     };
     console.log(contactData);
-  }
+
+    setEnteredEmail("");
+    setEnteredName("");
+    setEnteredPhone("");
+    setEnteredMessage("");
+  };
 
   return (
     <div className="contact" id="contact">
@@ -56,52 +60,56 @@ const Contact = () => {
         <hr></hr>
         <p>Have a question or want to work together?</p>
         <div className="my-contact">
-          <a href='tel:+1-514-247-1415'>Click to call Us!</a>
+          <a href="tel:+1-514-247-1415">Click to call Us!</a>
           <span> | </span>
           <a href="mailto: dhdhariaajit@gmail.com"> dhdhariaajit@gmail.com</a>
         </div>
       </div>
       <form className="contact-form" onSubmit={submitHandler}>
-      <div className="form-content">
-      <div className="user-details">
-        <div className="mb-2">
-          <input
-            type="email"
-            className="form-control"
-            id="contactEmail"
-            placeholder="Your Email"
-            onChange={emailHandler}
-          />
-        </div>
-        <div className="mb-2">
-          <input
-            type="text"
-            className="form-control"
-            id="contactName"
-            placeholder="Your Name"
-            onChange={nameHandler}
-          />
-        </div>
-        <div className="mb-2">
-          <input
-            type="text"
-            className="form-control"
-            id="contactPhone"
-            placeholder="Your Mobile"
-            onChange={phoneHandler}
-          />
-        </div>
-        </div>
-        <div className="mb-1">
-          <input
-            type="text"
-            className="form-control message"
-            id="contactMessage"
-            placeholder="Your Message"
-            style={{textAlign: "center"}}
-            onChange={messageHandler}
-          />
-        </div>
+        <div className="form-content">
+          <div className="user-details">
+            <div className="mb-2">
+              <input
+                type="email"
+                className="form-control"
+                id="contactEmail"
+                placeholder="Your Email"
+                value={enteredEmail}
+                onChange={emailHandler}
+              />
+            </div>
+            <div className="mb-2">
+              <input
+                type="text"
+                className="form-control"
+                id="contactName"
+                placeholder="Your Name"
+                value={enteredName}
+                onChange={nameHandler}
+              />
+            </div>
+            <div className="mb-2">
+              <input
+                type="text"
+                className="form-control"
+                id="contactPhone"
+                placeholder="Your Mobile"
+                value={enteredPhone}
+                onChange={phoneHandler}
+              />
+            </div>
+          </div>
+          <div className="mb-1">
+            <input
+              type="text"
+              className="form-control message"
+              id="contactMessage"
+              placeholder="Your Message"
+              value={enteredMessage}
+              style={{ textAlign: "center" }}
+              onChange={messageHandler}
+            />
+          </div>
         </div>
         <button type="submit" className="btn submit-button">
           Submit
@@ -109,6 +117,6 @@ const Contact = () => {
       </form>
     </div>
   );
-}
+};
 
 export default Contact;
