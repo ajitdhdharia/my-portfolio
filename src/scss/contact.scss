@@ -1,6 +1,7 @@
 @import "./variables";
 
 .contact {
+
   background-color: $text-header;
   border-radius: 0.5rem 0.5rem 0 0;
   h3 {
@@ -16,7 +17,7 @@
   }
 
   p {
-    color: $primary-color;
+    color: $azure;
   }
 
   .my-contact {
@@ -43,12 +44,12 @@
     }
 
     .submit-button {
-      border: 1px solid $primary-color;
-      color: $primary-color;
+      border: 1px solid $azure;
+      color: $azure;
       margin-top: 1rem;
       margin-bottom: 3rem;
       &:hover {
-        background-color: $primary-color;
+        background-color: $azure;
         color: #ffffff;
       }
     }

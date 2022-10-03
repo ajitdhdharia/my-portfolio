@@ -13,30 +13,24 @@
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 10px $primary-color;
+    box-shadow: 0 0 10px $azure;
   }
   to {
-    box-shadow: 0 0 20px $primary-color;
+    box-shadow: 0 0 20px $azure;
   }
 }
 
 .home {
   min-height: 100vh;
   position: relative;
-
   width: auto;
-  // margin: 0 auto;
   display: flex;
   justify-content: center;
-  // max-height: 100vh;
   align-items: center;
   flex-direction: column;
   font-family: $primaryFont;
   background-color: $secondary-color;
-  // background: url("https://i.gifer.com/Ir4.gif");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  // background-size: cover;
+
   .home-content {
     padding: 0 5%;
     margin: 0 auto;
@@ -68,18 +62,13 @@
         span {
           font-weight: $light;
           font-size: 3.3rem;
-          color: $primary-color;
+          color: $azure;
         }
         @media only screen and (max-width: $breakpoint-mobile) {
           text-align: center;
         }
       }
-      // h3 {
-      //   color: $bg-color;
-      //   font-weight: $thin;
-      //   font-size: 2rem;
-      //   text-align: left;
-      // }
+
       p {
         color: $bg-color;
         text-align: left;
@@ -98,13 +87,13 @@
         a {
           margin-right: 1rem;
           letter-spacing: 0.5px;
-          color: $primary-color;
-          border: 2px solid $primary-color;
+          color: $azure;
+          border: 2px solid $azure;
           font-weight: $light;
           padding: 0.5rem 1.5rem 0.75rem 1.5rem;
           text-decoration: none;
           border-radius: 3px;
-          box-shadow: 0 0 10px $primary-color;
+          box-shadow: 0 0 10px $azure;
           transition: all 0.2s ease-in-out 0.05s;
           animation: glow 0.5s ease-in-out 0.05s infinite alternate;
           &:hover {
@@ -156,7 +145,7 @@
           right: 1rem;
         }
         .social-icons {
-          color: $primary-color;
+          color: $azure;
           margin-left: 1rem;
           transition: all 0.2s ease-in-out 0.05s;
           &:hover {

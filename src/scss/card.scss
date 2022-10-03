@@ -3,10 +3,10 @@
 // Animations
 @keyframes glow {
   from {
-    box-shadow: 0 0 10px $primary-color;
+    box-shadow: 0 0 10px $azure;
   }
   to {
-    box-shadow: 0 0 20px $primary-color;
+    box-shadow: 0 0 20px $azure;
   }
 }
 
@@ -18,7 +18,7 @@
     padding: 10px 30px;
   }
   .card-overlay{
-    background-color: $primary-color;
+    background-color: $azure;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -55,15 +55,15 @@
       }
       p {
         margin-bottom: 1rem !important;
-        color: $primary-color;
+        color: $azure;
         font-style: italic;
         font-weight: $light;
       }
       .card-buttons {
         a {
-          border: 1px solid $primary-color;
-          color: $primary-color;
-          box-shadow: 0 0 10px $primary-color;
+          border: 1px solid $azure;
+          color: $azure;
+          box-shadow: 0 0 10px $azure;
           border-radius: 25px;
           font-family: $primaryFont;
           font-weight: $light;
