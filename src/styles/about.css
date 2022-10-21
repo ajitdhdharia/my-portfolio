@@ -1,11 +1,11 @@
 .about {
-  background-color: #eeeeee;
+  background-color: #1d1d1d;
   padding-top: 3rem;
   border-radius: 20px 20px 0 0;
 }
 .about h3 {
   margin: 1rem 0 0.5rem;
-  color: #393e46;
+  color: #E4F9F5;
 }
 .about hr {
   border: 2px solid #222831;
@@ -33,7 +33,7 @@
   margin-bottom: 5rem;
 }
 .about .about-top img {
-  border: 3px solid #00adb5;
+  border: 3px solid #11999E;
   border-radius: 50%;
   width: 50%;
   height: auto;
@@ -68,10 +68,10 @@
 .about .about-top .about-me a {
   text-align: left;
   text-decoration: none;
-  color: #00adb5;
+  color: #11999E;
 }
 .about .about-top .about-me a:hover {
-  color: #00adb5;
+  color: #11999E;
   font-size: 1.02rem;
 }
 @media only screen and (max-width: 600px) {

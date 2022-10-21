@@ -2,7 +2,7 @@
 
 .contact {
 
-  background-color: $text-header;
+  background-color: $text-color;
   border-radius: 0.5rem 0.5rem 0 0;
   h3 {
     color: $bg-color;
@@ -17,7 +17,7 @@
   }
 
   p {
-    color: $azure;
+    color: $primary-color;
   }
 
   .my-contact {
@@ -44,12 +44,12 @@
     }
 
     .submit-button {
-      border: 1px solid $azure;
-      color: $azure;
+      border: 1px solid $primary-color;
+      color: $primary-color;
       margin-top: 1rem;
       margin-bottom: 3rem;
       &:hover {
-        background-color: $azure;
+        background-color: $primary-color;
         color: #ffffff;
       }
     }

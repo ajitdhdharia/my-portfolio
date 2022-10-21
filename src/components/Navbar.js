@@ -4,11 +4,14 @@ import "../styles/navbar.css";
 
 function NavBar() {
   return (
-  <div>
+    <>
       {/* NavBar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark custom-nav">
-        <div className="container-fluid">
-          <ul className="navbar-nav mx-auto d-inline-flex flex-row">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark portfolio-nav">
+        <a class="navbar-brand" href="#home">
+          Navbar
+        </a>
+        <div className="container-fluid d-inline-flex justiy-content-end">
+          <ul className="navbar-nav">
             <li className="nav-item px-2">
               <a className="nav-link" href="#home">
                 <span>Home</span>
@@ -16,28 +19,28 @@ function NavBar() {
             </li>
             <li className="nav-item px-2">
               <a className="nav-link" href="#project">
-              <span>Projects</span>
+                <span>Projects</span>
               </a>
             </li>
             <li className="nav-item px-2">
               <a className="nav-link" href="#skills">
-              <span>Skills</span>
+                <span>Skills</span>
               </a>
             </li>
             <li className="nav-item px-2">
               <a className="nav-link" href="#about">
-              <span>About</span>
+                <span>About</span>
               </a>
             </li>
             <li className="nav-item px-2">
               <a className="nav-link" href="#contact">
-              <span>Contact</span>
+                <span>Contact</span>
               </a>
             </li>
           </ul>
         </div>
       </nav>
-  </div>
+    </>
   );
 }
 

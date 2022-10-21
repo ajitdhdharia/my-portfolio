@@ -1,9 +1,9 @@
 @keyframes glow {
   from {
-    box-shadow: 0 0 10px #00adb5;
+    box-shadow: 0 0 10px #11999E;
   }
   to {
-    box-shadow: 0 0 20px #00adb5;
+    box-shadow: 0 0 20px #11999E;
   }
 }
 .each-project {
@@ -17,7 +17,7 @@
   }
 }
 .each-project .card-overlay {
-  background-color: #00adb5;
+  background-color: #11999E;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -44,36 +44,36 @@
   padding: 0.5rem;
 }
 .each-project .project-card .project-card-body:hover {
-  background-color: #222831;
+  background-color: #181818;
 }
 .each-project .project-card .project-card-body h5 {
-  font-family: Roboto, sans-serif;
-  color: #eeeeee;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #1d1d1d;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .each-project .project-card .project-card-body p {
   margin-bottom: 1rem !important;
-  color: #00adb5;
+  color: #11999E;
   font-style: italic;
   font-weight: 300;
 }
 .each-project .project-card .project-card-body .card-buttons a {
-  border: 1px solid #00adb5;
-  color: #00adb5;
-  box-shadow: 0 0 10px #00adb5;
+  border: 1px solid #11999E;
+  color: #11999E;
+  box-shadow: 0 0 10px #11999E;
   border-radius: 25px;
-  font-family: Roboto, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   margin: 1rem;
   padding: 4px 20px;
   animation: glow 0.5s ease-in-out 0.05s infinite alternate;
 }
 .each-project .project-card .project-card-body .card-buttons a:hover {
-  border: 1px solid #ff2e63;
-  color: #ff2e63;
-  box-shadow: 0 0 10px #ff2e63;
+  border: 1px solid #FF2E63;
+  color: #FF2E63;
+  box-shadow: 0 0 10px #FF2E63;
   animation: none;
 }
 

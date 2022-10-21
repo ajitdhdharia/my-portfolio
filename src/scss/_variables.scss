@@ -1,15 +1,14 @@
-//Colors
-$primary-color: #00adb5;
-$secondary-color: #222831;
-$cta-color: #ff2e63;
-$bg-color: #eeeeee;
-$text-header: #393e46;
 
-$azure: #3185fcff;
-$irresistible: #b74f6fff;
-$maximum-blue-purple: #adbdffff;
-$sky-blue-crayola: #34e5ffff;
-$bistre: #35281dff;
+//Colors
+$primary-color: #11999E;
+$secondary-color: #181818;
+$cta-color: #FF2E63;
+$bg-color: #1d1d1d;
+$text-color: #E4F9F5;
+
+$white-color: #fff;
+$black-color: #000;
+
 
 @mixin text-body {
   color: #393e46;
@@ -23,13 +22,13 @@ $bistre: #35281dff;
 }
 
 //Fonts Family
-$primaryFont: Roboto, sans-serif;
+$primaryFont: 'Source Sans Pro', sans-serif;
 
-//Font weight
-$thin: 100;
+// Font weight
+$extra-light: 200;
 $light: 300;
 $regular: 400;
-$medium: 500;
+$semi-bold: 600;
 $bold: 700;
 $black: 900;
 

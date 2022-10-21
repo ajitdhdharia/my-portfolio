@@ -1,5 +1,5 @@
 .project {
-  background-color: #eeeeee;
+  background-color: #1d1d1d;
 }
 .project hr {
   border: 2px solid #222831;
@@ -20,12 +20,12 @@
   background: none;
   color: #000000;
   border: none;
-  font-family: Roboto, sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0 1rem;
   font-weight: 300;
 }
 .project .project-tab .tab-button:hover {
-  background-color: #ff2e63;
+  background-color: #FF2E63;
   border-radius: 0.2rem;
   color: #ffffff;
 }

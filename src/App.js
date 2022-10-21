@@ -1,7 +1,6 @@
-
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import About from "./components/About"
+import About from "./components/About";
 import Skills from "./components/Skills";
 import Project from "./components/Project/Project";
 import Contact from "./components/Contact";
@@ -11,17 +10,17 @@ import "./styles/app.css";
 
 function App() {
   return (
-    <div>
-      <Home></Home>
+    <>
       <div className="stick-top">
-      <Navbar></Navbar>
+        <Navbar></Navbar>
       </div>
+      <Home></Home>
       <Project></Project>
       <Skills></Skills>
       <About></About>
       <Contact></Contact>
       <Footer></Footer>
-    </div>
+    </>
   );
 }
 
