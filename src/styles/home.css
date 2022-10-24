@@ -87,10 +87,6 @@
     flex-direction: column;
   }
 }
-.home .title-home .cta:hover {
-  transform: scale(1.03);
-  transition: transform 0.5s;
-}
 .home .title-home .cta a {
   letter-spacing: 1px;
   background-color: #11999E;
@@ -98,7 +94,6 @@
   font-weight: 400;
   padding: 0.5rem 1.5rem 0.75rem 1.5rem;
   border-radius: 3px;
-  box-shadow: 0 0 10px #E4F9F5;
   transition: all 0.2s ease-in-out 0.05s;
 }
 .home .title-home .cta a:hover {
