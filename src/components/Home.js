@@ -2,7 +2,6 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import MailIcon from "@material-ui/icons/Mail";
-import CodeIcon from "@material-ui/icons/Code";
 
 import "../styles/home.css";
 
@@ -11,20 +10,22 @@ function Home() {
     <>
       <section className="home" id="home">
         <div className="social-links">
-          <a href="https://www.linkedin.com/in/ajitdhdharia/" target="_blank">
-            <LinkedInIcon className="social-icons" />
-          </a>
-          <a href="https://github.com/ajitdhdharia" target="_blank">
-            <GitHubIcon className="social-icons" />
-          </a>
-          <a href="mailto:dhdhariaajit@gmail.com" target="_blank">
-            <MailIcon className="social-icons" />
-          </a>
           <a
-            href="https://github.com/ajitdhdharia/my-portfolio"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/ajitdhdharia/"
             target="_blank"
           >
-            <CodeIcon className="social-icons" />
+            <LinkedInIcon className="social-icons" />
+          </a>
+          <a
+            title="GitHub"
+            href="https://github.com/ajitdhdharia"
+            target="_blank"
+          >
+            <GitHubIcon className="social-icons" />
+          </a>
+          <a title="Mail" href="mailto:dhdhariaajit@gmail.com" target="_blank">
+            <MailIcon className="social-icons" />
           </a>
         </div>
         <div className="title-home">
