@@ -4,14 +4,3 @@
   font-family: $primaryFont;
   scroll-behavior: smooth;
 }
-
-.stick-top {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  @media only screen and (max-width: $breakpoint-mobile) {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-}

@@ -1,9 +1,9 @@
 import React from "react";
 
 //Material UI Icons
-import CodeRoundedIcon from "@material-ui/icons/CodeRounded";
-import StorageRoundedIcon from "@material-ui/icons/StorageRounded";
-import ColorLensOutlinedIcon from "@material-ui/icons/ColorLensOutlined";
+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
+import StorageRoundedIcon from '@mui/icons-material/StorageRounded';
+import ColorLensOutlinedIcon from '@mui/icons-material/ColorLensOutlined';
 
 // STYLESHEET
 import "../styles/skills.css";

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import ProjectDetails from "./ProjectDetails";
 import Card from "../Card";
-import "../../styles/project/project.css";
+import "../../styles/project.css";
 
 function createCard(ProjectDetail) {
   return (

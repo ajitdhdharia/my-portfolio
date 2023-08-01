@@ -1,24 +1,6 @@
-@keyframes slide-right {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes glow {
-  from {
-    box-shadow: 0 0 10px #11999E;
-  }
-  to {
-    box-shadow: 0 0 20px #11999E;
-  }
-}
 .home {
   min-height: 100vh;
-  width: auto;
+  width: 100vw;
   background-color: #1d1d1d;
   display: flex;
   flex-direction: row;
@@ -46,17 +28,6 @@
   width: 100%;
   animation: slide-right 1s ease-out 0s;
 }
-@media only screen and (max-width: 600px) {
-  .home .title-home {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    animation: none;
-  }
-}
 .home .title-home h1 {
   text-align: center;
   color: #11999E;
@@ -66,26 +37,11 @@
   margin-bottom: 0;
   letter-spacing: 3px;
 }
-@media only screen and (max-width: 600px) {
-  .home .title-home h1 {
-    text-align: center;
-  }
-}
 .home .title-home p {
   color: #fff;
   text-align: center;
   margin: 3rem 6rem;
   font-weight: 400;
-}
-@media only screen and (max-width: 600px) {
-  .home .title-home p {
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .home .title-home .cta {
-    flex-direction: column;
-  }
 }
 .home .title-home .cta a {
   letter-spacing: 1px;
@@ -99,24 +55,6 @@
 .home .title-home .cta a:hover {
   animation: none;
   text-decoration: none;
-}
-@media only screen and (max-width: 600px) {
-  .home .title-home .cta a {
-    margin-top: 0.5rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .home .title-home h1 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-  }
-  .home .title-home h1 span {
-    font-size: 1.8rem;
-  }
-  .home .title-home h3 {
-    font-size: 1.3rem;
-    text-align: center;
-  }
 }
 
 /*# sourceMappingURL=home.css.map */

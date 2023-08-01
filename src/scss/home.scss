@@ -1,28 +1,8 @@
 @import "variables";
 
-@keyframes slide-right {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes glow {
-  from {
-    box-shadow: 0 0 10px $primary-color;
-  }
-  to {
-    box-shadow: 0 0 20px $primary-color;
-  }
-}
-
 .home {
   min-height: 100vh;
-  width: auto;
+  width: 100vw;
   background-color: $bg-color;
   display: flex;
   flex-direction: row;
@@ -36,10 +16,6 @@
     flex-direction: column;
     background-color: #fff;
     padding: 0.5rem 0 0.5rem 0;
-    // @media only screen and (max-width: $breakpoint-mobile) {
-    //   bottom: 0.5rem;
-    //   right: 1rem;
-    // }
     a {
       color: #000;
       margin: 0.6rem;
@@ -54,15 +30,6 @@
   .title-home {
     width: 100%;
     animation: slide-right 1s ease-out 0s;
-    @media only screen and (max-width: $breakpoint-mobile) {
-      padding: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      text-align: center;
-      animation: none;
-    }
     h1 {
       text-align: center;
       color: $primary-color;
@@ -71,30 +38,17 @@
       font-size: 4rem;
       margin-bottom: 0;
       letter-spacing: 3px;
-      @media only screen and (max-width: $breakpoint-mobile) {
-        text-align: center;
-      }
+      
     }
     p {
       color: $white-color;
       text-align: center;
       margin: 3rem 6rem;
       font-weight: $regular;
-      @media only screen and (max-width: $breakpoint-mobile) {
-        text-align: center;
-      }
+      
 
     }
     .cta {
-      @media only screen and (max-width: $breakpoint-mobile) {
-        flex-direction: column;
-      }
-      &:hover {
-        
-      }
-      
-
-
       a {
         letter-spacing: 1px;
         background-color: $primary-color;
@@ -107,22 +61,6 @@
           animation: none;
           text-decoration: none;
         }
-        @media only screen and (max-width: $breakpoint-mobile) {
-          margin-top: 0.5rem;
-        }
-      }
-    }
-    @media only screen and (max-width: $breakpoint-mobile) {
-      h1 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
-        span {
-          font-size: 1.8rem;
-        }
-      }
-      h3 {
-        font-size: 1.3rem;
-        text-align: center;
       }
     }
   }

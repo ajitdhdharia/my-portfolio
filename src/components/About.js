@@ -1,10 +1,10 @@
 import React from "react";
 
 //Material UI Icons
-import DevicesRoundedIcon from "@material-ui/icons/DevicesRounded";
-import DynamicFeedRoundedIcon from "@material-ui/icons/DynamicFeedRounded";
-import SpeedRoundedIcon from "@material-ui/icons/SpeedRounded";
-import TransformRoundedIcon from "@material-ui/icons/TransformRounded";
+import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
+import DynamicFeedRoundedIcon from '@mui/icons-material/DynamicFeedRounded';
+import SpeedRoundedIcon from '@mui/icons-material/SpeedRounded';
+import TransformRoundedIcon from '@mui/icons-material/TransformRounded';
 
 import "../styles/about.css";
 
