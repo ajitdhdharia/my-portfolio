@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import "../styles/footer.css";
 function Footer() {
+  const year = new Date().getFullYear();
   return (
     <>
       <div className="footer-items">
@@ -30,7 +31,7 @@ function Footer() {
           </a>
         </div>
         <div className="footer-copyright">
-          Ajit Dhdharia <span>©2021</span>
+          Ajit Dhdharia <span>©{year}</span>
         </div>
       </div>
     </>

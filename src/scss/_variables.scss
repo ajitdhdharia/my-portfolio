@@ -1,14 +1,13 @@
 
 //Colors
-$primary-color: #11999E;
-$secondary-color: #181818;
-$cta-color: #FF2E63;
-$bg-color: #1d1d1d;
-$text-color: #E4F9F5;
-
-$white-color: #fff;
-$black-color: #000;
-
+$color-bg: #ffffff;
+$color-bg-offset: #f7f7f9;
+$color-text: #373a3c;
+$color-text-offset: #818a91;
+$color-border: #eceeef;
+$color-primary: #ff335f;
+$color-primary-offset: #ff1447;
+$color-secondary: #43a9a3;
 
 @mixin text-body {
   color: #393e46;

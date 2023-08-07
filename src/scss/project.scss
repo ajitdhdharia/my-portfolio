@@ -1,20 +1,18 @@
 @import "variables";
 
 .project {
-  background-color: $white-color;
-  hr {
-    border: 2px solid #222831;
-    margin: 0 45% 1.5rem;
-    @media only screen and (max-width: $breakpoint-mobile) {
-      margin: 0 40% 2rem;
-    }
+  background-color: $color-bg;
+  padding: 7rem 0;
+
+  h3 {
+    text-transform: uppercase;
+      font-weight: $semi-bold;
+      font-size: 2rem;
+      color: $color-text;
   }
 
   .project-tab {
-    margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-bottom: 1rem;
     .tab-button {
       background: none;
       color: #000000;
@@ -23,8 +21,7 @@
       margin: 0 1rem;
       font-weight: $light;
       &:hover {
-        background-color: $cta-color;
-        // box-shadow: 0 2px 10px $text-color;
+        background-color: $color-primary;
         border-radius: 0.2rem;
         color: #ffffff;
       }

@@ -1,0 +1,28 @@
+.header {
+  padding: 2rem 1rem 0;
+}
+.header .navbar-toggler {
+  scale: 0.75;
+  border: none;
+}
+.header img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.header span {
+  padding-left: 0.75rem;
+  color: #373a3c;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.header .header-content {
+  justify-content: end;
+}
+.header .header-content .header-items {
+  color: #373a3c;
+  padding: 0 1.25rem;
+}
+
+/*# sourceMappingURL=header.css.map */

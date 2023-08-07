@@ -1,67 +1,37 @@
 @import "variables";
 
 .home {
-  min-height: 100vh;
-  width: 100vw;
-  background-color: $bg-color;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+  margin: 0 2rem;
+  background-color: $color-bg;
   font-family: $primaryFont;
-  background-size: cover;
-
-  .social-links {
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    padding: 0.5rem 0 0.5rem 0;
-    a {
-      color: #000;
-      margin: 0.6rem;
-      transform: scale(1.3);
-      transition: all 0.2s ease-in-out 0.05s;
-      &:hover {
-        transform: scale(1.3);
-      }
-    }
-  }
 
   .title-home {
     width: 100%;
-    animation: slide-right 1s ease-out 0s;
-    h1 {
-      text-align: center;
-      color: $primary-color;
-      font-weight: $bold;
-      text-transform: uppercase;
-      font-size: 4rem;
-      margin-bottom: 0;
-      letter-spacing: 3px;
-      
-    }
+    padding: 7rem 0;
+    
     p {
-      color: $white-color;
-      text-align: center;
-      margin: 3rem 6rem;
-      font-weight: $regular;
-      
+      text-align: left;
+      margin: 0;
+    }
+    .home-intro {
+      text-transform: uppercase;
+      font-weight: $semi-bold;
+      font-size: 1.25rem;
+      color: $color-primary;
+    }
 
+    .home-intro-desc {
+      font-size: 6rem;
+      font-weight: $bold;
+      line-height: 1.3;
     }
-    .cta {
-      a {
-        letter-spacing: 1px;
-        background-color: $primary-color;
-        color: $text-color;
-        font-weight: $regular;
-        padding: 0.5rem 1.5rem 0.75rem 1.5rem;
-        border-radius: 3px;
-        transition: all 0.2s ease-in-out 0.05s;
-        &:hover {
-          animation: none;
-          text-decoration: none;
-        }
-      }
+
+    .home-desc {
+      font-size: 2.5rem;
+      font-weight: $light;
+      line-height: 1.2;
     }
+    
+    
   }
 }

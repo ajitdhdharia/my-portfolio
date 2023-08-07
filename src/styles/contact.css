@@ -1,12 +1,12 @@
 .contact {
-  background-color: #E4F9F5;
+  background-color: #373a3c;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .contact h3 {
-  color: #1d1d1d;
+  color: #ffffff;
 }
 .contact hr {
-  border: 2px solid #1d1d1d;
+  border: 2px solid #ffffff;
   margin: 0 47% 1.5rem;
 }
 @media only screen and (max-width: 600px) {
@@ -15,14 +15,14 @@
   }
 }
 .contact p {
-  color: #11999E;
+  color: #ff335f;
 }
 .contact .my-contact {
-  color: #1d1d1d;
+  color: #ffffff;
   padding-bottom: 2rem;
 }
 .contact .my-contact a {
-  color: #1d1d1d;
+  color: #ffffff;
 }
 .contact .contact-form {
   margin: 0 35%;
@@ -39,13 +39,13 @@
   height: 200px;
 }
 .contact .contact-form .submit-button {
-  border: 1px solid #11999E;
-  color: #11999E;
+  border: 1px solid #ff335f;
+  color: #ff335f;
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 .contact .contact-form .submit-button:hover {
-  background-color: #11999E;
+  background-color: #ff335f;
   color: #ffffff;
 }
 

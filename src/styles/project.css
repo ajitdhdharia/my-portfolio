@@ -1,20 +1,15 @@
 .project {
-  background-color: #fff;
+  background-color: #ffffff;
+  padding: 7rem 0;
 }
-.project hr {
-  border: 2px solid #222831;
-  margin: 0 45% 1.5rem;
-}
-@media only screen and (max-width: 600px) {
-  .project hr {
-    margin: 0 40% 2rem;
-  }
+.project h3 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #373a3c;
 }
 .project .project-tab {
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 1rem;
 }
 .project .project-tab .tab-button {
   background: none;
@@ -25,7 +20,7 @@
   font-weight: 300;
 }
 .project .project-tab .tab-button:hover {
-  background-color: #FF2E63;
+  background-color: #ff335f;
   border-radius: 0.2rem;
   color: #ffffff;
 }

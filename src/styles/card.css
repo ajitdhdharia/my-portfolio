@@ -1,9 +1,9 @@
 @keyframes glow {
   from {
-    box-shadow: 0 0 10px #11999E;
+    box-shadow: 0 0 10px #ff335f;
   }
   to {
-    box-shadow: 0 0 20px #11999E;
+    box-shadow: 0 0 20px #ff335f;
   }
 }
 .each-project {
@@ -16,22 +16,9 @@
     padding: 10px 30px;
   }
 }
-.each-project .card-overlay {
-  background-color: #11999E;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  border-radius: 10px;
-}
 .each-project .project-card {
   border-radius: 5px;
   overflow: hidden;
-  opacity: 0;
-}
-.each-project .project-card:hover {
   opacity: 1;
 }
 .each-project .project-card .project-card-body {
@@ -43,37 +30,33 @@
   flex-direction: column;
   padding: 0.5rem;
 }
-.each-project .project-card .project-card-body:hover {
-  background-color: #181818;
-}
 .each-project .project-card .project-card-body h5 {
   font-family: "Source Sans Pro", sans-serif;
-  color: #1d1d1d;
+  color: #ffffff;
   font-weight: 400;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .each-project .project-card .project-card-body p {
   margin-bottom: 1rem !important;
-  color: #11999E;
+  color: #ff335f;
   font-style: italic;
   font-weight: 300;
 }
 .each-project .project-card .project-card-body .card-buttons a {
-  border: 1px solid #11999E;
-  color: #11999E;
-  box-shadow: 0 0 10px #11999E;
+  border: 1px solid #ff335f;
+  color: #ff335f;
+  box-shadow: 0 0 10px #ff335f;
   border-radius: 25px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 300;
   margin: 1rem;
   padding: 4px 20px;
-  animation: glow 0.5s ease-in-out 0.05s infinite alternate;
 }
 .each-project .project-card .project-card-body .card-buttons a:hover {
-  border: 1px solid #FF2E63;
-  color: #FF2E63;
-  box-shadow: 0 0 10px #FF2E63;
+  border: 1px solid;
+  color: #ff335f;
+  box-shadow: 0 0 10px #ff335f;
   animation: none;
 }
 

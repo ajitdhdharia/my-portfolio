@@ -1,20 +1,19 @@
 import React from "react";
-import { motion } from "framer-motion/dist/framer-motion";
 
 import "../styles/home.css";
 
 function Home() {
   return (
     <>
-      <section className="container-xxl home" id="home">
-        <div className="title-home">
-          <h1>Hi, I'm AJIT DHDHARIA</h1>
-          <p>
-            A Frontend focused Web Developer building the Applications that leads to the success of the overall
-            product. I also write about the web on my blog.
-          </p>
-          <div className="cta">
-            <a href="#project">VIEW MY WORK</a>
+      <section className="conatiner home" id="home">
+        <div className="row title-home">
+          <div className="col">
+            <p className="home-intro">Hello, My name is Ajit Dhdharia</p>
+            <p className="home-intro-desc">I make websites.</p>
+            <p className="home-desc">
+              I'm a front-end developer at Veriday Inc. I also write about the
+              web on my blog and make travel videos in spare time.
+            </p>
           </div>
         </div>
       </section>

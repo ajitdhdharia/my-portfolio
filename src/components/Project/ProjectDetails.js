@@ -1,7 +1,6 @@
 const ProjectDetails = [
   {
     id: 1,
-    category: "web",
     title: "React-Dock",
     description: "ReactJs/Javascript/SASS/Bootstrap",
     demoURL: "https://react-dock.netlify.app/",
@@ -12,7 +11,6 @@ const ProjectDetails = [
   },
   {
     id: 2,
-    category: "web",
     title: "YelpCamp",
     description: "Javascript/jQuery/SASS/Bootstrap",
     demoURL: "",
@@ -23,7 +21,6 @@ const ProjectDetails = [
   },
   {
     id: 3,
-    category: "web",
     title: "My Portfolio",
     description: "ReactJs/Javascript/SASS/Bootstrap",
     demoURL: "https://www.ajitdhdharia.com/",
@@ -34,7 +31,6 @@ const ProjectDetails = [
   },
   {
     id: 4,
-    category: "web",
     title: "Keeper - a Notes App",
     description: "ReactJs/Javascript/HTML/CSS/Bootstrap/Sass",
     demoURL: "",
@@ -45,7 +41,6 @@ const ProjectDetails = [
   },
   {
     id: 5,
-    category: "web",
     title: "Contacts",
     description: "ReactJs/Javascript/HTML/CSS/Bootstrap",
     demoURL: "",
@@ -56,7 +51,6 @@ const ProjectDetails = [
   },
   {
     id: 6,
-    category: "web",
     title: "Drumkit",
     description: "Javascript/jQuery/HTML/CSS/Bootstrap",
     demoURL: "https://ajit-drum-kit.netlify.app/",
@@ -67,7 +61,6 @@ const ProjectDetails = [
   },
   {
     id: 7,
-    category: "web",
     title: "Dice Game",
     description: "Javascript/jQuery/HTML/CSS/Bootstrap",
     demoURL: "https://unruffled-rosalind-cd9459.netlify.app/",
@@ -77,7 +70,6 @@ const ProjectDetails = [
   },
   {
     id: 8,
-    category: "web",
     title: "TinDog",
     description: "HTML/CSS/Bootstrap",
     demoURL: "",
@@ -88,7 +80,6 @@ const ProjectDetails = [
   },
   {
     id: 9,
-    category: "mobile",
     title: "InfinityJobs Portal",
     description: "Android/JAVA/XML",
     demoURL:
@@ -100,7 +91,6 @@ const ProjectDetails = [
   },
   {
     id: 10,
-    category: "mobile",
     title: "GoCars",
     description: "Android/JAVA/XML",
     demoURL:
@@ -112,7 +102,6 @@ const ProjectDetails = [
   },
   {
     id: 11,
-    category: "mobile",
     title: "MyCafe",
     description: "Android/JAVA/XML",
     demoURL: "https://github.com/ajitdhdharia/React-Dock",
@@ -123,7 +112,6 @@ const ProjectDetails = [
   },
   {
     id: 12,
-    category: "others",
     title: "GoCars Design",
     description: "Adobe XD/Adobe Illustrator/Adobe Photoshop",
     demoURL:
@@ -135,7 +123,6 @@ const ProjectDetails = [
   },
   {
     id: 13,
-    category: "others",
     title: "InfinityJobs Portal Design",
     description: "Adobe XD/Adobe Illustrator/Adobe Photoshop",
     demoURL:

@@ -3,12 +3,12 @@
 
 
 .about {
-  background-color: $bg-color;
+  background-color: $color-bg;
   padding-top: 3rem;
   border-radius: 20px 20px 0 0;
   h3 {
     margin: 1rem 0 0.5rem;
-    color: $text-color;
+    color: $color-text;
   }
   hr {
     border: 2px solid #222831;
@@ -31,7 +31,7 @@
   .about-top {
     margin-bottom: 5rem;
     img {
-      border: 3px solid $primary-color;
+      border: 3px solid $color-primary;
       border-radius: 50%;
       width: 50%;
       height: auto;
@@ -61,9 +61,9 @@
       a {
         text-align: left;
         text-decoration: none;
-        color: $primary-color;
+        color: $color-primary;
         &:hover {
-          color: $primary-color;
+          color: $color-primary;
           font-size: 1.02rem;
         }
         @media only screen and (max-width: $breakpoint-mobile) {
