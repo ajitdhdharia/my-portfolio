@@ -1,14 +1,21 @@
 import React from "react";
+import { motion } from "framer-motion/dist/framer-motion";
 import "../styles/card.css";
 
 function Card(props) {
   return (
     <>
-      <div className="each-project">
-        <div className="card text-center project-card">
-          <div className="project-card-body p-2">
+      <motion.div
+        className="project-card col-sm-6 col-md-4 col-lg-3"
+        whileHover={{
+          scale: 1.05,
+          transition: { duration: 0.25 },
+        }}
+      >
+        <div className="card text-center mb-4 h-100">
+          <div className="card-body project-card-body">
             <h5 className="card-title">{props.name}</h5>
-            <p className="card-text w-100">{props.description}</p>
+            <span className="card-text">{props.description}</span>
             <div className="card-buttons">
               {props.demoURL !== "" ? (
                 <a href={props.demoURL} className="btn" target="_blank">
@@ -23,7 +30,7 @@ function Card(props) {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 }

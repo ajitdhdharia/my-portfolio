@@ -1,17 +1,5 @@
 @import "./variables";
 
-
 .footer-items {
-    background-color: $color-secondary;
-    padding-top: 2rem;
-    
-  .footer-copyright {
-    color: #ffffff;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    span {
-      color: $color-primary;
-    }
-  }
-  
+  padding-top: 2rem;
 }

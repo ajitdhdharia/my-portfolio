@@ -25,9 +25,18 @@
   .header-content {
     justify-content: end;
 
-    .header-items {
-      color: $color-text;
-      padding: 0 1.25rem;
+    .navbar-content {
+      @include media-breakpoint-down(lg) {
+        flex-direction: column;
+      }
+
+      .header-items {
+        color: $color-text;
+        padding: 0 1.25rem;
+        @include media-breakpoint-down(lg) {
+          font-size: 2.5rem;
+        }
+      }
     }
   }
 }

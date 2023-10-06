@@ -1,37 +1,33 @@
 import React from "react";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 import "../styles/footer.css";
 function Footer() {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="footer-items">
-        <div className="footer-social">
-          <a href="https://www.linkedin.com/in/ajitdhdharia/" target="_blank">
-            <LinkedInIcon
-              style={{
-                width: "50px",
-                height: "50px",
-                color: "#00adb5",
-                marginRight: "1rem",
-              }}
-            />
-          </a>
-          <a href="https://github.com/ajitdhdharia" target="_blank">
-            <GitHubIcon
-              style={{
-                width: "45px",
-                height: "45px",
-                color: "#00adb5",
-                marginLeft: "1rem",
-              }}
-            />
-          </a>
-        </div>
-        <div className="footer-copyright">
-          Ajit Dhdharia <span>©{year}</span>
+      <div className="container footer-items">
+        <div className="row">
+          <div className="col">
+            <div className="footer-copyright">
+              <span>©{year}</span>
+              <span>Ajit Dhdharia </span>
+            </div>
+            <div className="footer-social">
+              <a
+                href="https://www.linkedin.com/in/ajitdhdharia/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
+              <a href="https://github.com/ajitdhdharia" target="_blank">
+                <FaGithub />
+              </a>
+              <a href="https://github.com/ajitdhdharia" target="_blank">
+                <FaInstagram />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </>

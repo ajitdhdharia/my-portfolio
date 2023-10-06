@@ -9,13 +9,29 @@ import {
   NavLink,
 } from "reactstrap";
 
+import { AiOutlineClose } from "react-icons/ai";
 import "../styles/header.css";
 import profile from "../assets/profile.jpg";
 
 const Header = () => {
-  const [collapsed, setCollapsed] = useState(true);
+  const [collapsed, setCollapsed] = useState();
 
-  const toggleNavbar = () => setCollapsed(!collapsed);
+  const toggleNavbar = () => {
+    setCollapsed(!collapsed);
+  };
+
+  // Close sign for menu button
+  let menuToggle;
+  let menuExpandStyle;
+  if (collapsed) {
+    menuToggle = <NavbarToggler onClick={toggleNavbar} />;
+  } else {
+    menuToggle = (
+      <NavbarToggler onClick={toggleNavbar}>
+        <AiOutlineClose className="" />
+      </NavbarToggler>
+    );
+  }
 
   return (
     <>
@@ -24,23 +40,33 @@ const Header = () => {
           <img src={profile} alt="profile" />
           <span>Ajit</span>
         </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar} />
+        {menuToggle}
         <Collapse isOpen={!collapsed} navbar className="header-content">
-          <Nav navbar>
-            <NavItem>
-              <NavLink href="/" className="header-items">home</NavLink>
+          <Nav className="navbar-content">
+            <NavItem className="mx-auto">
+              <NavLink href="/" className="header-items">
+                home
+              </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/project" className="header-items">project</NavLink>
+            <NavItem className="mx-auto">
+              <NavLink href="/project" className="header-items">
+                project
+              </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/skills" className="header-items">skills</NavLink>
+            <NavItem className="mx-auto">
+              <NavLink href="/skills" className="header-items">
+                skills
+              </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/about" className="header-items">about</NavLink>
+            <NavItem className="mx-auto">
+              <NavLink href="/about" className="header-items">
+                about
+              </NavLink>
             </NavItem>
-            <NavItem>
-              <NavLink href="/contact" className="header-items">contact</NavLink>
+            <NavItem className="mx-auto">
+              <NavLink href="/contact" className="header-items">
+                contact
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>

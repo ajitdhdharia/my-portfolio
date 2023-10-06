@@ -8,6 +8,7 @@ const ProjectDetails = [
     imageURL:
       "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/104907884/original/793c36ae4f4f016635396ad4a51292174381a585/design-your-beautiful-website-with-react-and-redux.png",
     isActive: true,
+    isFeatured: true,
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ const ProjectDetails = [
     imageURL:
       "https://cdn.dribbble.com/users/1134486/screenshots/10175466/render.png?compress=1&resize=400x300",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const ProjectDetails = [
     imageURL:
       "https://image.freepik.com/free-vector/digital-book-reading-electronic-notebook-reader-tablet-computer-cartoon-illustration_101884-1107.jpg",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const ProjectDetails = [
     imageURL:
       "https://clickup.com/blog/wp-content/uploads/2020/01/note-taking.png",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 5,
@@ -48,6 +52,7 @@ const ProjectDetails = [
     imageURL:
       "https://img.freepik.com/free-vector/woman-receiving-mail-reading-letter_74855-5964.jpg?size=626&ext=jpg",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 6,
@@ -58,6 +63,7 @@ const ProjectDetails = [
     imageURL:
       "https://schoolweb.tdsb.on.ca/portals/regentheights/images/Music.jpg",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 7,
@@ -67,6 +73,7 @@ const ProjectDetails = [
     codeURL: "https://github.com/ajitdhdharia/diceGame",
     imageURL: "https://ak.picdn.net/shutterstock/videos/1363972/thumb/1.jpg",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 8,
@@ -77,6 +84,7 @@ const ProjectDetails = [
     imageURL:
       "https://cdn.dribbble.com/users/1411165/screenshots/9396004/holt510.com-dribbble-shot.png",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 9,
@@ -88,6 +96,7 @@ const ProjectDetails = [
     imageURL:
       "https://i.pinimg.com/originals/ff/97/64/ff9764757240bd364299545a7b3f7c46.png",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 10,
@@ -99,6 +108,7 @@ const ProjectDetails = [
     imageURL:
       "https://i.pinimg.com/originals/04/9f/21/049f2113643fda22969400ed73109b2e.png",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 11,
@@ -109,6 +119,7 @@ const ProjectDetails = [
     imageURL:
       "https://cdn.dribbble.com/users/2064121/screenshots/5873725/cold_brew_thumb_2x_4x.jpg?compress=1&resize=400x300",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 12,
@@ -120,6 +131,7 @@ const ProjectDetails = [
     imageURL:
       "https://i.pinimg.com/originals/04/9f/21/049f2113643fda22969400ed73109b2e.png",
     isActive: true,
+    isFeatured: false,
   },
   {
     id: 13,
@@ -131,6 +143,7 @@ const ProjectDetails = [
     imageURL:
       "https://i.pinimg.com/originals/ff/97/64/ff9764757240bd364299545a7b3f7c46.png",
     isActive: true,
+    isFeatured: false,
   },
 ];
 

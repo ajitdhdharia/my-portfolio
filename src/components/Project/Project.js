@@ -17,23 +17,14 @@ function createCard(ProjectDetail) {
 }
 
 function Project() {
-  //useState for tab content.
-  const [currentState, setState] = useState(1);
-
-  function tabClick(index) {
-    setState(index);
-  }
-
   return (
     <>
-      <div className="container project" id="project">
-        {/* Project section Navbar */}
+      <div className="container project mt-5 mb-3" id="project">
         <div className="row">
           <h3>Projects</h3>
         </div>
-
-        <div className="row">
-          <div className="row ">{ProjectDetails.map(createCard)}</div>
+        <div>
+          <div className="row">{ProjectDetails.map(createCard)}</div>
         </div>
       </div>
     </>

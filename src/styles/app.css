@@ -2,4 +2,12 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
 /*# sourceMappingURL=app.css.map */

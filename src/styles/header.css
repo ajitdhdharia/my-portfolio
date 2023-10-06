@@ -20,9 +20,19 @@
 .header .header-content {
   justify-content: end;
 }
-.header .header-content .header-items {
+@media (max-width: 991.98px) {
+  .header .header-content .navbar-content {
+    flex-direction: column;
+  }
+}
+.header .header-content .navbar-content .header-items {
   color: #373a3c;
   padding: 0 1.25rem;
+}
+@media (max-width: 991.98px) {
+  .header .header-content .navbar-content .header-items {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

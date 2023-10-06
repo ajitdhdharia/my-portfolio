@@ -1,67 +1,33 @@
 @import "./variables";
 
-// Animations
-@keyframes glow {
-  from {
-    box-shadow: 0 0 10px $color-primary;
-  }
-  to {
-    box-shadow: 0 0 20px $color-primary;
-  }
-}
-
-.each-project {
-  padding: 0;
+.project-card {
   border-radius: 5px;
-  overflow: hidden;
-  @media only screen and (max-width: $breakpoint-mobile) {
-    padding: 10px 30px;
-  }
-  
-  .project-card {
-    border-radius: 5px;
-    overflow: hidden;
-    opacity: 1;
-    .project-card-body {
-      border-radius: 5px;
+  margin-bottom: 1.5rem;
 
-  min-height: 240px;
-      @include flex-center;
-      flex-direction: column;
-      // opacity: 0;
-      padding: 0.5rem;
-  
-      h5 {
-        font-family: $primaryFont;
-        color: $color-bg;
-        font-weight: $regular;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-      }
-      p {
-        margin-bottom: 1rem !important;
+  .project-card-body {
+    h5 {
+      font-family: $primaryFont;
+      font-weight: $regular;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+    span {
+      margin-bottom: 1rem !important;
+      font-style: italic;
+      font-weight: $light;
+    }
+    .card-buttons {
+      margin: 1rem 0;
+      a {
+        flex-wrap: wrap;
+        border: 1px solid $color-primary;
         color: $color-primary;
-        font-style: italic;
+        border-radius: 25px;
+        font-family: $primaryFont;
         font-weight: $light;
+        margin: 0 0.5rem;
+        padding: 4px 20px;
       }
-      .card-buttons {
-        a {
-          border: 1px solid $color-primary;
-          color: $color-primary;
-          box-shadow: 0 0 10px $color-primary;
-          border-radius: 25px;
-          font-family: $primaryFont;
-          font-weight: $light;
-          margin: 1rem;
-          padding: 4px 20px;
-          &:hover {
-            border: 1px solid;
-            color: $color-primary;
-            box-shadow: 0 0 10px $color-primary;
-            animation: none;
-          }
-        }
-      }  
     }
   }
 }

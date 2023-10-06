@@ -4,11 +4,16 @@
   background-color: $color-bg;
   padding: 7rem 0;
 
+  @include media-breakpoint-down(sm) {
+    margin: 0 1rem;
+  }
+
   h3 {
     text-transform: uppercase;
-      font-weight: $semi-bold;
-      font-size: 2rem;
-      color: $color-text;
+    font-weight: $bold;
+    font-size: 2rem;
+    color: $color-text;
+    margin-bottom: 1rem;
   }
 
   .project-tab {
