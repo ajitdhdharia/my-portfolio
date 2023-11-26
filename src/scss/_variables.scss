@@ -1,6 +1,6 @@
-@import '../../node_modules/bootstrap/scss/functions';
-@import '../../node_modules/bootstrap/scss/variables';
-@import '../../node_modules/bootstrap/scss/mixins';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 //Colors
 $color-bg: #ffffff;
@@ -12,24 +12,24 @@ $color-primary: #ff335f;
 $color-primary-offset: #ff1447;
 $color-secondary: #43a9a3;
 
-@mixin text-body {
-  color: #393e46;
-  opacity: 0.8;
-}
+$eerie-black: #1c1c1cff;
+$eerie-black-fade: #1c1c1cb3; //b3 is for 70% opacity
+$platinum: #daddd8ff;
+$alabaster: #ecebe4ff;
+$antiflash-white: #eef0f2ff;
+$ghost-white: #fafaffff;
 
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 //Fonts Family
-$primaryFont: 'Source Sans Pro', sans-serif;
+$fontFamily: "Figtree", "Roboto", "Rubik", "Source Sans 3", "Source Sans Pro",
+  sans-serif;
 
 // Font weight
+$thin: 100;
 $extra-light: 200;
 $light: 300;
 $regular: 400;
+$medium: 500;
 $semi-bold: 600;
 $bold: 700;
 $black: 900;

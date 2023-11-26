@@ -1,40 +1,68 @@
 @import "./variables";
 
-.header {
-  padding: 2rem 1rem 0;
+#header {
+  background-color: $eerie-black;
 
-  .navbar-toggler {
-    scale: 0.75;
-    border: none;
-  }
+  .header {
+    padding: 1rem 0.5rem;
+    .title {
+      color: $ghost-white;
+    }
 
-  img {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-  }
-
-  span {
-    padding-left: 0.75rem;
-    color: $color-text;
-    text-transform: uppercase;
-    font-weight: $bold;
-    font-size: 1.5rem;
-  }
-
-  .header-content {
-    justify-content: end;
-
-    .navbar-content {
+    .navbar-toggler {
+      border: none;
       @include media-breakpoint-down(lg) {
-        flex-direction: column;
+        color: #fff;
+      }
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+    }
+
+    span {
+      padding-left: 0.75rem;
+      color: $color-text;
+      text-transform: uppercase;
+      font-weight: $bold;
+      font-size: 1.5rem;
+    }
+
+    .close {
+      scale: 2;
+    }
+
+    .header-content {
+      justify-content: end;
+      @include media-breakpoint-down(lg) {
+        background-color: #000;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        width: 100%;
+        height: 100%;
+        padding-top: 6rem;
       }
 
-      .header-items {
-        color: $color-text;
-        padding: 0 1.25rem;
+      .navbar-content {
         @include media-breakpoint-down(lg) {
-          font-size: 2.5rem;
+          flex-direction: column;
+        }
+
+        .header-items {
+          padding: 1rem 1.25rem;
+          color: $antiflash-white;
+          @include media-breakpoint-down(lg) {
+            font-size: 2.5rem;
+            color: #fff;
+          }
         }
       }
     }

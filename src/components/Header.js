@@ -10,11 +10,12 @@ import {
 } from "reactstrap";
 
 import { AiOutlineClose } from "react-icons/ai";
+
 import "../styles/header.css";
 import profile from "../assets/profile.jpg";
 
 const Header = () => {
-  const [collapsed, setCollapsed] = useState();
+  const [collapsed, setCollapsed] = useState(true); //initial state true to keep it close for smaller screens.
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -22,56 +23,55 @@ const Header = () => {
 
   // Close sign for menu button
   let menuToggle;
-  let menuExpandStyle;
   if (collapsed) {
     menuToggle = <NavbarToggler onClick={toggleNavbar} />;
   } else {
     menuToggle = (
       <NavbarToggler onClick={toggleNavbar}>
-        <AiOutlineClose className="" />
+        <AiOutlineClose className="close" />
       </NavbarToggler>
     );
   }
 
   return (
-    <>
-      <Navbar className="header" color="faded" expand="lg" light>
+    <section id="header">
+      <Navbar className="container header" color="faded" expand="lg" light>
         <NavbarBrand href="/">
           <img src={profile} alt="profile" />
-          <span>Ajit</span>
+          <span className="title">Ajit</span>
         </NavbarBrand>
         {menuToggle}
         <Collapse isOpen={!collapsed} navbar className="header-content">
           <Nav className="navbar-content">
             <NavItem className="mx-auto">
               <NavLink href="/" className="header-items">
-                home
+                Home
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
               <NavLink href="/project" className="header-items">
-                project
+                Project
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
               <NavLink href="/skills" className="header-items">
-                skills
+                Skills
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
               <NavLink href="/about" className="header-items">
-                about
+                About
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
               <NavLink href="/contact" className="header-items">
-                contact
+                Contact
               </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
-    </>
+    </section>
   );
 };
 

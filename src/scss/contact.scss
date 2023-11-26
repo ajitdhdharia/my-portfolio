@@ -1,57 +1,102 @@
 @import "./variables";
+@import "./common";
 
-.contact {
-
-  background-color: $color-text;
-  border-radius: 0.5rem 0.5rem 0 0;
-  h3 {
-    color: $color-bg;
-  }
-
-  hr {
-    border: 2px solid $color-bg;
-    margin: 0 47% 1.5rem;
-    @media only screen and (max-width: $breakpoint-mobile) {
-      margin: 0 40% 2rem;
+#contact {
+  .contact-social {
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    box-shadow: 0px 2px 8px $platinum;
+    .tertiary-heading {
+      padding-bottom: 3rem;
     }
-  }
-
-  p {
-    color: $color-primary;
-  }
-
-  .my-contact {
-    color: $color-bg;
-    padding-bottom: 2rem;
-
     a {
-      color: $color-bg;
+      text-decoration: none;
+    }
+    span {
+      padding-left: 1rem;
+      font-size: 1.5rem;
+      font-weight: $semi-bold;
+    }
+    .social-linkedIn {
+      color: $ghost-white;
+      .icon {
+        @include icon-round;
+        background-color: #0982c0;
+      }
+      span {
+        color: #0982c0;
+      }
+    }
+    .social-github {
+      color: $ghost-white;
+      .icon {
+        @include icon-round;
+        background-color: $eerie-black;
+      }
+      span {
+        color: $eerie-black;
+      }
+    }
+    .social-instagram {
+      color: $ghost-white;
+      .icon {
+        @include icon-round;
+        background-color: #ef0074;
+      }
+      span {
+        color: #ef0074;
+      }
+    }
+    .social-mail {
+      color: $ghost-white;
+      .icon {
+        @include icon-round;
+        background-color: #fbbc05;
+      }
+      span {
+        color: #fbbc05;
+      }
+    }
+  }
+}
+
+.contact-form {
+  margin: 7rem 0 3rem 0;
+  .contact-input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    label {
+      font-size: 1.3rem;
+      font-weight: $light;
+      color: $eerie-black-fade;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    input {
+      border-radius: 4px;
+      border: $eerie-black-fade solid 1px;
+      width: 100%;
+      font-size: 2.5rem;
+      padding: 0 1.6rem;
+    }
+  }
+  .message {
+    height: 100%;
+    #message {
+      height: 100%;
     }
   }
 
-  .contact-form {
-    margin: 0 35%;
-    @media only screen and (max-width: $breakpoint-mobile) {
-      margin: 0 10%;
-    }
-    .form-content {
-      input {
-        text-align: left;
-      }
-      .message {
-        height: 200px;
-      }
-    }
-
-    .submit-button {
-      border: 1px solid $color-primary;
-      color: $color-primary;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-      &:hover {
-        background-color: $color-primary;
-        color: #ffffff;
-      }
+  .submit-button {
+    margin: 0.5rem 0 2rem 0;
+    border: 1px solid $eerie-black;
+    background-color: $eerie-black;
+    color: $ghost-white;
+    &:hover {
+      background-color: $ghost-white;
+      color: $eerie-black;
     }
   }
 }

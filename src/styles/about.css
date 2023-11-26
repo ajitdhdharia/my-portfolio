@@ -21,8 +21,6 @@
 }
 .about p {
   font-weight: 300;
-  color: #393e46;
-  opacity: 0.8;
 }
 @media only screen and (max-width: 600px) {
   .about p {

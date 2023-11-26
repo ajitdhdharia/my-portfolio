@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FaGithub, FaInstagram } from "react-icons/fa";
+import { BiLogoLinkedin, BiLogoGmail } from "react-icons/bi";
 import "../styles/contact.css";
 
 const Contact = () => {
@@ -6,13 +8,6 @@ const Contact = () => {
   const [enteredName, setEnteredName] = useState("");
   const [enteredPhone, setEnteredPhone] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
-
-  // const [userInput, setUserInput] = useState({
-  //   enteredEmail: '',
-  //   enteredName: '',
-  //   enteredPhone: '',
-  //   enteredMessage: ''
-  // });
 
   const emailHandler = (e) => {
     setEnteredEmail(e.target.value);
@@ -47,77 +42,133 @@ const Contact = () => {
   };
 
   return (
-    <>
-      <div className="contact" id="contact">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
-          <path
-            fill="#eeeeee"
-            fill-opacity="1"
-            d="M0,160L60,144C120,128,240,96,360,80C480,64,600,64,720,74.7C840,85,960,107,1080,133.3C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
-          ></path>
-        </svg>{" "}
-        <div>
-          <h3>Contacts</h3>
-          <hr></hr>
-          <p>Have a question or want to work together?</p>
-          <div className="my-contact">
-            <a href="tel:+1-514-247-1415">Click to call Us!</a>
-            <span> | </span>
-            <a href="mailto: dhdhariaajit@gmail.com"> dhdhariaajit@gmail.com</a>
+    <div id="contact">
+      <section className="contact-social">
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              <div className="contact-heading ">
+                <h1 className="primary-heading">Contact</h1>
+                <p className="tertiary-heading">
+                  Get in touch with me via social media or email
+                </p>
+              </div>
+              <div className="row">
+                <div className="col-6">
+                  <a
+                    className="social-linkedIn"
+                    href="https://www.linkedin.com/in/ajitdhdharia/"
+                    target="_blank"
+                  >
+                    <BiLogoLinkedin className="icon"></BiLogoLinkedin>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+                <div className="col-6">
+                  <a
+                    className="social-github"
+                    href="https://github.com/ajitdhdharia"
+                    target="_blank"
+                  >
+                    <FaGithub className="icon"></FaGithub>
+                    <span>GitHub</span>
+                  </a>
+                </div>
+                <div className="col-6">
+                  <a
+                    className="social-instagram"
+                    href="https://www.instagram.com/wanderwithajit/"
+                    target="_blank"
+                  >
+                    <FaInstagram className="icon"></FaInstagram>
+                    <span>Instagram</span>
+                  </a>
+                </div>
+                <div className="col-6">
+                  <a
+                    className="social-mail"
+                    href="https://www.instagram.com/wanderwithajit/"
+                    target="_blank"
+                  >
+                    <BiLogoGmail className="icon"></BiLogoGmail>
+                    <span>Gmail</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col-6">
+              <img></img>
+            </div>
           </div>
         </div>
-        <form className="contact-form" onSubmit={submitHandler}>
-          <div className="form-content">
-            <div className="user-details">
-              <div className="mb-2">
-                <input
-                  type="email"
-                  className="form-control"
-                  id="contactEmail"
-                  placeholder="Your Email"
-                  value={enteredEmail}
-                  onChange={emailHandler}
-                />
-              </div>
-              <div className="mb-2">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="contactName"
-                  placeholder="Your Name"
-                  value={enteredName}
-                  onChange={nameHandler}
-                />
-              </div>
-              <div className="mb-2">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="contactPhone"
-                  placeholder="Your Mobile"
-                  value={enteredPhone}
-                  onChange={phoneHandler}
-                />
-              </div>
-            </div>
-            <div className="mb-1">
-              <input
-                type="text"
-                className="form-control message"
-                id="contactMessage"
-                placeholder="Your Message"
-                value={enteredMessage}
-                style={{ textAlign: "center" }}
-                onChange={messageHandler}
-              />
+      </section>
+      <section className="contact-form ">
+        <div className="container">
+          <div className="row">
+            <div className="col">
+              <p className="tertiary-heading">
+                Get in touch with me via social media or email
+              </p>
+              <form onSubmit={submitHandler}>
+                <div className="row">
+                  <div className="col-6">
+                    <div className="contact-input-group">
+                      <label htmlFor="name">Name</label>
+                      <input
+                        type="text"
+                        id="name"
+                        value={enteredEmail}
+                        onChange={emailHandler}
+                        required
+                      />
+                    </div>
+                    <div className="contact-input-group">
+                      <label htmlFor="email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        value={enteredName}
+                        onChange={nameHandler}
+                        required
+                      />
+                    </div>
+                    <div className="contact-input-group">
+                      <label htmlFor="mobile">Mobile</label>
+                      <input
+                        type="tel"
+                        id="mobile"
+                        value={enteredPhone}
+                        onChange={phoneHandler}
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div className="col-6">
+                    <div className="contact-input-group message">
+                    <label htmlFor="">Message</label>
+                      <input
+                        type="text"
+                        id="message"
+                        value={enteredMessage}
+                        onChange={messageHandler}
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col" style={{ textAlign: "end" }}>
+                    <button type="submit" className="btn submit-button">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-          <button type="submit" className="btn submit-button">
-            Submit
-          </button>
-        </form>
-      </div>
-    </>
+        </div>
+      </section>
+    </div>
   );
 };
 

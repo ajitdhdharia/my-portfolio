@@ -1,37 +1,66 @@
-.header {
-  padding: 2rem 1rem 0;
+#header {
+  background-color: #1c1c1c;
 }
-.header .navbar-toggler {
-  scale: 0.75;
+#header .header {
+  padding: 1rem 0.5rem;
+}
+#header .header .title {
+  color: #fafaff;
+}
+#header .header .navbar-toggler {
   border: none;
 }
-.header img {
+@media (max-width: 991.98px) {
+  #header .header .navbar-toggler {
+    color: #fff;
+  }
+}
+#header .header .navbar-toggler:focus {
+  box-shadow: none;
+}
+#header .header img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
 }
-.header span {
+#header .header span {
   padding-left: 0.75rem;
   color: #373a3c;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5rem;
 }
-.header .header-content {
+#header .header .close {
+  scale: 2;
+}
+#header .header .header-content {
   justify-content: end;
 }
 @media (max-width: 991.98px) {
-  .header .header-content .navbar-content {
+  #header .header .header-content {
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    padding-top: 6rem;
+  }
+}
+@media (max-width: 991.98px) {
+  #header .header .header-content .navbar-content {
     flex-direction: column;
   }
 }
-.header .header-content .navbar-content .header-items {
-  color: #373a3c;
-  padding: 0 1.25rem;
+#header .header .header-content .navbar-content .header-items {
+  padding: 1rem 1.25rem;
+  color: #eef0f2;
 }
 @media (max-width: 991.98px) {
-  .header .header-content .navbar-content .header-items {
+  #header .header .header-content .navbar-content .header-items {
     font-size: 2.5rem;
+    color: #fff;
   }
 }
 

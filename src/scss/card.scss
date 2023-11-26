@@ -1,33 +1,35 @@
 @import "./variables";
+@import "./common";
 
 .project-card {
-  border-radius: 5px;
-  margin-bottom: 1.5rem;
-
-  .project-card-body {
-    h5 {
-      font-family: $primaryFont;
-      font-weight: $regular;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
-    span {
-      margin-bottom: 1rem !important;
-      font-style: italic;
-      font-weight: $light;
-    }
-    .card-buttons {
-      margin: 1rem 0;
-      a {
-        flex-wrap: wrap;
-        border: 1px solid $color-primary;
-        color: $color-primary;
-        border-radius: 25px;
-        font-family: $primaryFont;
-        font-weight: $light;
-        margin: 0 0.5rem;
-        padding: 4px 20px;
+  a {
+    text-decoration: none;
+    .card {
+      box-shadow: 0 0 10px 2px $alabaster;
+      border-radius: 5px;
+      border-color: $platinum;
+      padding: 2px;
+      transition: box-shadow 0.3s ease;
+      img {
+        border-radius: 5px 5px 0 0;
       }
+      .project-card-body {
+        .card-title {
+          font-size: 1.5rem;
+          font-weight: $regular;
+          color: $eerie-black;
+          line-height: 1;
+        }
+        .card-text {
+          font-size: 1.1rem;
+          font-weight: $light;
+          color: $eerie-black-fade;
+          line-height: 1;
+        }
+      }
+    }
+    &:hover .card {
+      box-shadow: 2px 5px 15px 5px $alabaster; /* Adjust the values as needed */
     }
   }
 }

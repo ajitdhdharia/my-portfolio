@@ -18,16 +18,16 @@ function createCard(ProjectDetail) {
 
 function Project() {
   return (
-    <>
-      <div className="container project mt-5 mb-3" id="project">
+    <section id="project">
+      <div className="container project">
         <div className="row">
-          <h3>Projects</h3>
+          <h3>Portfolio</h3>
         </div>
         <div>
           <div className="row">{ProjectDetails.map(createCard)}</div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

@@ -1,4 +1,6 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 import ProjectDetails from "./Project/ProjectDetails";
 import Card from "./Card";
 
@@ -11,8 +13,7 @@ function createCard(ProjectDetail) {
         key={ProjectDetail.id}
         name={ProjectDetail.title}
         description={ProjectDetail.description}
-        demoURL={ProjectDetail.demoURL}
-        codeURL={ProjectDetail.codeURL}
+        imageURL={ProjectDetail.imageURL}
       />
     )
   );
@@ -20,26 +21,72 @@ function createCard(ProjectDetail) {
 
 function Home() {
   return (
-    <>
-      <section className="conatiner home" id="home">
-        <div className="row title-home">
-          <div className="col">
-            <p className="home-intro">Hello, My name is Ajit Dhdharia</p>
-            <p className="home-intro-desc">I make websites.</p>
-            <p className="home-desc">
-              I'm a front-end developer at Veriday Inc. I also write about the
-              web on my blog and make travel videos in spare time.
-            </p>
+    <div id="home">
+      <section id="home-intro">
+        <div className="container">
+          <div className="row home-intro-text">
+            <div className="col-5">
+              <h1 className="primary-heading">Hi there, I'm Ajit Dhdharia</h1>
+              <p className="heading-desc ">
+                I'm a front-end developer from Toronto, Canada. I enjoy creating
+                and supporting websites and applications using modern
+                technologies.
+              </p>
+              <div className="home-social-icons">
+                <span>
+                  <a
+                    className="social-linkedIn"
+                    href="https://www.linkedin.com/in/ajitdhdharia/"
+                    target="_blank"
+                  >
+                    <FaLinkedin className="icon"></FaLinkedin>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    className="social-github"
+                    href="https://github.com/ajitdhdharia"
+                    target="_blank"
+                  >
+                    <FaGithub className="icon"></FaGithub>
+                  </a>
+                </span>
+                <span>
+                  <a
+                    className="social-mail"
+                    href="https://www.instagram.com/wanderwithajit/"
+                    target="_blank"
+                  >
+                    <BiLogoGmail className="icon"></BiLogoGmail>
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div className="col-7 profile-image">
+              <img
+                className=""
+                src={
+                  process.env.PUBLIC_URL +
+                  "/images/ajit_profile_transparent.png"
+                }
+              ></img>
+            </div>
           </div>
-        </div>
-        <div id="feature-projects-home">
-          <div className="row">
-            <h3>Projects</h3>
-          </div>
-          <div className="row">{ProjectDetails.map(createCard)}</div>
         </div>
       </section>
-    </>
+      <section id="home-project">
+        <div className="container">
+          <div className="row">
+            <div className="col project-title">
+              <h3>Some of my latest work</h3>
+            </div>
+          </div>
+          <div className="row latest-work">
+            {ProjectDetails.map(createCard)}
+          </div>
+        </div>
+      </section>
+    </div>
   );
 }
 

@@ -6,14 +6,14 @@ function Footer() {
   const year = new Date().getFullYear();
   return (
     <>
-      <div className="container footer-items">
-        <div className="row">
-          <div className="col">
-            <div className="footer-copyright">
+      <section id="footer">
+        <div className="container">
+          <div className="row footer-items">
+            <div className="col-6 footer-copyright">
               <span>©{year}</span>
               <span>Ajit Dhdharia </span>
             </div>
-            <div className="footer-social">
+            <div className="col -6 footer-social">
               <a
                 href="https://www.linkedin.com/in/ajitdhdharia/"
                 target="_blank"
@@ -23,13 +23,13 @@ function Footer() {
               <a href="https://github.com/ajitdhdharia" target="_blank">
                 <FaGithub />
               </a>
-              <a href="https://github.com/ajitdhdharia" target="_blank">
+              <a href="https://www.instagram.com/wanderwithajit/" target="_blank">
                 <FaInstagram />
               </a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 }
