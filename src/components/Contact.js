@@ -86,7 +86,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-6">
-              <img className="" src="/images/profile_ajit_short.png" alt="profile-picture"></img>
+              <img className="" src="/images/profile_ajit_short.png" alt="profile"></img>
             </div>
           </div>
         </div>

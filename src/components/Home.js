@@ -66,7 +66,7 @@ function Home() {
               <img
                 className=""
                 src="/images/profile_ajit_short.png"
-                alt="profile-picture"
+                alt="profile"
               ></img>
             </div>
           </div>
