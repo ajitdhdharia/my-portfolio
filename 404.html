@@ -11,10 +11,12 @@
     // Your React Router logic goes here
     // You can use the script below as a starting point
     const path = window.location.pathname;
-
+    console.log('Path', path);
     if (path.startsWith('/my-portfolio/')) {
+        console.log('if entered');
       window.location.replace('/my-portfolio/index.html');
     } else {
+        console.log('else entered');
       window.location.replace('/index.html');
     }
   </script>
