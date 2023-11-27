@@ -33,7 +33,6 @@ const Contact = () => {
       phone: enteredPhone,
       message: enteredMessage,
     };
-    console.log(contactData);
 
     setEnteredEmail("");
     setEnteredName("");
