@@ -14,16 +14,13 @@ function Footer() {
               <span>Ajit Dhdharia </span>
             </div>
             <div className="col -6 footer-social">
-              <a
-                href="https://www.linkedin.com/in/ajitdhdharia/"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/ajitdhdharia/">
                 <FaLinkedin />
               </a>
-              <a href="https://github.com/ajitdhdharia" target="_blank">
+              <a href="https://github.com/ajitdhdharia">
                 <FaGithub />
               </a>
-              <a href="https://www.instagram.com/wanderwithajit/" target="_blank">
+              <a href="https://www.instagram.com/wanderwithajit/">
                 <FaInstagram />
               </a>
             </div>

@@ -40,7 +40,6 @@ function Home() {
                   <a
                     className="social-linkedIn"
                     href="https://www.linkedin.com/in/ajitdhdharia/"
-                    target="_blank"
                   >
                     <FaLinkedin className="icon"></FaLinkedin>
                   </a>
@@ -49,7 +48,6 @@ function Home() {
                   <a
                     className="social-github"
                     href="https://github.com/ajitdhdharia"
-                    target="_blank"
                   >
                     <FaGithub className="icon"></FaGithub>
                   </a>
@@ -58,7 +56,6 @@ function Home() {
                   <a
                     className="social-mail"
                     href="https://www.instagram.com/wanderwithajit/"
-                    target="_blank"
                   >
                     <BiLogoGmail className="icon"></BiLogoGmail>
                   </a>
@@ -69,6 +66,7 @@ function Home() {
               <img
                 className=""
                 src="/images/profile_ajit_short.png"
+                alt="profile-picture"
               ></img>
             </div>
           </div>

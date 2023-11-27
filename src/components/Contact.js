@@ -27,12 +27,6 @@ const Contact = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const contactData = {
-      email: enteredEmail,
-      name: enteredName,
-      phone: enteredPhone,
-      message: enteredMessage,
-    };
 
     setEnteredEmail("");
     setEnteredName("");
@@ -57,7 +51,6 @@ const Contact = () => {
                   <a
                     className="social-linkedIn"
                     href="https://www.linkedin.com/in/ajitdhdharia/"
-                    target="_blank"
                   >
                     <BiLogoLinkedin className="icon"></BiLogoLinkedin>
                     <span>LinkedIn</span>
@@ -67,7 +60,6 @@ const Contact = () => {
                   <a
                     className="social-github"
                     href="https://github.com/ajitdhdharia"
-                    target="_blank"
                   >
                     <FaGithub className="icon"></FaGithub>
                     <span>GitHub</span>
@@ -77,7 +69,6 @@ const Contact = () => {
                   <a
                     className="social-instagram"
                     href="https://www.instagram.com/wanderwithajit/"
-                    target="_blank"
                   >
                     <FaInstagram className="icon"></FaInstagram>
                     <span>Instagram</span>
@@ -87,7 +78,6 @@ const Contact = () => {
                   <a
                     className="social-mail"
                     href="https://www.instagram.com/wanderwithajit/"
-                    target="_blank"
                   >
                     <BiLogoGmail className="icon"></BiLogoGmail>
                     <span>Gmail</span>
@@ -96,7 +86,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-6">
-              <img></img>
+              <img className="" src="/images/profile_ajit_short.png" alt="profile-picture"></img>
             </div>
           </div>
         </div>
@@ -144,7 +134,7 @@ const Contact = () => {
                   </div>
                   <div className="col-6">
                     <div className="contact-input-group message">
-                    <label htmlFor="">Message</label>
+                      <label htmlFor="">Message</label>
                       <input
                         type="text"
                         id="message"

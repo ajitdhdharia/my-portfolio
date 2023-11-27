@@ -5,7 +5,7 @@ function Card(props) {
   return (
     <>
       <div className="project-card col-sm-6 col-md-4 p-4">
-        <a href="">
+        <a href={props.demoURL}>
           <div className="card">
             <img className="card-image" src={props.imageURL} alt=""></img>
             <div className="card-body project-card-body">
