@@ -18,12 +18,12 @@ import "./styles/app.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/my-portfolio" element={<Layout />}>
-      <Route path="/my-portfolio" element={<Home />} />
-      <Route path="/my-portfolio/project" element={<Project />} />
-      <Route path="/my-portfolio/skills" element={<Skills />} />
-      <Route path="/my-portfolio/about" element={<About />} />
-      <Route path="/my-portfolio/contact" element={<Contact />} />
+    <Route path="/" element={<Layout />}>
+      <Route index element={<Home />} />
+      <Route path="/project" element={<Project />} />
+      <Route path="/skills" element={<Skills />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
     </Route>
   )
 );
