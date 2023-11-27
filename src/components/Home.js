@@ -68,7 +68,7 @@ function Home() {
             <div className="col-md-8 profile-image">
               <img
                 className=""
-                src={process.env.PUBLIC_URL + "/images/profile_ajit_short.png"}
+                src="/images/profile_ajit_short.png"
               ></img>
             </div>
           </div>
