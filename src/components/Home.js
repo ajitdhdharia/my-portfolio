@@ -25,8 +25,11 @@ function Home() {
       <section id="home-intro">
         <div className="container">
           <div className="row home-intro-text">
-            <div className="col-5">
-              <h1 className="primary-heading">Hi there, I'm Ajit Dhdharia</h1>
+            <div className="col-md-4">
+              <h1 className="primary-heading">
+                Hi there,
+                <br /> I'm Ajit Dhdharia
+              </h1>
               <p className="heading-desc ">
                 I'm a front-end developer from Toronto, Canada. I enjoy creating
                 and supporting websites and applications using modern
@@ -62,13 +65,10 @@ function Home() {
                 </span>
               </div>
             </div>
-            <div className="col-7 profile-image">
+            <div className="col-md-8 profile-image">
               <img
                 className=""
-                src={
-                  process.env.PUBLIC_URL +
-                  "/images/ajit_profile_transparent.png"
-                }
+                src={process.env.PUBLIC_URL + "/images/profile_ajit_short.png"}
               ></img>
             </div>
           </div>

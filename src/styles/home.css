@@ -25,8 +25,8 @@
 }
 
 #home #home-intro {
-  padding-top: 3rem;
-  box-shadow: 0px 2px 8px #daddd8;
+  padding-top: 7rem;
+  box-shadow: 0px 1px 10px #daddd8;
 }
 #home #home-intro .home-intro-text {
   align-items: center;
@@ -59,7 +59,8 @@
 #home #home-project {
   padding-top: 7rem;
   padding-bottom: 5rem;
-  box-shadow: 0px 2px 8px #daddd8;
+  box-shadow: 0px 1px 10px #daddd8;
+  background-color: #fafaff;
 }
 #home #home-project .project-title {
   text-align: center;

@@ -44,12 +44,12 @@ const Header = () => {
         <Collapse isOpen={!collapsed} navbar className="header-content">
           <Nav className="navbar-content">
             <NavItem className="mx-auto">
-              <NavLink href="/" className="header-items">
+              <NavLink href="/my-portfolio" className="header-items">
                 Home
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
-              <NavLink href="/project" className="header-items">
+              <NavLink href="/my-portfolio/project" className="header-items">
                 Project
               </NavLink>
             </NavItem>
@@ -59,12 +59,12 @@ const Header = () => {
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
-              <NavLink href="/about" className="header-items">
+              <NavLink href="/my-portfolio/about" className="header-items">
                 About
               </NavLink>
             </NavItem>
             <NavItem className="mx-auto">
-              <NavLink href="/contact" className="header-items">
+              <NavLink href="/my-portfolio/contact" className="header-items">
                 Contact
               </NavLink>
             </NavItem>

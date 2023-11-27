@@ -3,8 +3,8 @@
 
 #home {
   #home-intro {
-    padding-top: 3rem;
-    box-shadow: 0px 2px 8px $platinum;
+    padding-top: 7rem;
+    box-shadow: 0px 1px 10px $platinum;
     .home-intro-text {
       align-items: center;
       .primary-heading {
@@ -37,7 +37,8 @@
   #home-project {
     padding-top: 7rem;
     padding-bottom: 5rem;
-    box-shadow: 0px 2px 8px $platinum;
+    box-shadow: 0px 1px 10px $platinum;
+    background-color: $ghost-white;
     .project-title {
       text-align: center;
       h3 {
