@@ -1,91 +1,67 @@
-.about {
-  background-color: #ffffff;
-  padding-top: 3rem;
-  border-radius: 20px 20px 0 0;
+.primary-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #1c1c1c;
 }
-.about h3 {
-  margin: 1rem 0 0.5rem;
-  color: #373a3c;
-}
-.about hr {
-  border: 2px solid #222831;
-  margin: 0 47% 1.5rem;
-}
-@media only screen and (max-width: 600px) {
-  .about hr {
-    margin: 0 40% 2rem;
-  }
-}
-.about h5 {
-  margin-top: 1rem;
-}
-.about p {
-  font-weight: 300;
-}
-@media only screen and (max-width: 600px) {
-  .about p {
-    margin: 0 0 2rem;
-  }
-}
-.about .about-top {
-  margin-bottom: 5rem;
-}
-.about .about-top img {
-  border: 3px solid #ff335f;
-  border-radius: 50%;
-  width: 50%;
-  height: auto;
-  margin-top: 2rem;
-}
-.about .about-top .about-me {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-}
-.about .about-top .about-me h4 {
-  margin-top: 2rem;
+
+.secondary-heading {
+  font-size: 4rem;
   font-weight: 500;
-  text-align: left;
 }
-@media only screen and (max-width: 600px) {
-  .about .about-top .about-me h4 {
-    text-align: center;
-    margin-bottom: 0;
-  }
+
+.tertiary-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(28, 28, 28, 0.7019607843);
+  line-height: 1;
 }
-.about .about-top .about-me p {
-  text-align: left;
-  margin-bottom: 0.5rem;
+
+.heading-desc {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(28, 28, 28, 0.7019607843);
+  line-height: 1.25;
 }
-@media only screen and (max-width: 600px) {
-  .about .about-top .about-me p {
-    text-align: center;
-  }
+
+#about-intro {
+  padding-top: 5rem;
+  box-shadow: 0px 1px 10px #daddd8;
 }
-.about .about-top .about-me a {
-  text-align: left;
+#about-intro .about-intro-text {
+  padding: 0 1.5rem;
+}
+#about-intro .about-intro-text .secondary-heading {
+  font-size: 2.5rem;
+}
+#about-intro .about-intro-text .heading-desc {
+  font-size: 1.25rem;
+}
+#about-intro .about-intro-text .about-image {
+  text-align: start;
+  padding: 0 1.5rem;
+}
+#about-intro .about-intro-text .about-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+}
+#about-intro .about-intro-text .about-social-icons {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+}
+#about-intro .about-intro-text .about-social-icons span {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.5rem;
+}
+#about-intro .about-intro-text .about-social-icons span a {
+  color: rgba(28, 28, 28, 0.7019607843);
   text-decoration: none;
-  color: #ff335f;
 }
-.about .about-top .about-me a:hover {
-  color: #ff335f;
-  font-size: 1.02rem;
-}
-@media only screen and (max-width: 600px) {
-  .about .about-top .about-me a {
-    text-align: center;
-  }
-}
-.about .flip-x {
-  transform: scale(1);
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  transition-delay: 0.01s;
-}
-.about .flip-x:hover {
-  transform: scale(1.1);
+#about-intro .about-intro-text .about-social-icons span a span {
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=about.css.map */

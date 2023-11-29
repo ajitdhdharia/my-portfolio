@@ -11,6 +11,7 @@ function createCard(ProjectDetail) {
       name={ProjectDetail.title}
       description={ProjectDetail.description}
       demoURL={ProjectDetail.demoURL}
+      imageURL={ProjectDetail.imageURL}
       codeURL={ProjectDetail.codeURL}
     />
   );
@@ -22,6 +23,7 @@ function Project() {
       <div className="container project">
         <div className="row">
           <h3>Portfolio</h3>
+          <p className="heading-desc">Check out some of my latest projects.</p>
         </div>
         <div>
           <div className="row">{ProjectDetails.map(createCard)}</div>

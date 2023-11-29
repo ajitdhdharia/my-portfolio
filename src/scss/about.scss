@@ -1,84 +1,42 @@
 @import "./variables";
+@import "_common.scss";
 
-
-
-.about {
-  background-color: $color-bg;
-  padding-top: 3rem;
-  border-radius: 20px 20px 0 0;
-  h3 {
-    margin: 1rem 0 0.5rem;
-    color: $color-text;
-  }
-  hr {
-    border: 2px solid #222831;
-    margin: 0 47% 1.5rem;
-    @media only screen and (max-width: $breakpoint-mobile) {
-      margin: 0 40% 2rem;
+#about-intro {
+  padding-top: 5rem;
+  box-shadow: 0px 1px 10px $platinum;
+  .about-intro-text {
+    padding: 0 1.5rem;
+    .secondary-heading {
+      font-size: 2.5rem;
     }
-  }
-  h5 {
-    margin-top: 1rem;
-  }
-  p {
-    font-weight: 300;
-    @media only screen and (max-width: $breakpoint-mobile) {
-      margin: 0 0 2rem;
+    .heading-desc {
+      font-size: 1.25rem;
     }
-  }
-
-  .about-top {
-    margin-bottom: 5rem;
-    img {
-      border: 3px solid $color-primary;
-      border-radius: 50%;
-      width: 50%;
-      height: auto;
-      margin-top: 2rem;
+    .about-image {
+      text-align: start;
+      padding: 0 1.5rem;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 30px;
+      }
     }
-    .about-me {
+    .about-social-icons {
+      padding: 1rem 1.5rem;
       display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-direction: column;
-      h4 {
-        margin-top: 2rem;
-        font-weight: 500;
-        text-align: left;
-        @media only screen and (max-width: $breakpoint-mobile) {
-          text-align: center;
-          margin-bottom: 0;
-        }
-      }
-      p {
-        text-align: left;
-        margin-bottom: 0.5rem;
-        @media only screen and (max-width: $breakpoint-mobile) {
-          text-align: center;
-        }
-      }
-      a {
-        text-align: left;
-        text-decoration: none;
-        color: $color-primary;
-        &:hover {
-          color: $color-primary;
-          font-size: 1.02rem;
-        }
-        @media only screen and (max-width: $breakpoint-mobile) {
-          text-align: center;
+      flex-flow: column;
+      justify-content: flex-start;
+      span {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.5rem;
+        a {
+          color: $eerie-black-fade;
+          text-decoration: none;
+          span {
+            font-size: 1rem;
+          }
         }
       }
     }
   }
-.flip-x {
-  transform: scale(1);
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: linear;
-  transition-delay: 0.01s;
-  &:hover{
-    transform: scale(1.1);
-  }
-}
 }

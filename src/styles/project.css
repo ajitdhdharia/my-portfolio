@@ -1,23 +1,50 @@
-.project {
-  background-color: #ffffff;
+.primary-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #1c1c1c;
+}
+
+.secondary-heading {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.tertiary-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(28, 28, 28, 0.7019607843);
+  line-height: 1;
+}
+
+.heading-desc {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(28, 28, 28, 0.7019607843);
+  line-height: 1.25;
+}
+
+#project {
+  box-shadow: 0px 1px 10px #daddd8;
   padding: 7rem 0;
+  background-color: #ffffff;
 }
 @media (max-width: 575.98px) {
-  .project {
+  #project .project {
     margin: 0 1rem;
   }
 }
-.project h3 {
+#project .project h3 {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 2rem;
   color: #373a3c;
   margin-bottom: 1rem;
 }
-.project .project-tab {
+#project .project .project-tab {
   margin-bottom: 1rem;
 }
-.project .project-tab .tab-button {
+#project .project .project-tab .tab-button {
   background: none;
   color: #000000;
   border: none;
@@ -25,13 +52,13 @@
   margin: 0 1rem;
   font-weight: 300;
 }
-.project .project-tab .tab-button:hover {
+#project .project .project-tab .tab-button:hover {
   background-color: #ff335f;
   border-radius: 0.2rem;
   color: #ffffff;
 }
 @media only screen and (max-width: 600px) {
-  .project .project-tab .tab-button {
+  #project .project .project-tab .tab-button {
     margin: 0;
   }
 }

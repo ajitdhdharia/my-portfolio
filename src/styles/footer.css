@@ -1,6 +1,10 @@
 #footer .footer-items {
-  font-size: 1.5rem;
-  padding: 1rem 0;
+  font-size: 1rem;
+  padding: 1rem;
+}
+#footer .footer-items .footer-copyright {
+  display: flex;
+  align-items: center;
 }
 #footer .footer-items .footer-copyright span {
   margin: 0 1rem;
@@ -10,7 +14,7 @@
 }
 #footer .footer-items .footer-social a {
   margin: 0 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #1c1c1c;
 }
 

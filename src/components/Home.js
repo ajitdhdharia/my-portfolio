@@ -14,6 +14,7 @@ function createCard(ProjectDetail) {
         name={ProjectDetail.title}
         description={ProjectDetail.description}
         imageURL={ProjectDetail.imageURL}
+        demoURL={ProjectDetail.demoURL}
       />
     )
   );
@@ -30,7 +31,7 @@ function Home() {
                 Hi there,
                 <br /> I'm Ajit Dhdharia
               </h1>
-              <p className="heading-desc ">
+              <p className="heading-desc">
                 I'm a front-end developer from Toronto, Canada. I enjoy creating
                 and supporting websites and applications using modern
                 technologies.

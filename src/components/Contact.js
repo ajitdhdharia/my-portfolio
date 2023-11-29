@@ -36,123 +36,131 @@ const Contact = () => {
 
   return (
     <div id="contact">
-      <section className="contact-social">
-        <div className="container">
-          <div className="row">
-            <div className="col-6">
-              <div className="contact-heading ">
-                <h1 className="primary-heading">Contact</h1>
-                <p className="tertiary-heading">
-                  Get in touch with me via social media or email
-                </p>
+      <section className="contact-details">
+        <div className="contact-social">
+          <div className="container">
+            <div className="row">
+              <div className="col-6">
+                <div className="contact-heading ">
+                  <h1 className="primary-heading">Contact</h1>
+                  <p className="tertiary-heading">
+                    Get in touch with me via social media or email
+                  </p>
+                </div>
+                <div className="row">
+                  <div className="col-6">
+                    <a
+                      className="social-linkedIn"
+                      href="https://www.linkedin.com/in/ajitdhdharia/"
+                    >
+                      <BiLogoLinkedin className="icon"></BiLogoLinkedin>
+                      <span>LinkedIn</span>
+                    </a>
+                  </div>
+                  <div className="col-6">
+                    <a
+                      className="social-github"
+                      href="https://github.com/ajitdhdharia"
+                    >
+                      <FaGithub className="icon"></FaGithub>
+                      <span>GitHub</span>
+                    </a>
+                  </div>
+                  <div className="col-6">
+                    <a
+                      className="social-instagram"
+                      href="https://www.instagram.com/wanderwithajit/"
+                    >
+                      <FaInstagram className="icon"></FaInstagram>
+                      <span>Instagram</span>
+                    </a>
+                  </div>
+                  <div className="col-6">
+                    <a
+                      className="social-mail"
+                      href="https://www.instagram.com/wanderwithajit/"
+                    >
+                      <BiLogoGmail className="icon"></BiLogoGmail>
+                      <span>Gmail</span>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="row">
-                <div className="col-6">
-                  <a
-                    className="social-linkedIn"
-                    href="https://www.linkedin.com/in/ajitdhdharia/"
-                  >
-                    <BiLogoLinkedin className="icon"></BiLogoLinkedin>
-                    <span>LinkedIn</span>
-                  </a>
-                </div>
-                <div className="col-6">
-                  <a
-                    className="social-github"
-                    href="https://github.com/ajitdhdharia"
-                  >
-                    <FaGithub className="icon"></FaGithub>
-                    <span>GitHub</span>
-                  </a>
-                </div>
-                <div className="col-6">
-                  <a
-                    className="social-instagram"
-                    href="https://www.instagram.com/wanderwithajit/"
-                  >
-                    <FaInstagram className="icon"></FaInstagram>
-                    <span>Instagram</span>
-                  </a>
-                </div>
-                <div className="col-6">
-                  <a
-                    className="social-mail"
-                    href="https://www.instagram.com/wanderwithajit/"
-                  >
-                    <BiLogoGmail className="icon"></BiLogoGmail>
-                    <span>Gmail</span>
-                  </a>
-                </div>
+              <div className="col-6 contact-image">
+                <img
+                  className=""
+                  src="/images/profile_ajit_short.png"
+                  alt="profile"
+                ></img>
               </div>
-            </div>
-            <div className="col-6">
-              <img className="" src="/images/profile_ajit_short.png" alt="profile"></img>
             </div>
           </div>
         </div>
       </section>
       <section className="contact-form ">
-        <div className="container">
-          <div className="row">
-            <div className="col">
-              <p className="tertiary-heading">
-                Get in touch with me via social media or email
-              </p>
-              <form onSubmit={submitHandler}>
-                <div className="row">
-                  <div className="col-6">
-                    <div className="contact-input-group">
-                      <label htmlFor="name">Name</label>
-                      <input
-                        type="text"
-                        id="name"
-                        value={enteredEmail}
-                        onChange={emailHandler}
-                        required
-                      />
+        <div>
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <p className="tertiary-heading">
+                  Get in touch with me via social media or email
+                </p>
+                <form onSubmit={submitHandler}>
+                  <div className="row">
+                    <div className="col-6">
+                      <div className="contact-input-group">
+                        <label htmlFor="name">Name</label>
+                        <input
+                          type="text"
+                          id="name"
+                          value={enteredEmail}
+                          onChange={emailHandler}
+                          required
+                        />
+                      </div>
+                      <div className="contact-input-group">
+                        <label htmlFor="email">Email</label>
+                        <input
+                          type="email"
+                          id="email"
+                          value={enteredName}
+                          onChange={nameHandler}
+                          required
+                        />
+                      </div>
+                      <div className="contact-input-group">
+                        <label htmlFor="mobile">Mobile</label>
+                        <input
+                          type="tel"
+                          id="mobile"
+                          value={enteredPhone}
+                          onChange={phoneHandler}
+                          required
+                        />
+                      </div>
                     </div>
-                    <div className="contact-input-group">
-                      <label htmlFor="email">Email</label>
-                      <input
-                        type="email"
-                        id="email"
-                        value={enteredName}
-                        onChange={nameHandler}
-                        required
-                      />
-                    </div>
-                    <div className="contact-input-group">
-                      <label htmlFor="mobile">Mobile</label>
-                      <input
-                        type="tel"
-                        id="mobile"
-                        value={enteredPhone}
-                        onChange={phoneHandler}
-                        required
-                      />
+                    <div className="col-6">
+                      <div className="contact-input-group message">
+                        <label htmlFor="">Message</label>
+                        <input
+                          type="text"
+                          id="message"
+                          value={enteredMessage}
+                          onChange={messageHandler}
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-6">
-                    <div className="contact-input-group message">
-                      <label htmlFor="">Message</label>
-                      <input
-                        type="text"
-                        id="message"
-                        value={enteredMessage}
-                        onChange={messageHandler}
-                        required
-                      />
+                  <div className="row">
+                    <div className="col" style={{ textAlign: "end" }}>
+                      <button type="submit" className="btn submit-button">
+                        Submit
+                      </button>
                     </div>
                   </div>
-                </div>
-                <div className="row">
-                  <div className="col" style={{ textAlign: "end" }}>
-                    <button type="submit" className="btn submit-button">
-                      Submit
-                    </button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </div>

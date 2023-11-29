@@ -24,111 +24,126 @@
   line-height: 1.25;
 }
 
-#contact .contact-social {
-  padding-top: 7rem;
-  padding-bottom: 5rem;
-  font-size: 3rem;
+#contact {
   box-shadow: 0px 2px 8px #daddd8;
 }
-#contact .contact-social .tertiary-heading {
+#contact .contact-details {
+  padding-top: 7rem;
+  box-shadow: 0px 2px 8px #daddd8;
+}
+#contact .contact-details .contact-social {
+  font-size: 3rem;
+  padding-bottom: 5rem;
+}
+#contact .contact-details .contact-social .tertiary-heading {
   padding-bottom: 3rem;
 }
-#contact .contact-social a {
+#contact .contact-details .contact-social a {
   text-decoration: none;
 }
-#contact .contact-social span {
+#contact .contact-details .contact-social span {
   padding-left: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
-#contact .contact-social .social-linkedIn {
+#contact .contact-details .contact-social .social-linkedIn {
   color: #fafaff;
 }
-#contact .contact-social .social-linkedIn .icon {
+#contact .contact-details .contact-social .social-linkedIn .icon {
   width: 3rem;
   height: 3rem;
   padding: 12px;
   border-radius: 50%;
   background-color: #0982c0;
 }
-#contact .contact-social .social-linkedIn span {
+#contact .contact-details .contact-social .social-linkedIn span {
   color: #0982c0;
 }
-#contact .contact-social .social-github {
+#contact .contact-details .contact-social .social-github {
   color: #fafaff;
 }
-#contact .contact-social .social-github .icon {
+#contact .contact-details .contact-social .social-github .icon {
   width: 3rem;
   height: 3rem;
   padding: 12px;
   border-radius: 50%;
   background-color: #1c1c1c;
 }
-#contact .contact-social .social-github span {
+#contact .contact-details .contact-social .social-github span {
   color: #1c1c1c;
 }
-#contact .contact-social .social-instagram {
+#contact .contact-details .contact-social .social-instagram {
   color: #fafaff;
 }
-#contact .contact-social .social-instagram .icon {
+#contact .contact-details .contact-social .social-instagram .icon {
   width: 3rem;
   height: 3rem;
   padding: 12px;
   border-radius: 50%;
   background-color: #ef0074;
 }
-#contact .contact-social .social-instagram span {
+#contact .contact-details .contact-social .social-instagram span {
   color: #ef0074;
 }
-#contact .contact-social .social-mail {
+#contact .contact-details .contact-social .social-mail {
   color: #fafaff;
 }
-#contact .contact-social .social-mail .icon {
+#contact .contact-details .contact-social .social-mail .icon {
   width: 3rem;
   height: 3rem;
   padding: 12px;
   border-radius: 50%;
   background-color: #fbbc05;
 }
-#contact .contact-social .social-mail span {
+#contact .contact-details .contact-social .social-mail span {
   color: #fbbc05;
 }
-
-.contact-form {
-  margin: 7rem 0 3rem 0;
+#contact .contact-details .contact-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 0 1.5rem;
 }
-.contact-form .contact-input-group {
+#contact .contact-details .contact-image img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+}
+#contact .contact-form {
+  padding: 7rem 0 3rem 0;
+}
+#contact .contact-form .contact-input-group {
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
 }
-.contact-form .contact-input-group label {
+#contact .contact-form .contact-input-group label {
   font-size: 1.3rem;
   font-weight: 300;
   color: rgba(28, 28, 28, 0.7019607843);
   line-height: 1;
   margin-bottom: 0.5rem;
 }
-.contact-form .contact-input-group input {
+#contact .contact-form .contact-input-group input {
   border-radius: 4px;
   border: rgba(28, 28, 28, 0.7019607843) solid 1px;
   width: 100%;
   font-size: 2.5rem;
   padding: 0 1.6rem;
 }
-.contact-form .message {
+#contact .contact-form .message {
   height: 100%;
 }
-.contact-form .message #message {
+#contact .contact-form .message #message {
   height: 100%;
 }
-.contact-form .submit-button {
+#contact .contact-form .submit-button {
   margin: 0.5rem 0 2rem 0;
   border: 1px solid #1c1c1c;
   background-color: #1c1c1c;
   color: #fafaff;
 }
-.contact-form .submit-button:hover {
+#contact .contact-form .submit-button:hover {
   background-color: #fafaff;
   color: #1c1c1c;
 }

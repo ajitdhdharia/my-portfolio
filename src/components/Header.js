@@ -53,11 +53,11 @@ const Header = () => {
                 Project
               </NavLink>
             </NavItem>
-            <NavItem className="mx-auto">
+            {/* <NavItem className="mx-auto">
               <NavLink href="/skills" className="header-items">
                 Skills
               </NavLink>
-            </NavItem>
+            </NavItem> */}
             <NavItem className="mx-auto">
               <NavLink href="/about" className="header-items">
                 About
