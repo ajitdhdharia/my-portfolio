@@ -40,11 +40,19 @@
             padding: 0 0.5rem;
             font-size: 1rem;
           }
+
           a {
             color: $eerie-black-fade;
             text-decoration: none;
+            @include media-breakpoint-down(sm) {
+                font-size: 2.5rem;
+                padding: 0 1rem;
+              }
             span {
               font-size: 1rem;
+              @include media-breakpoint-down(sm) {
+                display: none;
+              }
             }
           }
         }

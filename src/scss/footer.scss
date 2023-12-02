@@ -10,6 +10,9 @@
       span {
         margin: 0 1rem;
       }
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+      }
     }
     .footer-social {
       text-align: right;
@@ -17,7 +20,17 @@
         margin: 0 1rem;
         font-size: 1.5rem;
         color: $eerie-black;
+        @include media-breakpoint-down(sm) {
+          display: flex;
+          padding-top: 1rem;
+          font-size: 1.25rem;
+        }
+      }
+      @include media-breakpoint-down(sm) {
+        display: flex;
+        justify-content: center;
       }
     }
   }
+  
 }

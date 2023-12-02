@@ -51,6 +51,11 @@
   font-size: 1.5rem;
   font-weight: 600;
 }
+@media (max-width: 575.98px) {
+  #contact .contact-details .contact-social span {
+    display: none;
+  }
+}
 #contact .contact-details .contact-social .social-linkedIn {
   color: #fafaff;
 }
@@ -113,6 +118,11 @@
   max-width: 100%;
   max-height: 100%;
   border-radius: 30px;
+}
+@media (max-width: 991.98px) {
+  #contact .contact-details .contact-image {
+    padding: 3rem 1.5rem;
+  }
 }
 #contact .contact-form {
   padding: 7rem 0 3rem 0;

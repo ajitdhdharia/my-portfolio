@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/footer.scss","../scss/_variables.scss"],"names":[],"mappings":"AAGE;EACE;EACA;;AACA;EACE;EACA;;AACA;EACE;;AAGJ;EACE;;AACA;EACE;EACA;EACA,OCJM","file":"footer.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/footer.scss","../../node_modules/bootstrap/scss/mixins/_breakpoints.scss","../scss/_variables.scss"],"names":[],"mappings":"AAGE;EACE;EACA;;AACA;EACE;EACA;;AACA;EACE;;ACkEJ;EDtEA;IAOI;;;AAGJ;EACE;;AACA;EACE;EACA;EACA,OEPM;;AD8DV;ED1DE;IAKI;IACA;IACA;;;ACmDN;ED5DA;IAaI;IACA","file":"footer.css"}

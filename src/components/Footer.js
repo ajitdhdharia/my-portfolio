@@ -9,11 +9,11 @@ function Footer() {
       <section id="footer">
         <div className="container">
           <div className="row footer-items">
-            <div className="col-6 footer-copyright">
+            <div className="col-sm-6 footer-copyright">
               <span>©{year}</span>
               <span>Ajit Dhdharia </span>
             </div>
-            <div className="col -6 footer-social">
+            <div className="col-sm-6 footer-social">
               <a href="https://www.linkedin.com/in/ajitdhdharia/">
                 <FaLinkedin />
               </a>

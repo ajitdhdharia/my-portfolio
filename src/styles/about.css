@@ -76,8 +76,19 @@
   color: rgba(28, 28, 28, 0.7019607843);
   text-decoration: none;
 }
+@media (max-width: 575.98px) {
+  #about #about-intro .about-intro-text .about-social-icons span a {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+}
 #about #about-intro .about-intro-text .about-social-icons span a span {
   font-size: 1rem;
+}
+@media (max-width: 575.98px) {
+  #about #about-intro .about-intro-text .about-social-icons span a span {
+    display: none;
+  }
 }
 #about #books {
   padding-bottom: 3rem;
