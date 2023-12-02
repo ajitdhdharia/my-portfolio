@@ -88,38 +88,24 @@ const About = () => {
           <div className="row books-cards">
             <BookCard
               imageURL="/images/BooksImages/clean_code.png"
-              name=""
-              author=""
             ></BookCard>
             <BookCard
               imageURL="/images/BooksImages/pragmatic.png"
-              name=""
-              author=""
             ></BookCard>
             <BookCard
               imageURL="/images/BooksImages/refactoring.png"
-              name=""
-              author=""
             ></BookCard>
             <BookCard
               imageURL="/images/BooksImages/Atomic_habits.png"
-              name=""
-              author=""
             ></BookCard>
             <BookCard
               imageURL="/images/BooksImages/psychology_of_money.png"
-              name=""
-              author=""
             ></BookCard>
             <BookCard
               imageURL="/images/BooksImages/steal_like_an _artist.png"
-              name=""
-              author=""
             ></BookCard>
             <BookCard
               imageURL="/images/BooksImages/Ikigai.png"
-              name=""
-              author=""
             ></BookCard>
           </div>
         </div>
