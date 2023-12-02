@@ -35,6 +35,11 @@
   font-size: 3rem;
   padding-bottom: 5rem;
 }
+@media (max-width: 991.98px) {
+  #contact .contact-details .contact-social {
+    text-align: center;
+  }
+}
 #contact .contact-details .contact-social .tertiary-heading {
   padding-bottom: 3rem;
 }

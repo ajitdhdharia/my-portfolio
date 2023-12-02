@@ -10,10 +10,14 @@
     .contact-social {
       font-size: 3rem;
       padding-bottom: 5rem;
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
 
       .tertiary-heading {
         padding-bottom: 3rem;
       }
+
       a {
         text-decoration: none;
       }
@@ -108,6 +112,7 @@
       border: 1px solid $eerie-black;
       background-color: $eerie-black;
       color: $ghost-white;
+      
       &:hover {
         background-color: $ghost-white;
         color: $eerie-black;

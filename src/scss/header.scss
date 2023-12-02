@@ -2,17 +2,26 @@
 
 #header {
   background-color: $eerie-black;
-
   .header {
     padding: 1rem 0.5rem;
+    @include media-breakpoint-down(lg) {
+    max-width: 100%;
+  }
+
     .title {
       color: $ghost-white;
     }
 
     .navbar-toggler {
       border: none;
+      scale: 1.7;
       @include media-breakpoint-down(lg) {
-        color: #fff;
+        color: $ghost-white;
+        .close {
+          z-index: 1000;
+          border: 2px solid red;
+          color: #fff;
+        }
       }
     }
 
@@ -28,14 +37,10 @@
 
     span {
       padding-left: 0.75rem;
-      color: $color-text;
+      color: $ghost-white;
       text-transform: uppercase;
       font-weight: $bold;
       font-size: 1.5rem;
-    }
-
-    .close {
-      scale: 2;
     }
 
     .header-content {

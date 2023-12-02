@@ -9,29 +9,18 @@ import {
   NavLink,
 } from "reactstrap";
 
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
+import { MdClose } from "react-icons/md";
 
 import "../styles/header.css";
 import profile from "../assets/profile.jpg";
 
 const Header = () => {
-  const [collapsed, setCollapsed] = useState(true); //initial state true to keep it close for smaller screens.
+  const [isOpen, setIsOpen] = useState(false); //initial state true to keep it close for smaller screens.
 
   const toggleNavbar = () => {
-    setCollapsed(!collapsed);
+    setIsOpen(!isOpen);
   };
-
-  // Close sign for menu button
-  let menuToggle;
-  if (collapsed) {
-    menuToggle = <NavbarToggler onClick={toggleNavbar} />;
-  } else {
-    menuToggle = (
-      <NavbarToggler onClick={toggleNavbar}>
-        <AiOutlineClose className="close" />
-      </NavbarToggler>
-    );
-  }
 
   return (
     <section id="header">
@@ -40,8 +29,14 @@ const Header = () => {
           <img src={profile} alt="profile" />
           <span className="title">Ajit</span>
         </NavbarBrand>
-        {menuToggle}
-        <Collapse isOpen={!collapsed} navbar className="header-content">
+        <NavbarToggler onClick={toggleNavbar}>
+          {isOpen ? (
+            <MdClose className="close" style={{ color: "#ffff" }} />
+          ) : (
+            <AiOutlineMenu style={{ color: "#ffff" }} />
+          )}
+        </NavbarToggler>
+        <Collapse isOpen={isOpen} navbar className="header-content">
           <Nav className="navbar-content">
             <NavItem className="mx-auto">
               <NavLink href="/" className="header-items">

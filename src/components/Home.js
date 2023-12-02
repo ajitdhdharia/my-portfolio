@@ -15,6 +15,7 @@ function createCard(ProjectDetail) {
         description={ProjectDetail.description}
         imageURL={ProjectDetail.imageURL}
         demoURL={ProjectDetail.demoURL}
+        codeURL={ProjectDetail.codeURL}
       />
     )
   );
@@ -26,13 +27,13 @@ function Home() {
       <section id="home-intro">
         <div className="container">
           <div className="row home-intro-text">
-            <div className="col-md-4">
+            <div className="col-lg-4">
               <h1 className="primary-heading">
                 Hi there,
                 <br /> I'm Ajit Dhdharia
               </h1>
               <p className="heading-desc">
-                I'm a front-end developer from Toronto, Canada. I enjoy creating
+                I'm a Software Developer from Toronto, Canada. I enjoy creating
                 and supporting websites and applications using modern
                 technologies.
               </p>
@@ -63,7 +64,7 @@ function Home() {
                 </span>
               </div>
             </div>
-            <div className="col-md-8 profile-image">
+            <div className="col-lg-8 profile-image">
               <img
                 className=""
                 src="/images/profile_ajit_short.png"

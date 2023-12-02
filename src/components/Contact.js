@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="contact-social">
           <div className="container">
             <div className="row">
-              <div className="col-6">
+              <div className="col-lg-6">
                 <div className="contact-heading ">
                   <h1 className="primary-heading">Contact</h1>
                   <p className="tertiary-heading">
@@ -86,7 +86,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-6 contact-image">
+              <div className="col-lg-6 contact-image">
                 <img
                   className=""
                   src="/images/profile_ajit_short.png"
@@ -107,7 +107,7 @@ const Contact = () => {
                 </p>
                 <form onSubmit={submitHandler}>
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-md-6">
                       <div className="contact-input-group">
                         <label htmlFor="name">Name</label>
                         <input
@@ -139,7 +139,7 @@ const Contact = () => {
                         />
                       </div>
                     </div>
-                    <div className="col-6">
+                    <div className="col-md-6">
                       <div className="contact-input-group message">
                         <label htmlFor="">Message</label>
                         <input
