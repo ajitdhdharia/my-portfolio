@@ -141,7 +141,7 @@ const Contact = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="contact-input-group message">
-                        <label htmlFor="">Message</label>
+                        <label htmlFor="message">Message</label>
                         <input
                           type="text"
                           id="message"
