@@ -16,6 +16,8 @@
 }
 #footer .footer-items .footer-social {
   text-align: right;
+  display: flex;
+  justify-content: end;
 }
 #footer .footer-items .footer-social a {
   margin: 0 1rem;

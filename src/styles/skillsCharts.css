@@ -1,0 +1,31 @@
+.primary-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  color: #1c1c1c;
+}
+
+.secondary-heading {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.tertiary-heading {
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(28, 28, 28, 0.7019607843);
+  line-height: 1;
+}
+
+.heading-desc {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: rgba(28, 28, 28, 0.7019607843);
+  line-height: 1.25;
+}
+
+svg {
+  width: 100%;
+}
+
+/*# sourceMappingURL=skillsCharts.css.map */

@@ -6,9 +6,9 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-// import Skills from "./components/Skills";
 import Project from "./components/Project/Project";
 import Contact from "./components/Contact";
+import ProjectDemo from "./components/ProjectDemo";
 
 //Root Layout
 import Layout from "./components/Layout";
@@ -21,9 +21,9 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="/project" element={<Project />} />
-      {/* <Route path="/skills" element={<Skills />} /> */}
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/projectDemo/:id" element={<ProjectDemo />} />
     </Route>
   )
 );
@@ -31,7 +31,7 @@ const router = createBrowserRouter(
 function App() {
   return (
     <div>
-      <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </div>
   );
 }

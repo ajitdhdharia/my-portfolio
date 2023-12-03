@@ -1,0 +1,79 @@
+@import "variables";
+@import "./common";
+
+#projectDemo {
+  .project-demo-intro {
+    padding-top: 7rem;
+    box-shadow: 0px 0px 10px $platinum;
+    .intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      @include media-breakpoint-down(lg) {
+        align-items: center;
+      }
+      .secondary-heading {
+        font-size: 2.5rem;
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+      }
+      .tertiary-heading {
+        font-size: 1.5rem;
+      }
+      p {
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+      }
+    }
+    img {
+      max-width: 100%;
+      @include media-breakpoint-down(lg) {
+        text-align: center;
+      }
+    }
+  }
+
+  .skills {
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    .project-skills-intro {
+      padding-bottom: 1.5rem;
+      .secondary-heading {
+        font-size: 2.5rem;
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+      }
+      .tertiary-heading {
+        font-size: 1.5rem;
+        @include media-breakpoint-down(lg) {
+          text-align: center;
+        }
+      }
+    }
+    .project-skills {
+      box-shadow: 1px 1px 10px $platinum;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      padding: 1.5rem;
+      g {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: $semi-bold;
+      }
+    }
+  }
+
+  .other-projects {
+    box-shadow: 0px 0px 10px $platinum;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    .secondary-heading {
+      font-size: 2.5rem;
+    }
+  }
+}

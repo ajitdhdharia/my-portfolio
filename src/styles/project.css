@@ -34,32 +34,17 @@
     margin: 0 1rem;
   }
 }
-#project .project h3 {
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 2rem;
-  color: #373a3c;
-  margin-bottom: 1rem;
+#project .project .secondary-heading {
+  font-size: 2.5rem;
 }
-#project .project .project-tab {
-  margin-bottom: 1rem;
+@media (max-width: 991.98px) {
+  #project .project .secondary-heading {
+    text-align: center;
+  }
 }
-#project .project .project-tab .tab-button {
-  background: none;
-  color: #000000;
-  border: none;
-  font-family: "Figtree", "Roboto", "Rubik", "Source Sans 3", "Source Sans Pro", sans-serif;
-  margin: 0 1rem;
-  font-weight: 300;
-}
-#project .project .project-tab .tab-button:hover {
-  background-color: #ff335f;
-  border-radius: 0.2rem;
-  color: #ffffff;
-}
-@media only screen and (max-width: 600px) {
-  #project .project .project-tab .tab-button {
-    margin: 0;
+@media (max-width: 991.98px) {
+  #project .project p {
+    text-align: center;
   }
 }
 

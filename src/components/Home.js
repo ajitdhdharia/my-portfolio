@@ -11,10 +11,11 @@ function createCard(ProjectDetail) {
     ProjectDetail.isFeatured && (
       <Card
         key={ProjectDetail.id}
+        id={ProjectDetail.id}
         name={ProjectDetail.title}
         description={ProjectDetail.description}
         imageURL={ProjectDetail.imageURL}
-        demoURL={ProjectDetail.demoURL}
+        demoURL="/project-demo"
         codeURL={ProjectDetail.codeURL}
       />
     )
