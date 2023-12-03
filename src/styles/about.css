@@ -54,39 +54,34 @@
   padding: 1rem 1.5rem;
   display: flex;
   flex-flow: column;
-  justify-content: flex-start;
+  align-items: start;
 }
 @media (max-width: 991.98px) {
   #about #about-intro .about-intro-text .about-social-icons {
-    flex-flow: row;
-    justify-content: center;
+    align-items: center;
   }
 }
-#about #about-intro .about-intro-text .about-social-icons span {
-  padding: 0.5rem 1.5rem;
-  font-size: 1.5rem;
-}
-@media (max-width: 991.98px) {
-  #about #about-intro .about-intro-text .about-social-icons span {
-    padding: 0 0.5rem;
-    font-size: 1rem;
-  }
-}
-#about #about-intro .about-intro-text .about-social-icons span a {
+#about #about-intro .about-intro-text .about-social-icons a {
   color: rgba(28, 28, 28, 0.7019607843);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  padding: 1rem;
 }
 @media (max-width: 575.98px) {
-  #about #about-intro .about-intro-text .about-social-icons span a {
+  #about #about-intro .about-intro-text .about-social-icons a {
     font-size: 2.5rem;
     padding: 0 1rem;
   }
 }
-#about #about-intro .about-intro-text .about-social-icons span a span {
+#about #about-intro .about-intro-text .about-social-icons a span {
   font-size: 1rem;
+  padding-left: 1rem;
+  white-space: nowrap;
 }
 @media (max-width: 575.98px) {
-  #about #about-intro .about-intro-text .about-social-icons span a span {
+  #about #about-intro .about-intro-text .about-social-icons a span {
     display: none;
   }
 }

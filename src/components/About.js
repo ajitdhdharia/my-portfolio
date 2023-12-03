@@ -44,35 +44,29 @@ const About = () => {
               <div className="about-image">
                 <img src="/images/ajit_professional.jpg" alt="profile"></img>
               </div>
-
               <div className="about-social-icons">
-                <span>
-                  <a
-                    className="social-linkedIn"
-                    href="https://www.linkedin.com/in/ajitdhdharia/"
-                  >
-                    <FaLinkedin className="icon"></FaLinkedin>
-                    <span>Follow on LinkedIn</span>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    className="social-github"
-                    href="https://github.com/ajitdhdharia"
-                  >
-                    <FaGithub className="icon"></FaGithub>
-                    <span>Follow in GitHub</span>
-                  </a>
-                </span>
-                <span>
-                  <a
-                    className="social-mail"
-                    href="https://www.instagram.com/wanderwithajit/"
-                  >
-                    <BiLogoGmail className="icon"></BiLogoGmail>
-                    <span>Follow on Instagram</span>
-                  </a>
-                </span>
+                <a
+                  className="social-linkedIn"
+                  href="https://www.linkedin.com/in/ajitdhdharia/"
+                >
+                  <FaLinkedin className="icon"></FaLinkedin>
+                  <span>Follow on LinkedIn</span>
+                </a>
+
+                <a
+                  className="social-github"
+                  href="https://github.com/ajitdhdharia"
+                >
+                  <FaGithub className="icon"></FaGithub>
+                  <span>Follow on GitHub</span>
+                </a>
+                <a
+                  className="social-mail"
+                  href="https://www.instagram.com/wanderwithajit/"
+                >
+                  <BiLogoGmail className="icon"></BiLogoGmail>
+                  <span>Follow on Instagram</span>
+                </a>
               </div>
             </div>
           </div>
@@ -86,27 +80,13 @@ const About = () => {
             </div>
           </div>
           <div className="row books-cards">
-            <BookCard
-              imageURL="/images/BooksImages/clean_code.png"
-            ></BookCard>
-            <BookCard
-              imageURL="/images/BooksImages/pragmatic.png"
-            ></BookCard>
-            <BookCard
-              imageURL="/images/BooksImages/refactoring.png"
-            ></BookCard>
-            <BookCard
-              imageURL="/images/BooksImages/Atomic_habits.png"
-            ></BookCard>
-            <BookCard
-              imageURL="/images/BooksImages/psychology_of_money.png"
-            ></BookCard>
-            <BookCard
-              imageURL="/images/BooksImages/steal_like_an _artist.png"
-            ></BookCard>
-            <BookCard
-              imageURL="/images/BooksImages/Ikigai.png"
-            ></BookCard>
+            <BookCard imageURL="/images/BooksImages/clean_code.png"></BookCard>
+            <BookCard imageURL="/images/BooksImages/pragmatic.png"></BookCard>
+            <BookCard imageURL="/images/BooksImages/refactoring.png"></BookCard>
+            <BookCard imageURL="/images/BooksImages/Atomic_habits.png"></BookCard>
+            <BookCard imageURL="/images/BooksImages/psychology_of_money.png"></BookCard>
+            <BookCard imageURL="/images/BooksImages/steal_like_an _artist.png"></BookCard>
+            <BookCard imageURL="/images/BooksImages/Ikigai.png"></BookCard>
           </div>
         </div>
       </section>
