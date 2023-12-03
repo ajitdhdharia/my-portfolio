@@ -52,6 +52,8 @@ const Contact = () => {
                     <a
                       className="social-linkedIn"
                       href="https://www.linkedin.com/in/ajitdhdharia/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <BiLogoLinkedin className="icon"></BiLogoLinkedin>
                       <span>LinkedIn</span>
@@ -61,6 +63,8 @@ const Contact = () => {
                     <a
                       className="social-github"
                       href="https://github.com/ajitdhdharia"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaGithub className="icon"></FaGithub>
                       <span>GitHub</span>
@@ -70,6 +74,8 @@ const Contact = () => {
                     <a
                       className="social-instagram"
                       href="https://www.instagram.com/wanderwithajit/"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FaInstagram className="icon"></FaInstagram>
                       <span>Instagram</span>
@@ -78,7 +84,9 @@ const Contact = () => {
                   <div className="col-6">
                     <a
                       className="social-mail"
-                      href="https://www.instagram.com/wanderwithajit/"
+                      href="mailto:dhdhariaajit@gmail.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <BiLogoGmail className="icon"></BiLogoGmail>
                       <span>Gmail</span>

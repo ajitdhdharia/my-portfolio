@@ -43,6 +43,8 @@ function Home() {
                   <a
                     className="social-linkedIn"
                     href="https://www.linkedin.com/in/ajitdhdharia/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaLinkedin className="icon"></FaLinkedin>
                   </a>
@@ -51,6 +53,8 @@ function Home() {
                   <a
                     className="social-github"
                     href="https://github.com/ajitdhdharia"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <FaGithub className="icon"></FaGithub>
                   </a>
@@ -58,7 +62,9 @@ function Home() {
                 <span>
                   <a
                     className="social-mail"
-                    href="https://www.instagram.com/wanderwithajit/"
+                    href="mailto:dhdhariaajit@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <BiLogoGmail className="icon"></BiLogoGmail>
                   </a>
