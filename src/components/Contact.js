@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { BiLogoLinkedin, BiLogoGmail } from "react-icons/bi";
+import { motion } from "framer-motion";
 import "../styles/contact.css";
 
 const Contact = () => {
@@ -40,7 +41,16 @@ const Contact = () => {
         <div className="contact-social">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6">
+              <motion.div
+                initial={{ x: -1000 }}
+                animate={{ x: 0, opacity: [0, 1] }}
+                transition={{
+                  duration: 1,
+                  ease: "easeInOut",
+                  repeatDelay: 1,
+                }}
+                className="col-lg-6"
+              >
                 <div className="contact-heading ">
                   <h1 className="primary-heading">Contact</h1>
                   <p className="tertiary-heading">
@@ -93,20 +103,49 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-              </div>
-              <div className="col-lg-6 contact-image">
+              </motion.div>
+              <motion.div
+                initial={{ x: 1000 }}
+                animate={{ x: 0, opacity: [0, 1] }}
+                transition={{
+                  duration: 1,
+                  ease: "easeInOut",
+                  repeatDelay: 1,
+                }}
+                className="col-lg-6 contact-image"
+              >
                 <img
                   className=""
                   src="/images/profile_ajit_short.png"
                   alt="profile"
                 ></img>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
       </section>
       <section className="contact-form ">
-        <div>
+        <motion.div
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={{
+            offscreen: {
+              scale: 0,
+              opacity: 0,
+            },
+            onscreen: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                type: "spring",
+                ease: "easeInOut",
+                bounce: 0.2,
+                duration: 1.2,
+              },
+            },
+          }}
+        >
           <div className="container">
             <div className="row">
               <div className="col">
@@ -171,7 +210,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

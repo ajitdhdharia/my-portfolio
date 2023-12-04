@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import BookCard from "./BookCard";
+import { motion } from "framer-motion";
 import "../styles/about.css";
 
 const About = () => {
@@ -10,7 +11,16 @@ const About = () => {
       <section id="about-intro">
         <div className="container">
           <div className="row about-intro-text">
-            <div className="col-lg-6">
+            <motion.div
+              initial={{ x: -1000 }}
+              animate={{ x: 0, opacity: [0, 1] }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                repeatDelay: 1,
+              }}
+              className="col-lg-6"
+            >
               <h2 className="secondary-heading">
                 Making the web a better place - one line of Javascript at a time
               </h2>
@@ -39,8 +49,17 @@ const About = () => {
                 libraries like Framer Motion and gsap to build beautiful and
                 interactive user interfaces.
               </p>
-            </div>
-            <div className="col-lg-6">
+            </motion.div>
+            <motion.div
+              initial={{ x: 1000 }}
+              animate={{ x: 0, opacity: [0, 1] }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                repeatDelay: 1,
+              }}
+              className="col-lg-6"
+            >
               <div className="about-image">
                 <img src="/images/ajit_professional.jpg" alt="profile"></img>
               </div>
@@ -68,7 +87,7 @@ const About = () => {
                   <span>Follow on Instagram</span>
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

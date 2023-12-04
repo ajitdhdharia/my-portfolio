@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import ProjectDetails from "./Project/ProjectDetails";
 import Card from "./Card";
+import { motion } from "framer-motion";
 
 import "../styles/home.css";
 
@@ -28,7 +29,16 @@ function Home() {
       <section id="home-intro">
         <div className="container">
           <div className="row home-intro-text">
-            <div className="col-lg-4">
+            <motion.div
+              initial={{ x: -1000 }}
+              animate={{ x: 0, opacity: [0, 1] }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                repeatDelay: 1,
+              }}
+              className="col-lg-4"
+            >
               <h1 className="primary-heading">
                 Hi there,
                 <br /> I'm Ajit Dhdharia
@@ -70,14 +80,23 @@ function Home() {
                   </a>
                 </span>
               </div>
-            </div>
-            <div className="col-lg-8 profile-image">
+            </motion.div>
+            <motion.div
+              initial={{ x: 1000 }}
+              animate={{ x: 0, opacity: [0, 1] }}
+              transition={{
+                duration: 1,
+                ease: "easeInOut",
+                repeatDelay: 1,
+              }}
+              className="col-lg-8 profile-image"
+            >
               <img
                 className=""
                 src="/images/profile_ajit_short.png"
                 alt="profile"
               ></img>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

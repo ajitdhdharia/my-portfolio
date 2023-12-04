@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { motion } from "framer-motion";
 import {
   Collapse,
   Navbar,
@@ -24,50 +24,55 @@ const Header = () => {
   };
 
   return (
-    <section id="header">
-      <Navbar className="container header" color="faded" expand="lg" light>
-        <NavbarBrand href="/">
-          <img src={profile} alt="profile" />
-          <span className="title">Ajit</span>
-        </NavbarBrand>
-        <NavbarToggler onClick={toggleNavbar}>
-          {isOpen ? (
-            <MdClose className="close" style={{ color: "#ffff" }} />
-          ) : (
-            <AiOutlineMenu className="menu-button" style={{ color: "#ffff" }} />
-          )}
-        </NavbarToggler>
-        <Collapse isOpen={isOpen} navbar className="header-content">
-          <Nav className="navbar-content">
-            <NavItem className="mx-auto">
-              <NavLink href="/" className="header-items">
-                Home
-              </NavLink>
-            </NavItem>
-            <NavItem className="mx-auto">
-              <NavLink href="/project" className="header-items">
-                Project
-              </NavLink>
-            </NavItem>
-            {/* <NavItem className="mx-auto">
+    <motion.div initial={{ y: -50 }} animate={{ y: 0 }}>
+      <section id="header">
+        <Navbar className="container header" color="faded" expand="lg" light>
+          <NavbarBrand href="/">
+            <img src={profile} alt="profile" />
+            <span className="title">Ajit</span>
+          </NavbarBrand>
+          <NavbarToggler onClick={toggleNavbar}>
+            {isOpen ? (
+              <MdClose className="close" style={{ color: "#ffff" }} />
+            ) : (
+              <AiOutlineMenu
+                className="menu-button"
+                style={{ color: "#ffff" }}
+              />
+            )}
+          </NavbarToggler>
+          <Collapse isOpen={isOpen} navbar className="header-content">
+            <Nav className="navbar-content">
+              <NavItem className="mx-auto">
+                <NavLink href="/" className="header-items">
+                  Home
+                </NavLink>
+              </NavItem>
+              <NavItem className="mx-auto">
+                <NavLink href="/project" className="header-items">
+                  Project
+                </NavLink>
+              </NavItem>
+              {/* <NavItem className="mx-auto">
               <NavLink href="/skills" className="header-items">
                 Skills
               </NavLink>
             </NavItem> */}
-            <NavItem className="mx-auto">
-              <NavLink href="/about" className="header-items">
-                About
-              </NavLink>
-            </NavItem>
-            <NavItem className="mx-auto">
-              <NavLink href="/contact" className="header-items">
-                Contact
-              </NavLink>
-            </NavItem>
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </section>
+              <NavItem className="mx-auto">
+                <NavLink href="/about" className="header-items">
+                  About
+                </NavLink>
+              </NavItem>
+              <NavItem className="mx-auto">
+                <NavLink href="/contact" className="header-items">
+                  Contact
+                </NavLink>
+              </NavItem>
+            </Nav>
+          </Collapse>
+        </Navbar>
+      </section>
+    </motion.div>
   );
 };
 

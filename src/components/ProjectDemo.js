@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import SkillsChart from "./SkillsChart";
 import ProjectDetails from "./Project/ProjectDetails";
 import Card from "./Card";
+import { motion } from "framer-motion";
 import "../styles/projectDemo.css";
 
 function getData(id) {
@@ -49,18 +50,36 @@ const ProjectDemo = () => {
         <section className="project-demo-intro">
           <div className="container">
             <div className="row">
-              <div className="col-lg-6 intro-text">
+              <motion.div
+                initial={{ x: -1000 }}
+                animate={{ x: 0, opacity: [0, 1] }}
+                transition={{
+                  duration: 1,
+                  ease: "easeInOut",
+                  repeatDelay: 1,
+                }}
+                className="col-lg-6 intro-text"
+              >
                 <h2 className="secondary-heading">{projectData.title}</h2>
                 <h3 className="tertiary-heading">{projectData.description}</h3>
                 <p>{projectData.detailDescription}</p>
-              </div>
-              <div className="col-lg-6">
+              </motion.div>
+              <motion.div
+                initial={{ x: 1000 }}
+                animate={{ x: 0, opacity: [0, 1] }}
+                transition={{
+                  duration: 1,
+                  ease: "easeInOut",
+                  repeatDelay: 1,
+                }}
+                className="col-lg-6"
+              >
                 <img
                   className=""
                   src={projectData.imageURL}
                   alt="profile"
                 ></img>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -75,16 +94,37 @@ const ProjectDemo = () => {
                 </h3>
               </div>
             </div>
-            <div className="row project-skills">
+            <motion.div
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+              variants={{
+                offscreen: {
+                  scale: 0,
+                  opacity: 0,
+                },
+                onscreen: {
+                  scale: 1,
+                  opacity: 1,
+                  transition: {
+                    type: "spring",
+                    ease: "easeInOut",
+                    bounce: 0.2,
+                    duration: 1.2,
+                  },
+                },
+              }}
+              className="row project-skills"
+            >
               <SkillsChart data={projectData.data} />
-            </div>
+            </motion.div>
           </div>
         </section>
         <section className="other-projects">
           <div className="container">
-          <div className="row">
-          <h2 className="secondary-heading">Other Projects</h2>
-          </div>
+            <div className="row">
+              <h2 className="secondary-heading">Other Projects</h2>
+            </div>
             <div className="row">{randomProject.map(createCard)}</div>
           </div>
         </section>
