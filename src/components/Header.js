@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Container, Row, Col } from "reactstrap";
 import {
   Collapse,
   Navbar,
@@ -33,7 +34,7 @@ const Header = () => {
           {isOpen ? (
             <MdClose className="close" style={{ color: "#ffff" }} />
           ) : (
-            <AiOutlineMenu style={{ color: "#ffff" }} />
+            <AiOutlineMenu className="menu-button" style={{ color: "#ffff" }} />
           )}
         </NavbarToggler>
         <Collapse isOpen={isOpen} navbar className="header-content">

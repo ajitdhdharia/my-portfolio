@@ -6,6 +6,8 @@
     padding: 1rem 0.5rem;
     @include media-breakpoint-down(lg) {
     max-width: 100%;
+    display: flex;
+    
   }
 
     .title {
