@@ -1,0 +1,189 @@
+{
+  "ProjectDetails": [
+    {
+      "id": 1,
+      "title": "Toronto Hydro",
+      "description": "Utility Website",
+      "detailDescription": "Toronto Hydro Corporation is an electric utility that operates the electricity distribution system for the city of Toronto, Ontario, Canada. As of 2018, it serves approximately 772,000 customers and delivers approximately 19% of the electricity consumed in Ontario.",
+      "demoURL": "https://www.torontohydro.com/",
+      "imageURL": "/images/toronto-hydro.png",
+      "isActive": true,
+      "isFeatured": true,
+      "content": [
+        {
+          "description": "Worked with team of developers to successfully migrate the Toronto Hydro website from jQuery to React. This involved creating reusable widgets for complex projects and implementing Redux for state management."
+        },
+        {
+          "description": "Implemented web service data integration using technologies such as REST APIs, GraphQL for data querying, WebSockets for developing a webchat for power outage inquiries"
+        },
+        {
+          "description": "Executed Jest and Cypress testing initiatives across frontend and backend, achieving a 50% reduction in bugs and enhancing application reliability through meticulous unit, integration, and comprehensive end-to-end testing"
+        },
+        {
+          "description": "Participated in the development of the large-scale Toronto Hydro platform, including responsive and adaptive design, a high level of web accessibility, AODA compliance, WCAG 2 standardization, and seamless cross-browser compatibility"
+        },
+        {
+          "description": "Spearheaded the backend development of Toronto Hydro's Self-Service Portal using Node.js and Express, implementing scalable microservices architecture to enhance system responsiveness and manage high volumes of user data seamlessly"
+        },
+        {
+          "description": "Effectively managed and optimized PostgreSQL databases for Toronto Hydro’s critical systems, implementing advanced SQL queries and schema designs to enhance performance, scalability, and transaction safety across multiple high-traffic applications"
+        },
+        {
+          "description": "Led client-facing discussions and consultations with Toronto Hydro stakeholders and interdisciplinary teams in agile setting, gathering requirements, optimizing task management, and ensuring seamless integration of custom solutions for project delivery"
+        }
+      ],
+      "skills": [
+        "Javascript",
+        "React",
+        "Redux",
+        "Rest APIs",
+        "jQuery",
+        "GraphQL",
+        "WebSockets",
+        "Jest",
+        "Cypress",
+        "AODA",
+        "WCAG 2",
+        "NodeJS",
+        "Express",
+        "PostgreSQL",
+        "Webpack",
+        "Gradle",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Babel",
+        "Agile",
+        "NPM",
+        "Bitbucket",
+        "JIRA"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "IndieWares",
+      "description": "Side Project",
+      "detailDescription": "Developing personalized e-commerce platform, leveraging technologies like React and Node.js to create a responsive and feature-rich online shopping experience. Implementing innovative solutions for enhanced user interaction, secure transactions, and streamlined product management.",
+      "demoURL": "https://react-dock.netlify.app/",
+      "codeURL": "https://github.com/ajitdhdharia/IndieWares",
+      "imageURL": "/images/indieWare.png",
+      "isActive": true,
+      "isFeatured": true,
+      "skills": [
+        "Javascript",
+        "React",
+        "Rest APIs",
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "Webpack",
+        "Gradle",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Babel",
+        "NPM"
+      ],
+      "subProjects": [
+        {
+          "title": "Frontend",
+          "description": "a dynamic and responsive e-commerce frontend using React, enhancing user experience and seamless shopping.",
+          "link": "https://github.com/ajitdhdharia/IndieWares-front"
+        },
+        {
+          "title": "Backend",
+          "description": "a robust e-commerce backend with Node.js, Express, and MongoDB, ensuring efficient and scalable performance.",
+          "link": "https://github.com/ajitdhdharia/IndieWares"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "React Dock",
+      "description": "Side Project",
+      "detailDescription": "Curated and developed a comprehensive showcase of React projects, highlighting diverse react skills and innovative projects.",
+      "codeURL": "https://github.com/ajitdhdharia/React-Dock",
+      "imageURL": "/images/react-dock.png",
+      "isActive": true,
+      "isFeatured": true,
+      "skills": [
+        "Javascript",
+        "React",
+        "Redux",
+        "Webpack",
+        "Gradle",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Babel",
+        "NPM",
+        "JIRA"
+      ],
+      "subProjects": [
+        {
+          "title": "FitForge",
+          "description": "FitForge is an app developed using MongoDB, Express.js, React, and Node.js to efficiently track exercises and workouts, enhancing fitness management and progress monitoring.",
+          "link": "https://github.com/ajitdhdharia/FitForge"
+        },
+        {
+          "title": "Theme Switcher",
+          "description": "A dynamic theme switcher in React enabling seamless toggling between light and dark modes for enhanced user experience",
+          "link": "https://github.com/ajitdhdharia/React-Dock/tree/master/src/Projects/ThemeSwitcher/context"
+        },
+        {
+          "title": "Fintech App",
+          "description": "A fintech application that handles user transactions. The platform aims to provide users with the ability to track their expenses, make payments, and analyze their financial data.",
+          "link": "https://github.com/ajitdhdharia/fintech_app_ajitdhdharia"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "InkPencil Pvt. Ltd.",
+      "description": "Educational Website",
+      "detailDescription": "A MERN(MongoDB, Express, ReactJS Node) based EdTech platform.",
+      "imageURL": "/images/inkpencil_pvt_ltd.png",
+      "isActive": true,
+      "isFeatured": false,
+      "content": [
+        {
+          "description": "Meticulously crafted code, built APIs, and integrated seamlessly with third parties, ensuring software responsiveness and efficiency"
+        },
+        {
+          "description": "Collaborated closely with business leaders, sharing insights, strategic communication, and actively contributed to technical documentation including user stories, process flows, use cases and test scenario design"
+        },
+        {
+          "description": "Authenticated and authorized user base of 100K using JSON Web Tokens(JWT), Passport, and Google Login API to enhance security and protect sensitive user data"
+        },
+        {
+          "description": "Constituted the routes required for delivering data to the front-end with Express MVC framework for Node.js"
+        },
+        {
+          "description": "Collaborated with the UI/UX designers to deliver pixel-perfect designs and develop a fully responsive web design using a mobile-first approach resulting in 80% improvement in mobile user engagement"
+        },
+        {
+          "description": "Implemented robust DevOps practices, utilizing GitHub for version control and Jenkins for continuous integration, resulting in a streamlined development pipeline and heightened overall efficiency"
+        }
+      ],
+      "skills": [
+        "Javascript",
+        "React",
+        "Redux",
+        "Rest APIs",
+        "Jest",
+        "NodeJS",
+        "Express",
+        "MongoDB",
+        "Webpack",
+        "Gradle",
+        "HTML5",
+        "CSS3",
+        "SASS",
+        "Babel",
+        "Agile",
+        "NPM",
+        "GitHub"
+      ]
+    }
+  ]
+}
