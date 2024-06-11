@@ -6,9 +6,6 @@ import { LampContainer } from "@/components/ui/lamp";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { FollowerPointerCard } from "@/components/ui/following-pointer";
 import { AnimatedTooltip } from "@/components/ui/animated-tooltip";
-import { Boxes } from "@/components/ui/background-boxes";
-import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
-import { cn } from "@/utils/cn";
 
 const TitleComponent = ({ title, avatar }) => (
   <div className="flex space-x-2 items-center">

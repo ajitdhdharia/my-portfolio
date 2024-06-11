@@ -31,7 +31,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
         }
       );
     }
-  }, [isInView]);
+  });
 
   const renderWords = () => {
     return (
