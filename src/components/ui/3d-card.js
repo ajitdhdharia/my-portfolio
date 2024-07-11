@@ -1,7 +1,5 @@
 "use client";
-
 import { cn } from "@/utils/cn";
-import Image from "next/image";
 import React, {
   createContext,
   useState,
@@ -38,12 +36,9 @@ export const CardContainer = ({ children, className, containerClassName }) => {
   return (
     <MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
       <div
-        className={cn(
-          "",
-          containerClassName
-        )}
+        className={cn("", containerClassName)}
         style={{
-          perspective: "1000px",
+          perspective: "1700px",
         }}
       >
         <div

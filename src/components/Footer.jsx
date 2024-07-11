@@ -1,13 +1,7 @@
 "use client";
 import React from "react";
-import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { cn } from "@/utils/cn";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
-import {
-  IconBrandLinkedin,
-  IconBrandGithubFilled,
-  IconBrandInstagram,
-} from "@tabler/icons-react";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -27,13 +21,13 @@ const Footer = () => {
     <>
       <div
         className={cn(
-          "relative flex justify-center items-center bg-white dark:bg-black w-full group border-t border-slate-800"
+          "relative flex justify-center items-center bg-white dark:bg-black w-full group border-t border-gray-100"
         )}
         onMouseMove={handleMouseMove}
       >
-        <div className="absolute inset-0 bg-dot-thick-neutral-300 dark:bg-dot-thick-neutral-800  pointer-events-none" />
+        <div className="absolute inset-0 bg-dot-thick-neutral-100 dark:bg-dot-thick-neutral-800  pointer-events-none" />
         <motion.div
-          className="pointer-events-none bg-dot-thick-indigo-500 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
+          className="pointer-events-none bg-dot-thick-indigo-200 dark:bg-dot-thick-indigo-500   absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100"
           style={{
             WebkitMaskImage: useMotionTemplate`
             radial-gradient(
@@ -52,54 +46,10 @@ const Footer = () => {
           }}
         />
 
-        <div className="text-gray-400 sm:px-10 py-8 mx-auto grid sm:grid-cols-1 md:grid-cols-2 sm:gap-5 md:gap-80 z-20">
-          <div className="justify-self-start">
-            <p className="font-light text-center text-xl">
-              ©{year} Ajit Dhdharia. All rights reserved.
-            </p>
-          </div>
-          <div className="justify-self-center md:justify-self-end">
-            <div className="flex space-x-16">
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-              >
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors duration-300"
-                >
-                  <IconBrandGithubFilled />
-                </a>
-              </HoverBorderGradient>
-
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-              >
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors duration-300"
-                >
-                  <IconBrandInstagram />
-                </a>
-              </HoverBorderGradient>
-
-              <HoverBorderGradient
-                containerClassName="rounded-full"
-                as="button"
-                className="dark:bg-black bg-white text-black dark:text-white flex items-center space-x-2"
-              >
-                <a
-                  href="#"
-                  className="hover:text-white transition-colors duration-300"
-                >
-                  <IconBrandLinkedin />
-                </a>
-              </HoverBorderGradient>
-            </div>
-          </div>
+        <div className="py-4 mx-auto grid grid-cols-1 z-20">
+          <span className="text-md self-center text-gray-600 tracking-tight">
+            ©{year} Ajit Dhdharia. All rights reserved.
+          </span>
         </div>
       </div>
     </>

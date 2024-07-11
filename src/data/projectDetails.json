@@ -4,60 +4,12 @@
       "id": 1,
       "title": "Toronto Hydro",
       "description": "Utility Website",
-      "detailDescription": "Toronto Hydro Corporation is an electric utility that operates the electricity distribution system for the city of Toronto, Ontario, Canada. As of 2018, it serves approximately 772,000 customers and delivers approximately 19% of the electricity consumed in Ontario.",
+      "detailDescriptionOne": "A Toronto-based utilities company, which owns and operates the electricity distribution system for the city of Toronto. Serving the largest city in Canada, the Toronto-based utilities company has a great responsibility to service its customers as it distributes around 18% of the electricity consumed in Ontario. As the company serves so many it is important their website can support many concurrent users so that information can be easily accessible.",
+      "detailDescriptionTwo": "This Toronto-based utilities company was struggling with the performance and usability on their legacy platform. The company website was outdated thus creating a failing customer experience and was in need of a modern update. The old website did not meet the Canadian Government’s standards of accessibility. Thus as a public government organisation, special attention would need to be given to the new website so it could be accessed by all. Moreover, during times of high traffic, such as storms/outages, the website was unable to support a larger volume of concurrent users. As people often come to their website with a strict purpose it was difficult to find information on the website because the website had poor search capabilities.",
       "demoURL": "https://www.torontohydro.com/",
-      "imageURL": "/images/toronto-hydro.png",
+      "imageURL": "/images/toronto-hydro.jpeg",
       "isActive": true,
-      "isFeatured": true,
-      "content": [
-        {
-          "description": "Worked with team of developers to successfully migrate the Toronto Hydro website from jQuery to React. This involved creating reusable widgets for complex projects and implementing Redux for state management."
-        },
-        {
-          "description": "Implemented web service data integration using technologies such as REST APIs, GraphQL for data querying, WebSockets for developing a webchat for power outage inquiries"
-        },
-        {
-          "description": "Executed Jest and Cypress testing initiatives across frontend and backend, achieving a 50% reduction in bugs and enhancing application reliability through meticulous unit, integration, and comprehensive end-to-end testing"
-        },
-        {
-          "description": "Participated in the development of the large-scale Toronto Hydro platform, including responsive and adaptive design, a high level of web accessibility, AODA compliance, WCAG 2 standardization, and seamless cross-browser compatibility"
-        },
-        {
-          "description": "Spearheaded the backend development of Toronto Hydro's Self-Service Portal using Node.js and Express, implementing scalable microservices architecture to enhance system responsiveness and manage high volumes of user data seamlessly"
-        },
-        {
-          "description": "Effectively managed and optimized PostgreSQL databases for Toronto Hydro’s critical systems, implementing advanced SQL queries and schema designs to enhance performance, scalability, and transaction safety across multiple high-traffic applications"
-        },
-        {
-          "description": "Led client-facing discussions and consultations with Toronto Hydro stakeholders and interdisciplinary teams in agile setting, gathering requirements, optimizing task management, and ensuring seamless integration of custom solutions for project delivery"
-        }
-      ],
-      "skills": [
-        "Javascript",
-        "React",
-        "Redux",
-        "Rest APIs",
-        "jQuery",
-        "GraphQL",
-        "WebSockets",
-        "Jest",
-        "Cypress",
-        "AODA",
-        "WCAG 2",
-        "NodeJS",
-        "Express",
-        "PostgreSQL",
-        "Webpack",
-        "Gradle",
-        "HTML5",
-        "CSS3",
-        "SASS",
-        "Babel",
-        "Agile",
-        "NPM",
-        "Bitbucket",
-        "JIRA"
-      ]
+      "isFeatured": true
     },
     {
       "id": 2,

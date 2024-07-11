@@ -1,0 +1,15 @@
+{
+  "BlogsDetails": [
+    {
+      "id": 1,
+      "title": "Getting Started with Django",
+      "blogURL":"getting-started-with-django",
+      "description": "High-level Python Web framework that encourages rapid development and clean, pragmatic design.",
+      "author": "Ajit Dhdharia",
+      "readTime": "10 mins read",
+      "isFeatured": true,
+      "imageURL": "bg-[url('/images/BlogsImages/django-setup.jpg')] bg-cover",
+      "file": "./blogsMarkdown/getting-started-with-django.md"
+    }
+  ]
+}
