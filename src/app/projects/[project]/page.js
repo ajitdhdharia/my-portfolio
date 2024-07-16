@@ -17,19 +17,19 @@ export default function Page({ params }) {
   const wordsOne = [
     {
       text: "1600",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
   const wordsTwo = [
     {
       text: "AODA",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
   const wordsThree = [
     {
       text: "99.9%",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
 
@@ -45,10 +45,10 @@ export default function Page({ params }) {
       {project.title == "Toronto Hydro" && (
         <>
           <div className="grid grid-cols-1 justify-items-center items-center px-10">
-            <div className="text-lg text-center md:text-left text-neutral-700 dark:text-white max-w-4xl font-light lg:px-0 pt-16 ">
+            <div className="text-lg text-center md:text-left text-neutral-700 max-w-4xl font-light lg:px-0 pt-16 ">
               {project.detailDescriptionOne && project.detailDescriptionOne}
             </div>
-            <div className="text-lg text-center md:text-left text-neutral-700 dark:text-white max-w-4xl font-light lg:px-0 pt-8 pb-16 ">
+            <div className="text-lg text-center md:text-left text-neutral-700 max-w-4xl font-light lg:px-0 pt-8 pb-16 ">
               {project.detailDescriptionTwo && project.detailDescriptionTwo}
             </div>
           </div>
