@@ -25,7 +25,7 @@ export default function Page() {
     },
     {
       text: "latest work.",
-      className: "text-blue-500 dark:text-blue-500",
+      className: "text-blue-500",
     },
   ];
 

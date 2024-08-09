@@ -15,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="no-scrollbar">
       <body className={inter.className}>
-        <Container className="border-gray-100 border-x-2">
-          <Navbar />
-          {children}
-          <Footer />
-        </Container>
+        <div className="bg-white">
+          <Container className="border-gray-100 border-x-2">
+            <Navbar />
+            {children}
+            <Footer />
+          </Container>
+        </div>
       </body>
     </html>
   );

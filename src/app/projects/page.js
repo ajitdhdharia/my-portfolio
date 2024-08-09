@@ -12,17 +12,17 @@ function createCard(item, key) {
   return (
     <Link href={`projects/${item.id}`}>
       <CardContainer className="inter-var" key={key}>
-        <CardBody className="flex-1 bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+        <CardBody className="flex-1 bg-gray-50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
           <CardItem
             translateZ="50"
-            className="text-xl font-bold text-neutral-600 dark:text-white"
+            className="text-xl font-bold text-neutral-600"
           >
             {item.title}
           </CardItem>
           <CardItem
             as="p"
             translateZ="60"
-            className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+            className="text-neutral-500 text-sm max-w-sm mt-2"
           >
             {item.description}
           </CardItem>
@@ -45,10 +45,10 @@ export default function Page() {
   return (
     <Container className="bg-dot-black/[0.1]">
       <div className="lg:p-20">
-        <div className="text-lg text-center md:text-left sm:text-3xl lg:text-4xl uppercase text-gray-700 dark:text-white max-w-4xl font-bold my-5">
+        <div className="text-lg text-center md:text-left sm:text-3xl lg:text-4xl uppercase text-gray-700 max-w-4xl font-bold my-5">
           Projects Portfolio
         </div>
-        <div className="text-md lg:text-xl text-center md:text-left text-gray-700 dark:text-white max-w-4xl font-light px-10 md:px-0 pb-10 ">
+        <div className="text-md lg:text-xl text-center md:text-left text-gray-700 max-w-4xl font-light px-10 md:px-0 pb-10 ">
           Take a look at the latest work I have been involved in and explore the
           various initiatives and developments I have been working on recently
         </div>
