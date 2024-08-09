@@ -52,7 +52,7 @@ export default function Page() {
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
                 <div className="bg-black rounded-full  relative group transition duration-200 text-white hover:bg-transparent">
                   <Image
-                    src="/images/ajit_profile_solid_color.png"
+                    src="/images/ajit_profile_solid_color.webp"
                     className="bg-black rounded-full"
                     alt="profile"
                     width={200}
@@ -98,7 +98,7 @@ export default function Page() {
                 </p>
               </div>
               <Image
-                src="/images/toronto-hydro.png"
+                src="/images/toronto-hydro.webp"
                 width={500}
                 height={500}
                 alt="Toronto Hydro"
@@ -110,12 +110,10 @@ export default function Page() {
               href={`projects/${data.ProjectDetails[2].id}`}
             >
               <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                React Dock
+                InkPencil
               </h2>
               <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                Curated and developed a comprehensive showcase of React
-                projects, highlighting diverse react skills and innovative
-                projects.
+              Snapnews is an innovative mobile app designed to streamline news consumption with a fresh approach.
               </p>
             </WobbleCard>
             <WobbleCard
@@ -135,7 +133,7 @@ export default function Page() {
                 </p>
               </div>
               <Image
-                src="/images/indieWare.png"
+                src="/images/snapnews.webp"
                 width={500}
                 height={500}
                 alt="linear demo image"
