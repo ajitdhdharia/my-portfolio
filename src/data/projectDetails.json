@@ -2,63 +2,96 @@
   "ProjectDetails": [
     {
       "id": 1,
-      "title": "Toronto Hydro",
-      "description": "Utility Website",
-      "detailDescriptionOne": "A Toronto-based utilities company, which owns and operates the electricity distribution system for the city of Toronto. Serving the largest city in Canada, the Toronto-based utilities company has a great responsibility to service its customers as it distributes around 18% of the electricity consumed in Ontario. As the company serves so many it is important their website can support many concurrent users so that information can be easily accessible.",
-      "detailDescriptionTwo": "This Toronto-based utilities company was struggling with the performance and usability on their legacy platform. The company website was outdated thus creating a failing customer experience and was in need of a modern update. The old website did not meet the Canadian Government’s standards of accessibility. Thus as a public government organisation, special attention would need to be given to the new website so it could be accessed by all. Moreover, during times of high traffic, such as storms/outages, the website was unable to support a larger volume of concurrent users. As people often come to their website with a strict purpose it was difficult to find information on the website because the website had poor search capabilities.",
-      "demoURL": "https://www.torontohydro.com/",
-      "imageURL": "/images/toronto-hydro.webp",
+      "title": "SnapNews",
+      "subTitle": "Mobile App",
+      "description": "Snapnews is an innovative mobile app designed to streamline news consumption with a fresh approach",
+      "detailDescription": [
+        "SnapNews is an emerging mobile news aggregation platform that aims to deliver concise and engaging news summaries to users. As a consultant, I have been instrumental in shaping the technical architecture and driving the development of both the frontend and backend systems.",
+        "The SnapNews platform is built using cutting-edge technologies to ensure a seamless and responsive user experience. The frontend, developed using React Native, provides a fluid and intuitive interface that caters to the diverse needs of mobile users. On the backend, Django serves as the robust framework powering the app, enabling efficient data management and secure content delivery.",
+        "To support the scalability and performance of SnapNews, the platform is hosted on Azure Cloud Services, ensuring that it can handle a growing user base and deliver news content quickly, even during peak times. My role has involved optimizing the integration between these components, ensuring that the app runs smoothly across different devices and networks.",
+        "Through close collaboration with the SnapNews team, I have contributed to refining the user experience, ensuring that the app not only meets but exceeds user expectations in delivering fast, reliable, and relevant news updates."
+      ],
+      "demoURL": "https://snapnews.ai/",
+      "imageURL": "/images/snapnews.webp",
+      "imagePages": "/images/snapnewsTN.webp",
       "isActive": true,
       "isFeatured": true
     },
     {
       "id": 2,
-      "title": "InkPencil",
-      "description": "Ed-Tech Website",
-      "detailDescription": "An ed-tech company unifying Pune's talented tutors on one platform, connecting students with expert educators for personalized learning, covering academic tutoring, skill development, and test preparation.",
-      "imageURL": "/images/inkpencil_pvt_ltd.webp",
+      "title": "Toronto Hydro",
+      "subTitle": "Utility Website",
+      "description": "Toronto Hydro Corporation is an electric utility that operates the electricity distribution system for the city of Toronto, Ontario, Canada. As of 2018, it serves approximately 772,000 customers and delivers approximately 19% of the electricity consumed in Ontario.",
+      "detailDescription": [
+        "A Toronto-based utilities company, which owns and operates the electricity distribution system for the city of Toronto. Serving the largest city in Canada, the Toronto-based utilities company has a great responsibility to service its customers as it distributes around 18% of the electricity consumed in Ontario. As the company serves so many it is important their website can support many concurrent users so that information can be easily accessible.",
+        "This Toronto-based utilities company was struggling with the performance and usability on their legacy platform. The company website was outdated thus creating a failing customer experience and was in need of a modern update. The old website did not meet the Canadian Government’s standards of accessibility. Thus as a public government organisation, special attention would need to be given to the new website so it could be accessed by all. Moreover, during times of high traffic, such as storms/outages, the website was unable to support a larger volume of concurrent users. As people often come to their website with a strict purpose it was difficult to find information on the website because the website had poor search capabilities."
+      ],
+      "demoURL": "https://www.torontohydro.com/",
+      "imageURL": "/images/toronto-hydro.webp",
+      "imagePages": "/images/TH.webp",
       "isActive": true,
       "isFeatured": true
     },
     {
       "id": 3,
-      "title": "SnapNews",
-      "description": "Mobile App",
-      "detailDescription": "Snapnews is an innovative mobile app designed to streamline news consumption with a fresh approach",
-      "imageURL": "/images/react-dock.png",
+      "title": "InkPencil",
+      "subTitle": "Ed-Tech Website",
+      "description": "An ed-tech company unifying Pune's talented tutors on one platform, connecting students with expert educators for personalized learning, covering academic tutoring, skill development, and test preparation.",
+      "detailDescription": [
+        "InkPencil Pvt. Ltd. was an ambitious ed-tech startup with the goal of bringing all tutors in Pune onto a unified online platform. As a member of the initial team and a Full Stack Developer, I played a critical role in the development of this platform from the ground up. The company sought to create a responsive and scalable platform that could securely manage a growing user base while offering a seamless experience for both tutors and students.",
+        "At InkPencil, we faced the challenge of building a robust and maintainable codebase that could handle complex integrations and meet the high standards of modern web development. The platform required secure authentication for a user base of over 100,000, which was accomplished through the implementation of JSON Web Tokens (JWT), Passport, and Google Login API. This ensured that user data was protected while allowing easy access to the platform.",
+        "The platform's success was also dependent on delivering data efficiently to the front-end. By employing the Express MVC framework for Node.js, I was able to design and implement the necessary routes that ensured fast and reliable data delivery. Additionally, I collaborated closely with UI/UX designers to bring pixel-perfect designs to life, focusing on a mobile-first approach that led to an 80% improvement in mobile user engagement.",
+        "To support the platform's continuous development and deployment, I implemented robust DevOps practices. Utilizing GitHub for version control and Jenkins for continuous integration, I helped streamline our development pipeline, ensuring that new features and updates could be delivered quickly and efficiently.",
+        "Through strategic communication and collaboration with business leaders, I contributed to technical documentation, including use cases and test scenarios, which were essential in aligning the development team with the company's goals. My work at InkPencil not only laid the foundation for a successful ed-tech platform but also demonstrated the power of technology in transforming traditional education models."
+      ],
+      "imageURL": "/images/inkpencil_pvt_ltd.webp",
       "isActive": true,
       "isFeatured": true
     },
+
     {
       "id": 4,
-      "title": "IndieWares",
-      "description": "Side Project",
-      "detailDescription": "Developing personalized e-commerce platform, leveraging technologies like React and Node.js to create a responsive and feature-rich online shopping experience. Implementing innovative solutions for enhanced user interaction, secure transactions, and streamlined product management.",
-      "demoURL": "https://react-dock.netlify.app/",
-      "codeURL": "https://github.com/ajitdhdharia/IndieWares",
-      "imageURL": "/images/indieWare.png",
+      "title": "FinFlow",
+      "subTitle": "Side Project",
+      "description": "A fintech application that handles user transactions. The platform aims to provide users with the ability to track their expenses, make payments, and analyze their financial data.",
+      "detailDescription": [
+        "A fintech web application as a side project to enhance my skills in the MERN stack (MongoDB, Express, React, Node). This project aims to provide a seamless platform for users to manage their finances efficiently, integrating modern web technologies to ensure a responsive and user-friendly experience",
+        "The backend, built with Node.js and Express, handles secure transactions and data management, while MongoDB serves as the scalable database solution. The React-powered frontend delivers an intuitive interface, offering users real-time insights and easy access to their financial data.",
+        "This project has allowed me to deepen my understanding of full-stack development and refine my ability to create robust, scalable applications that meet user needs in the dynamic fintech space."
+      ],
+      "codeURL": "https://github.com/ajitdhdharia/fintech_app_ajitdhdharia",
+      "imageURL": "/images/FinFlow.webp",
       "isActive": true,
       "isFeatured": true
     },
     {
       "id": 5,
-      "title": "FinFlow",
-      "description": "Side Project",
-      "detailDescription": "A fintech application that handles user transactions. The platform aims to provide users with the ability to track their expenses, make payments, and analyze their financial data.",
-      "demoURL": "https://react-dock.netlify.app/",
-      "codeURL": "https://github.com/ajitdhdharia/IndieWares",
-      "imageURL": "/images/indieWare.png",
+      "title": "GoCars",
+      "subTitle": "Side Project",
+      "detailDescription": [
+        "The GoCars Android application is a comprehensive platform designed to streamline the car rental process for both customers and car owners. The app allows users to register, manage their profiles, and book vehicles online, providing a convenient way for individuals to rent cars without needing to own one. Customers can view available vehicles, filter options based on criteria like car type, specifications, ratings, and price, and make reservations for specific dates and locations. The app also supports group bookings for events like weddings or corporate meetings.",
+        "For car owners, GoCars offers an opportunity to list their vehicles for rent, manage bookings, and track transactions, providing a new revenue stream. Owners can specify rental terms such as mileage limits and manage their vehicle listings through an intuitive interface.",
+        "The application enhances business operations by leveraging internet technology to expand the reach of car rental services beyond local markets, increasing the return on investment (ROI) for car rental companies. Key features include customer registration, online vehicle reservations, and integrated payment processing. Additionally, the system includes functionalities for customer feedback, cancellation policies, and notifications regarding overuse of rental time or distance.",
+        "The development of GoCars is structured using the Scrum Agile framework, divided into several sprints, each focusing on delivering specific features and improvements. This iterative approach ensures that the application evolves in response to user needs and feedback, ultimately providing a user-friendly, efficient, and scalable solution for both customers and car owners. The application also includes robust security measures, such as secure password management and multi-device login notifications, to protect user data."
+      ],
+      "codeURL": "https://github.com/ajitdhdharia/GOCars",
+      "imageURL": "/images/go-cars.webp",
+      "imagePages": "/images/GoCarsTN.webp",
       "isActive": true,
       "isFeatured": true
     },
     {
       "id": 6,
-      "title": "FitForge",
-      "description": "Side Project",
-      "detailDescription": "FitForge is an app developed using MongoDB, Express.js, React, and Node.js to efficiently track exercises and workouts, enhancing fitness management and progress monitoring.",
-      "demoURL": "https://react-dock.netlify.app/",
-      "codeURL": "https://github.com/ajitdhdharia/IndieWares",
-      "imageURL": "/images/indieWare.png",
+      "title": "Infinity Jobs Portal",
+      "subTitle": "Side Project",
+      "detailDescription": [
+        "The InfinityJobsPortal Android application is designed to serve as a comprehensive platform for part-time job seekers and employers. The app enables job seekers to register, create profiles, upload resumes, and search for part-time job opportunities based on various filters such as location, job title, and salary. Once registered, users can apply for jobs, save job postings, and track the status of their applications.",
+        "For employers, the app provides the ability to register, create company profiles, and post job openings. Employers can search for candidates based on specific criteria and manage the recruitment process, including communicating with candidates and scheduling interviews.",
+        "The application utilizes Cloud Firestore for its database, ensuring real-time data synchronization and offline support. Developed using Android Studio, the app is built to be user-friendly and accessible on any Android device. The project is structured using a sprint-based Agile development approach, allowing for iterative improvements and new feature integration. The app also includes security features like password protection and device login notifications, aiming to create a reliable and efficient job search experience, particularly beneficial in the context of the COVID-19 pandemic, where physical interactions are minimized."
+      ],
+      "codeURL": "https://github.com/ajitdhdharia/InfinityJobPortal",
+      "imageURL": "/images/infinity-jobs.webp",
+      "imagePages": "/images/infinity-jobsTN.webp",
       "isActive": true,
       "isFeatured": true
     }

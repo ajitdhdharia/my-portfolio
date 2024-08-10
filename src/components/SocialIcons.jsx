@@ -9,13 +9,13 @@ export default function SocialIcons({ className }) {
     {
       id: 1,
       name: "GitHub",
-      image: "/images/github.png",
+      image: "/images/github.webp",
       link: "https://github.com/ajitdhdharia",
     },
     {
       id: 2,
       name: "LinkedIn",
-      image: "/images/linkedin.png",
+      image: "/images/linkedin.webp",
       link: "https://www.linkedin.com/in/ajitdhdharia/",
     },
     {
@@ -29,7 +29,7 @@ export default function SocialIcons({ className }) {
   return (
     <div
       className={clsx(
-        "flex flex-row items-center justify-start w-full",
+        "flex items-center justify-center lg:justify-start w-full",
         className
       )}
     >

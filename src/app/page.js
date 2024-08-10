@@ -46,8 +46,8 @@ export default function Page() {
         }}
       >
         <section>
-          <HeroHighlight>
-            <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[7rem] h-[7rem] mt-8">
+          <HeroHighlight className="flex flex-col items-center justify-center lg:items-start">
+            <div className="p-4 tracking-tight text-slate-100/50 w-[7rem] h-[7rem] mt-8">
               <div className="p-[3px] relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full" />
                 <div className="bg-black rounded-full  relative group transition duration-200 text-white hover:bg-transparent">
@@ -72,33 +72,30 @@ export default function Page() {
                     creating and supporting websites and applications using
                     modern technologies.
                   </div>
-                  <SocialIcons />
                 </div>
               </h1>
             </div>
+
+            <SocialIcons />
           </HeroHighlight>
         </section>
-        <section className="grid grid-cols-1 justify-items-center py-10 px-14">
+        <section className="grid grid-cols-1 justify-items-center lg:py-10 px-14">
           <TypewriterEffectSmooth words={words} />
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full my-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full lg:my-10">
             <WobbleCard
               containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
               href={`projects/${data.ProjectDetails[0].id}`}
             >
               <div className="max-w-xs">
                 <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  Toronto Hydro
+                  {data.ProjectDetails[0].title}
                 </h2>
                 <p className="mt-4 text-left  text-base/6 text-neutral-200">
-                  Toronto Hydro Corporation is an electric utility that operates
-                  the electricity distribution system for the city of Toronto,
-                  Ontario, Canada. As of 2018, it serves approximately 772,000
-                  customers and delivers approximately 19% of the electricity
-                  consumed in Ontario.
+                  {data.ProjectDetails[0].description}
                 </p>
               </div>
               <Image
-                src="/images/toronto-hydro.webp"
+                src="/images/snapnews.webp"
                 width={500}
                 height={500}
                 alt="Toronto Hydro"
@@ -110,10 +107,10 @@ export default function Page() {
               href={`projects/${data.ProjectDetails[2].id}`}
             >
               <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                InkPencil
+                {data.ProjectDetails[2].title}
               </h2>
               <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-              Snapnews is an innovative mobile app designed to streamline news consumption with a fresh approach.
+                {data.ProjectDetails[2].description}
               </p>
             </WobbleCard>
             <WobbleCard
@@ -122,18 +119,14 @@ export default function Page() {
             >
               <div className="max-w-sm">
                 <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-                  IndieWares
+                  {data.ProjectDetails[1].title}
                 </h2>
                 <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-                  Developing personalized e-commerce platform, leveraging
-                  technologies like React and Node.js to create a responsive and
-                  feature-rich online shopping experience. Implementing
-                  innovative solutions for enhanced user interaction, secure
-                  transactions, and streamlined product management.
+                  {data.ProjectDetails[1].description}
                 </p>
               </div>
               <Image
-                src="/images/snapnews.webp"
+                src="/images/toronto-hydro.webp"
                 width={500}
                 height={500}
                 alt="linear demo image"

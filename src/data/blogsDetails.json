@@ -8,8 +8,17 @@
       "author": "Ajit Dhdharia",
       "readTime": "10 mins read",
       "isFeatured": true,
-      "imageURL": "bg-[url('/images/BlogsImages/django-setup.jpg')] bg-cover",
-      "file": "./blogsMarkdown/getting-started-with-django.md"
+      "imageURL": "bg-[url('/images/BlogsImages/django-setup.webp')] bg-cover"
+    },
+    {
+      "id": 2,
+      "title": "Getting started with Vi text editor",
+      "blogURL":"getting-started-with-vi",
+      "description": "Vi (short for “visual editor”) is a command-line text editor that is commonly found on Unix-like systems, including Linux and macOS",
+      "author": "Ajit Dhdharia",
+      "readTime": "08 mins read",
+      "isFeatured": true,
+      "imageURL": "bg-[url('/images/BlogsImages/django-setup.webp')] bg-cover"
     }
   ]
 }

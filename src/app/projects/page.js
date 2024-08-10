@@ -24,7 +24,7 @@ function createCard(item, key) {
             translateZ="60"
             className="text-neutral-500 text-sm max-w-sm mt-2"
           >
-            {item.description}
+            {item.subTitle}
           </CardItem>
           <CardItem translateZ="100" className="w-full mt-4">
             <Image
@@ -44,8 +44,8 @@ function createCard(item, key) {
 export default function Page() {
   return (
     <Container className="bg-dot-black/[0.1]">
-      <div className="lg:p-20">
-        <div className="text-lg text-center md:text-left sm:text-3xl lg:text-4xl uppercase text-gray-700 max-w-4xl font-bold my-5">
+      <div className="p-20">
+        <div className="text-lg text-center lg:text-left sm:text-3xl lg:text-4xl uppercase text-gray-700 max-w-4xl font-bold my-5">
           Projects Portfolio
         </div>
         <div className="text-md lg:text-xl text-center md:text-left text-gray-700 max-w-4xl font-light px-10 md:px-0 pb-10 ">

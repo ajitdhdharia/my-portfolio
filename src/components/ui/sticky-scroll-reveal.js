@@ -70,7 +70,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
               key={item.title + index}
               className="text-lg text-slate-300 mb-10"
             >
-              {item.description}
+              {item.subTitle}
             </motion.li>
           ))}
         </ul>

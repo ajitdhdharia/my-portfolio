@@ -58,7 +58,7 @@ export const LaptopScroll = ({ src, showGradient, title }) => {
   return (
     <div
       ref={ref}
-      className="min-h-[130vh] flex flex-col items-center py-0 md:py-40 justify-start flex-shrink-0 [perspective:400px] transform md:scale-100  scale-[0.35] sm:scale-50 background-transparent"
+      className="min-h-[130vh] flex flex-col items-center sm:py-40 justify-start flex-shrink-0 [perspective:400px] transform sm:scale-100 scale-[0.70] background-transparent"
     >
       <motion.h2
         style={{
@@ -135,12 +135,13 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
         }}
         className="h-96 w-[32rem] absolute inset-0 bg-[#010101] rounded-2xl p-2"
       >
-        <div className="absolute inset-0 bg-[#272729] rounded-lg" />
+        <div className="absolute inset-0 bg-[#272729] rounded-lg flex justify-center items-center" />
         <Image
           src={src}
-          alt="aceternity logo"
+          alt="logo"
           fill
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
+          style={{ objectPosition: "center" }}
         />
       </motion.div>
     </div>

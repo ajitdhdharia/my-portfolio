@@ -22,7 +22,7 @@ function createCard(item, key) {
               height="100"
               width="100"
               alt="Avatar"
-              src="/images/ajit_professional.jpg"
+              src="/images/ajit_professional.webp"
               className="h-10 w-10 rounded-full border-2 object-cover"
             />
             <div className="flex flex-col">
@@ -37,6 +37,9 @@ function createCard(item, key) {
               {item.title}
             </h1>
             <p className="font-normal text-sm text-gray-50 relative z-10 my-4">
+              {item.subTitle}
+            </p>
+            <p className="font-normal text-xs text-gray-50 relative z-10 my-4">
               {item.description}
             </p>
           </div>

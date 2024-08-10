@@ -12,8 +12,8 @@ import {
   IconBrandLinkedin,
 } from "@tabler/icons-react";
 
-import aboutPic from "../../../public/images/ajit_professional.jpg";
-import authorAvatar from "../../../public/images/ajit_profile_solid_color.png";
+import aboutPic from "../../../public/images/ajit_professional.webp";
+import authorAvatar from "../../../public/images/ajit_profile_solid_color.webp";
 
 const TitleComponent = ({ title, avatar }) => (
   <div className="flex space-x-2 items-center">
