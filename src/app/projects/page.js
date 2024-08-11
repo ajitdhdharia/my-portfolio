@@ -43,9 +43,9 @@ function createCard(item, key) {
 
 export default function Page() {
   return (
-    <Container className="bg-dot-black/[0.1]">
-      <div className="p-20">
-        <div className="text-lg text-center lg:text-left sm:text-3xl lg:text-4xl uppercase text-gray-700 max-w-4xl font-bold my-5">
+    <Container className="bg-dot-black/[0.1] pb-20">
+      <div className="pt-20 px-4 md:px-10 lg:p-20">
+        <div className="text-xl text-center lg:text-left sm:text-3xl lg:text-4xl uppercase text-gray-700 max-w-4xl font-bold my-5">
           Projects Portfolio
         </div>
         <div className="text-md lg:text-xl text-center md:text-left text-gray-700 max-w-4xl font-light px-10 md:px-0 pb-10 ">

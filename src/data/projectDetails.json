@@ -75,6 +75,7 @@
         "The development of GoCars is structured using the Scrum Agile framework, divided into several sprints, each focusing on delivering specific features and improvements. This iterative approach ensures that the application evolves in response to user needs and feedback, ultimately providing a user-friendly, efficient, and scalable solution for both customers and car owners. The application also includes robust security measures, such as secure password management and multi-device login notifications, to protect user data."
       ],
       "codeURL": "https://github.com/ajitdhdharia/GOCars",
+      "docURL": "https://drive.google.com/file/d/1LLwLri3EyHqFHn6sEnFbbozvSGoll6yP/view",
       "imageURL": "/images/go-cars.webp",
       "imagePages": "/images/GoCarsTN.webp",
       "isActive": true,
@@ -90,6 +91,7 @@
         "The application utilizes Cloud Firestore for its database, ensuring real-time data synchronization and offline support. Developed using Android Studio, the app is built to be user-friendly and accessible on any Android device. The project is structured using a sprint-based Agile development approach, allowing for iterative improvements and new feature integration. The app also includes security features like password protection and device login notifications, aiming to create a reliable and efficient job search experience, particularly beneficial in the context of the COVID-19 pandemic, where physical interactions are minimized."
       ],
       "codeURL": "https://github.com/ajitdhdharia/InfinityJobPortal",
+      "docURL": "https://drive.google.com/file/d/14_uK6CANV7ffyof9aJ87ACGUQ8ufKIep/view",
       "imageURL": "/images/infinity-jobs.webp",
       "imagePages": "/images/infinity-jobsTN.webp",
       "isActive": true,

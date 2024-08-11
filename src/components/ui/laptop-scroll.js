@@ -58,14 +58,14 @@ export const LaptopScroll = ({ src, showGradient, title }) => {
   return (
     <div
       ref={ref}
-      className="min-h-[130vh] flex flex-col items-center sm:py-40 justify-start flex-shrink-0 [perspective:400px] transform sm:scale-100 scale-[0.70] background-transparent"
+      className="md:min-h-[130vh] flex flex-col items-center lg:py-40 justify-start flex-shrink-0 [perspective:400px] transform scale-[0.55] sm:scale-[0.70] md:scale-[0.80] lg:scale-[0.90] xl:scale-100 background-transparent"
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="text-neutral-800 text-3xl font-bold mb-10 text-center"
+        className="text-neutral-800 text-5xl sm:text-4xl  font-bold mb-10 text-center uppercase"
       >
         {title}
       </motion.h2>
@@ -121,7 +121,7 @@ export const Lid = ({ scaleX, scaleY, rotate, translate, src }) => {
           }}
           className="absolute inset-0 bg-[#010101] rounded-lg flex items-center justify-center"
         >
-          <span className="text-white">Toronto Hydro</span>
+          <span className="text-white"></span>
         </div>
       </div>
       <motion.div

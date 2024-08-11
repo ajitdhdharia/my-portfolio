@@ -1,101 +1,80 @@
-<div className="pt-10 lg:py-16"> 
-    <div className="mx-auto max-w-5xl">
-        <div className="mt-16 markdown-content prose max-w-none">          
-            # Getting started with Vi text editor
-            **Vi** (short for "visual editor") is a command-line text editor that is commonly found on Unix-like systems, including Linux and macOS. There are several reasons why it's important:
-            The `vi` text editor is a fundamental tool in Unix-like systems, and there are several reasons why it's important:
+import BlogContent from "@/components/BlogContent";
 
-            - `vi` is available on virtually every Unix-like system, including Linux and macOS. Since `vi` is included in the default installation of most Unix-like systems, you don't need to install any additional software to use it.
-            - `vi` is lightweight and starts up almost instantly, even on systems with limited resources.
-            - `vi` runs entirely in the terminal, making it ideal for environments where graphical user interfaces (GUIs) are not available or when working remotely over SSH.
-            - The skills learned in `vi` can transfer to other advanced text editors like `vim` (a more advanced version of `vi`), making you more versatile in different computing environments.
-            - `vi` is compatible with other tools in the Unix ecosystem, making it easier to integrate with shell scripts, version control systems, and other command-line utilities.
+<BlogContent>       
+   # Getting started with Vi text editor
+   **Vi** (short for "visual editor") is a command-line text editor that is commonly found on Unix-like systems, including Linux and macOS. There are several reasons why it's important:
+   The `vi` text editor is a fundamental tool in Unix-like systems, and there are several reasons why it's important:
+   - `vi` is available on virtually every Unix-like system, including Linux and macOS. Since `vi` is included in the default installation of most Unix-like systems, you don't need to install any additional software to use it.
+   - `vi` is lightweight and starts up almost instantly, even on systems with limited resources.
+   - `vi` runs entirely in the terminal, making it ideal for environments where graphical user interfaces (GUIs) are not available or when working remotely over SSH.
+   - The skills learned in `vi` can transfer to other advanced text editors like `vim` (a more advanced version of `vi`), making you more versatile in different computing environments.
+   - `vi` is compatible with other tools in the Unix ecosystem, making it easier to integrate with shell scripts, version control systems, and other command-line utilities.
 
-            ## Basic guide to using `vi`, which is a powerful but somewhat complex text editor.
 
-            ### **Starting `vi`**
+   ## Basic guide to using `vi`, which is a powerful but somewhat complex text editor.
 
-            To open a file with `vi`, use the following command in your terminal:
+   ### **Starting `vi`**
+   To open a file with `vi`, use the following command in your terminal:
+   ```bash
+   vi filename
+   ```
+   If the file doesn't exist, `vi` will create a new file with that name.
 
-            ```bash
-            vi filename
-            ```
+   ### **Modes in `vi`**
+   - **Command Mode**: This is the default mode when you open `vi`. In this mode, you can navigate, delete, copy, and paste text, and execute commands.
+   - **Insert Mode**: This mode allows you to insert or edit text. You must enter insert mode from command mode.
+   ### **Switching Between Modes**
+   - **To enter insert mode**: Press `i` (insert before the cursor) or `a` (insert after the cursor).
+   - **To return to command mode**: Press `Esc`.
 
-            If the file doesn't exist, `vi` will create a new file with that name.
-
-            ### **Modes in `vi`**
-
-            - **Command Mode**: This is the default mode when you open `vi`. In this mode, you can navigate, delete, copy, and paste text, and execute commands.
-            - **Insert Mode**: This mode allows you to insert or edit text. You must enter insert mode from command mode.
-
-            ### **Switching Between Modes**
-
-            - **To enter insert mode**: Press `i` (insert before the cursor) or `a` (insert after the cursor).
-            - **To return to command mode**: Press `Esc`.
-
-            ### **Basic Commands in Command Mode**
-
-            1. **Navigation**:
-
-               - `h`: Move left.
-               - `j`: Move down.
-               - `k`: Move up.
-               - `l`: Move right.
-               - `0` (zero): Move to the beginning of the line.
-               - `$`: Move to the end of the line.
-               - `G`: Go to the end of the file.
-               - `gg`: Go to the beginning of the file.
-
-            2. **Editing Text**:
-
-               - `x`: Delete the character under the cursor.
-               - `dw`: Delete the word under the cursor.
-               - `dd`: Delete the current line.
-               - `u`: Undo the last change.
-               - `yy`: Copy (yank) the current line.
-               - `p`: Paste the copied or deleted text after the cursor.
-               - `r`: Replace the character under the cursor.
-
-            3. **Saving and Exiting**:
-
-               - `:w`: Save the file (write changes).
-               - `:q`: Quit `vi`.
-               - `:wq` or `ZZ`: Save and quit.
-               - `:q!`: Quit without saving changes.
-
-            4. **Search**:
-
-               - `/pattern`: Search forward for "pattern".
-               - `?pattern`: Search backward for "pattern".
-               - `n`: Repeat the last search in the same direction.
-               - `N`: Repeat the last search in the opposite direction.
-
-            5. **Replacing Text**:
-               - `:s/old/new`: Replace the first occurrence of "old" with "new" in the current line.
-               - `:s/old/new/g`: Replace all occurrences of "old" with "new" in the current line.
-               - `:%s/old/new/g`: Replace all occurrences of "old" with "new" in the entire file.
-
-            ### **Tips for Efficient Use**
-
-            - **Visual Mode**: You can highlight text by pressing `v` in command mode and then use navigation keys. After selecting text, you can delete it (`d`), copy it (`y`), or change it.
-            - **Line Numbers**: You can display line numbers with `:set number` and turn them off with `:set nonumber`.
-            - **Command History**: You can press `:` and use the arrow keys to navigate through previous commands.
-
-            ### **Advanced Commands**
-
-            - **Splitting Windows**:
-
-              - `:split filename`: Split the window horizontally and open another file.
-              - `:vsplit filename`: Split the window vertically.
-              - `Ctrl+w`: Followed by `arrow key` to move between split windows.
-
-            - **Macro Recording**:
-              - Start recording with `q` followed by a register letter (e.g., `qa`).
-              - Perform the actions you want to record.
-              - Stop recording with `q`.
-              - Replay the macro with `@` followed by the register letter (e.g., `@a`).
-
-            `vi` is a versatile editor with a steep learning curve, but mastering it can significantly enhance your efficiency in text editing tasks.
-        </div>
-    </div>
-</div>
+   ### **Basic Commands in Command Mode**
+   1. **Navigation**:
+      - `h`: Move left.
+      - `j`: Move down.
+      - `k`: Move up.
+      - `l`: Move right.
+      - `0` (zero): Move to the beginning of the line.
+      - `$`: Move to the end of the line.
+      - `G`: Go to the end of the file.
+      - `gg`: Go to the beginning of the file.
+   2. **Editing Text**:
+      - `x`: Delete the character under the cursor.
+      - `dw`: Delete the word under the cursor.
+      - `dd`: Delete the current line.
+      - `u`: Undo the last change.
+      - `yy`: Copy (yank) the current line.
+      - `p`: Paste the copied or deleted text after the cursor.
+      - `r`: Replace the character under the cursor.
+   3. **Saving and Exiting**:
+      - `:w`: Save the file (write changes).
+      - `:q`: Quit `vi`.
+      - `:wq` or `ZZ`: Save and quit.
+      - `:q!`: Quit without saving changes.
+   4. **Search**:
+      - `/pattern`: Search forward for "pattern".
+      - `?pattern`: Search backward for "pattern".
+      - `n`: Repeat the last search in the same direction.
+      - `N`: Repeat the last search in the opposite direction.
+   5. **Replacing Text**:
+      - `:s/old/new`: Replace the first occurrence of "old" with "new" in the current line.
+      - `:s/old/new/g`: Replace all occurrences of "old" with "new" in the current line.
+      - `:%s/old/new/g`: Replace all occurrences of "old" with "new" in the entire file.
+   
+   ### **Tips for Efficient Use**
+   - **Visual Mode**: You can highlight text by pressing `v` in command mode and then use navigation keys. After selecting text, you can delete it (`d`), copy it (`y`), or change it.
+   - **Line Numbers**: You can display line numbers with `:set number` and turn them off with `:set nonumber`.
+   - **Command History**: You can press `:` and use the arrow keys to navigate through previous commands.
+   
+   ### **Advanced Commands**
+   - **Splitting Windows**:
+     - `:split filename`: Split the window horizontally and open another file.
+     - `:vsplit filename`: Split the window vertically.
+     - `Ctrl+w`: Followed by `arrow key` to move between split windows.
+   - **Macro Recording**:
+     - Start recording with `q` followed by a register letter (e.g., `qa`).
+     - Perform the actions you want to record.
+     - Stop recording with `q`.
+     - Replay the macro with `@` followed by the register letter (e.g., `@a`).
+   
+   `vi` is a versatile editor with a steep learning curve, but mastering it can significantly enhance your efficiency in text editing tasks.
+</BlogContent>

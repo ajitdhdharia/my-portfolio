@@ -30,12 +30,12 @@ const TitleComponent = ({ title, avatar }) => (
 
 const Page = () => {
   return (
-    <Container className="py-32 px-16">
-      <div className="grid grid-cols-2 gap-8 justify-between">
-        <div className="">
-          <h1 className="text-5xl font-bold tracking-normal text-gray-700">
-            Making the softwares better - one line of code at a time
-          </h1>
+    <Container className="py-24 lg:py-32 px-8 lg:px-16">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-normal text-gray-700">
+        Making the softwares better - one line of code at a time
+      </h1>
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 justify-between">
+        <div>
           <p className="text-md text-gray-700 font-light leading-relaxed pt-8">
             Hey there, I&apos;m Ajit Dhdharia - a seasoned Software Engineer
             with a deep passion for crafting exceptional digital experiences.
@@ -74,7 +74,7 @@ const Page = () => {
             adventure with you.
           </p>
         </div>
-        <div className="my-auto p-24">
+        <div className="my-auto p-8 sm:px-32 lg:p-8 ">
           <FollowerPointerCard
             title={
               <TitleComponent title="Ajit Dhdharia" avatar={authorAvatar} />

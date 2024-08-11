@@ -1,0 +1,34 @@
+import BlogContent from "@/components/BlogContent";
+
+<BlogContent>     
+    # Dev Tip: How to view localhost web apps on your phone
+    When developing web applications, ensuring they are optimized for mobile is a priority. While the mobile device emulator in Chrome DevTools is useful for making minor style adjustments, it doesn't fully replicate the experience of using an actual mobile browser. Testing directly on a mobile device is crucial for identifying and resolving mobile-specific issues before they affect end users.
+    Here’s a method I use to make testing on mobile devices extremely easy. These instructions are for a Mac environment.
+
+    # Serve over your wifi via local IP
+    This sounds complicated but its actually really easy.  
+    > IMPORTANT: Make sure that your dev computer and your mobile device are connected to the same wifi network.
+
+    ## Step 1: Serve to Localhost
+    On your dev machine, serve your application in whatever way you usually do that serves it over a  `localhost`  address.
+    Make sure to note what port number its being served on. In the image below, we’re noting  `3000`.
+    ![Web browser port number](/images/blogImages/view-localhost-on-phone/on-web-browser.webp)
+    Once you are able to view your app locally on your computer via localhost, you can move to step 2.
+
+    ## Step 2: Find your Local IP Address
+    Open  **System Setting**. Select “Wifi” in the left pane if it isn’t already selected. Go to "Details" on your wifi network.
+    ![Getting IP address](/images/blogImages/view-localhost-on-phone/ip-address.webp)
+    You should see the IP address.
+    Take note of that IP address!
+    > Note: It’s common for your Local IP Address to change automatically when your device or other devices connect/disconnect from the network. So you can’t really bookmark this address. Instead, you’ll have to find your address each time — for me, this is usually just when I get started each morning and it stays throughout the day.
+
+    ## Step 3: View on your phone
+    On your mobile device’s browser (any will work), navigate to  `http://<Local IP Address>:<port number>`.
+    ![Getting IP address](/images/blogImages/view-localhost-on-phone/on-phone-browser.webp)
+    For example, if I was serving on  `localhost:3000`  and my local IP address is 192.168.2.41, on my mobile device’s browser I would navigate to  `http://192.168.2.41:3000`. 
+
+    # Success!
+    You should now be viewing your app on your mobile device. Set it up right next to your main monitor, because it will reload every time your localhost reloads, so it will be perfectly in sync with the locally served desktop web application.
+
+    You don’t get any front-end devtools with this experience, but you do get an early warning if things look or behave differently on a native browser’s experience.
+</BlogContent>

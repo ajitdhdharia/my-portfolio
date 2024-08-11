@@ -1,77 +1,88 @@
-<div className="pt-10 lg:py-16"> 
-    <div className="mx-auto max-w-5xl">
-        <div className="mt-16 markdown-content prose max-w-none">
-            ![Pro django book](/images/django-setup.webp)
-            # Table of Content
-            1.  What is Django?
-            2.  Environment Setup
-            3.  Django project
-            # What is Django
-            Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. It takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel.
-            Django is a full-featured web framework that follows the **Model-View-Controller (MVC)** architectural pattern. It provides a set of tools and libraries for building web applicationss, including an **ORM**, a **templating engine**, and a **built-in admin interface**.
-            # Environment Setup
-            We need to setup a virtual environment, but first _what is virtual environment_ and _why do we need it_?
-            ### Why do we need it?
-            The original design of Python and its packaging system puts installed packages alongside the Python interpreter in the file system; furthermore, only a single version of a given package can be installed with a given Python interpreter.
-            1.  **_Python Interpreter Installation_**: When you install Python on your system, the interpreter is placed in a directory. Let's assume Python is installed in `/usr/local/bin/python3.8`.
-            2.  **_Package Installation_**: When you install a package using a tool like `pip`, the package gets installed in a directory associated with the Python interpreter. For instance, if you install the package `requests`, it might be placed in `/usr/local/lib/python3.8/site-packages/requests`.
-            3.  **_Single Version Limitation_**: If you later want to install a different version of `requests`, the new version will overwrite the existing one. For example, if you initially install `requests==2.25.1` and later install `requests==2.26.0`, the files for `requests==2.26.0` will replace those of `requests==2.25.1` in the same directory.
-            This led to issues when different projects required different versions of packages. To address this problem, _Python virtual environments_ were developed.
-            ### What is virtual environment?
-            A Python virtual environment (venv) is simply a directory with a particular file structure. It has a `bin` subdirectory that includes links to a Python interpreter as well as subdirectories that hold packages installed in the specific venv. By invoking the Python interpreter using the path to the venv's `bin` subdirectory, the Python interpreter “knows” to use the associated packages within the venv (as opposed to any packages installed alongside the actual location of the Python interpreter). It is in this sense that venvs are “virtual”—they are not virtual in the sense of, say, a virtual machine.
-            When you set up a virtual environment (details below), you can immediately use it by invoking `python` using the full path to the `bin` subdirectory within your venv (e.g., `myvenv/bin/python my_program.py`). For convenience, when you set up a venv, it provides an _activate_ script that you can invoke which will put the `bin` subdirectory for your venv first on your PATH. (It also updates your shell prompt to let you know this change is in effect). When your venv is activated, you no longer need to use the full path to the Python interpreter (e.g., you can simply use `python my_program.py`).
-            IMPORTANT (and useful): If you invoke your Python program with the full path to the Python interpreter in the virtual environment, it will run in the virtual environment even if you are not in an interactive session where you used the `activate` script. This is useful for cron jobs and for Bash scripts where explicitly “activating” the virtual environment is problematic.
-            ### Create virtual environment and activate it
-            ```
-            # Create virtual environment
-            # for linux
-            python3 -m venv .venv
-            # for windows
-            # python -m venv .venv
-            # to activate the virtual environment
-            # for linux
-            source .venv/bin/activate
-            # for windows
-            # .venv\Scripts\activate
-            ```
-            This is regular way but these days I am using [`uv` ](https://pypi.org/project/uv/) to manage virtual environment and other tools. It's rediculously easy and fast.
-            ```
-            # On Windows.
-            powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-            # With pip.
-            pip install uv
-            # With Homebrew.
-            brew install uv
-            # to create a virtual environment
-            uv venv
-            # activation commands are same as above
-            # On macOS and Linux.
-            source .venv/bin/activate
-            # On Windows.
-            .venv\Scripts\activate
-            ```
-            Now for all installations, you can use `uv pip install` command. For example, to install Django, run the following command:
-            ```
-            uv pip install django
-            uv pip install -r requirements.txt
-            ```
-            # Django Project
-            A Django project is a collection of settings and configurations that define the structure and behavior of a web application. It includes the code for the application, as well as the templates, static files, and other resources that make up the application.
-            To create a new Django project, you can use the following command:
-            ```
-            django-admin startproject snapnews
-            cd snapnews
-            ```
-            This will create a new directory called `snapnews` with the basic structure of a Django project.
-            ### Start a Django Server
-            To start the Django server, you can use the following command:
-            ```
-            python manage.py runserver
-            ```
-            This will start the server and make it accessible at `http://localhost:8000`.
-            Ignore the unapplied migrations warning. This is a common issue when starting a new Django project. We will address this in a later section.
-            # Conclusion
-            This is the end of the first part of the tutorial. We will surely have more fun in the next part.
-        </div>
-    </div>
-</div>
+import BlogContent from "@/components/BlogContent";
+
+<BlogContent>
+    ![Pro django book](/images/blogImages/getting-started-with-django/django-setup.webp)
+    # Table of Content
+    1.  What is Django?
+    2.  Environment Setup
+    3.  Django project
+
+    # What is Django
+    Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. It takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel.
+    Django is a full-featured web framework that follows the **Model-View-Controller (MVC)** architectural pattern. It provides a set of tools and libraries for building web applicationss, including an **ORM**, a **templating engine**, and a **built-in admin interface**.
+
+
+    # Environment Setup
+    We need to setup a virtual environment, but first _what is virtual environment_ and _why do we need it_?
+
+    ### Why do we need it?
+    The original design of Python and its packaging system puts installed packages alongside the Python interpreter in the file system; furthermore, only a single version of a given package can be installed with a given Python interpreter.
+    1.  **_Python Interpreter Installation_**: When you install Python on your system, the interpreter is placed in a directory. Let's assume Python is installed in `/usr/local/bin/python3.8`.
+    2.  **_Package Installation_**: When you install a package using a tool like `pip`, the package gets installed in a directory associated with the Python interpreter. For instance, if you install the package `requests`, it might be placed in `/usr/local/lib/python3.8/site-packages/requests`.
+    3.  **_Single Version Limitation_**: If you later want to install a different version of `requests`, the new version will overwrite the existing one. For example, if you initially install `requests==2.25.1` and later install `requests==2.26.0`, the files for `requests==2.26.0` will replace those of `requests==2.25.1` in the same directory.
+    This led to issues when different projects required different versions of packages. To address this problem, _Python virtual environments_ were developed.
+
+    ### What is virtual environment?
+    A Python virtual environment (venv) is simply a directory with a particular file structure. It has a `bin` subdirectory that includes links to a Python interpreter as well as subdirectories that hold packages installed in the specific venv. By invoking the Python interpreter using the path to the venv's `bin` subdirectory, the Python interpreter “knows” to use the associated packages within the venv (as opposed to any packages installed alongside the actual location of the Python interpreter). It is in this sense that venvs are “virtual”—they are not virtual in the sense of, say, a virtual machine.
+    When you set up a virtual environment (details below), you can immediately use it by invoking `python` using the full path to the `bin` subdirectory within your venv (e.g., `myvenv/bin/python my_program.py`). For convenience, when you set up a venv, it provides an _activate_ script that you can invoke which will put the `bin` subdirectory for your venv first on your PATH. (It also updates your shell prompt to let you know this change is in effect). When your venv is activated, you no longer need to use the full path to the Python interpreter (e.g., you can simply use `python my_program.py`).
+    IMPORTANT (and useful): If you invoke your Python program with the full path to the Python interpreter in the virtual environment, it will run in the virtual environment even if you are not in an interactive session where you used the `activate` script. This is useful for cron jobs and for Bash scripts where explicitly “activating” the virtual environment is problematic.
+
+    ### Create virtual environment and activate it
+    ```
+    # Create virtual environment
+    # for linux
+    python3 -m venv .venv
+    # for windows
+    # python -m venv .venv
+    # to activate the virtual environment
+    # for linux
+    source .venv/bin/activate
+    # for windows
+    # .venv\Scripts\activate
+    ```
+    
+    This is regular way but these days I am using [`uv` ](https://pypi.org/project/uv/) to manage virtual environment and other tools. It's rediculously easy and fast.
+    ```
+    # On Windows.
+    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+    # With pip.
+    pip install uv
+    # With Homebrew.
+    brew install uv
+    # to create a virtual environment
+    uv venv
+    # activation commands are same as above
+    # On macOS and Linux.
+    source .venv/bin/activate
+    # On Windows.
+    .venv\Scripts\activate
+    ```
+
+    Now for all installations, you can use `uv pip install` command. For example, to install Django, run the following command:
+    ```
+    uv pip install django
+    uv pip install -r requirements.txt
+    ```
+
+
+    # Django Project
+    A Django project is a collection of settings and configurations that define the structure and behavior of a web application. It includes the code for the application, as well as the templates, static files, and other resources that make up the application.
+    To create a new Django project, you can use the following command:
+    ```
+    django-admin startproject snapnews
+    cd snapnews
+    ```
+    This will create a new directory called `snapnews` with the basic structure of a Django project.
+
+    ### Start a Django Server
+    To start the Django server, you can use the following command:
+    ```
+    python manage.py runserver
+    ```
+    This will start the server and make it accessible at `http://localhost:8000`.
+    Ignore the unapplied migrations warning. This is a common issue when starting a new Django project. We will address this in a later section.
+
+    
+    # Conclusion
+    This is the end of the first part of the tutorial. We will surely have more fun in the next part.     
+</BlogContent>

@@ -30,7 +30,7 @@ export default function Page() {
   ];
 
   return (
-    <Container className="pt-0">
+    <Container className="pt-0 pb-20">
       <motion.main
         initial={{
           opacity: 0,
@@ -75,22 +75,21 @@ export default function Page() {
                 </div>
               </h1>
             </div>
-
             <SocialIcons />
           </HeroHighlight>
         </section>
-        <section className="grid grid-cols-1 justify-items-center lg:py-10 px-14">
+        <section className="grid grid-cols-1 justify-items-center lg:py-10 md:px-14 px-4">
           <TypewriterEffectSmooth words={words} />
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full lg:my-10">
             <WobbleCard
-              containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+              containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[380px] lg:min-h-[300px]"
               href={`projects/${data.ProjectDetails[0].id}`}
             >
-              <div className="max-w-xs">
-                <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              <div className="lg:max-w-xs">
+                <h2 className="text-left text-balance text-xl sm:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                   {data.ProjectDetails[0].title}
                 </h2>
-                <p className="mt-4 text-left  text-base/6 text-neutral-200">
+                <p className="mt-4 text-left text-base/6 text-neutral-200">
                   {data.ProjectDetails[0].description}
                 </p>
               </div>
@@ -98,15 +97,15 @@ export default function Page() {
                 src="/images/snapnews.webp"
                 width={500}
                 height={500}
-                alt="Toronto Hydro"
-                className="absolute -right-4 xl:-right-[20%] lg:-right-[30%] grayscale filter -bottom-22 lg:-bottom-14 object-contain rounded-2xl"
+                alt="Snapnews Home Page"
+                className="absolute -right-4 xl:-right-[20%] lg:-right-[30%] grayscale filter -bottom-4 lg:-bottom-14 object-contain rounded-2xl"
               />
             </WobbleCard>
             <WobbleCard
-              containerClassName="col-span-1 min-h-[300px]"
+              containerClassName="col-span-1 min-h-[250px]"
               href={`projects/${data.ProjectDetails[2].id}`}
             >
-              <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              <h2 className="max-w-80 text-left text-balance text-xl sm:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                 {data.ProjectDetails[2].title}
               </h2>
               <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
@@ -114,14 +113,14 @@ export default function Page() {
               </p>
             </WobbleCard>
             <WobbleCard
-              containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]"
+              containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[300px]"
               href={`projects/${data.ProjectDetails[1].id}`}
             >
-              <div className="max-w-sm">
-                <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+              <div>
+                <h2 className="text-left text-balance text-xl sm:text-2xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
                   {data.ProjectDetails[1].title}
                 </h2>
-                <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                <p className="mt-4 lg:max-w-[26rem] text-left text-base/6 text-neutral-200">
                   {data.ProjectDetails[1].description}
                 </p>
               </div>
@@ -129,8 +128,8 @@ export default function Page() {
                 src="/images/toronto-hydro.webp"
                 width={500}
                 height={500}
-                alt="linear demo image"
-                className="absolute -right-10 xl:-right-[20%] lg:-right-[5%] -bottom-18 lg:-bottom-2 object-contain rounded-2xl"
+                alt="Toronto Hydro"
+                className="absolute -right-10 xl:-right-[20%] lg:-right-[5%] -bottom-4 lg:-bottom-2 object-contain rounded-2xl"
               />
             </WobbleCard>
           </div>

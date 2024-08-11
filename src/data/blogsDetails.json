@@ -17,8 +17,16 @@
       "description": "Vi (short for “visual editor”) is a command-line text editor that is commonly found on Unix-like systems, including Linux and macOS",
       "author": "Ajit Dhdharia",
       "readTime": "08 mins read",
-      "isFeatured": true,
-      "imageURL": "bg-[url('/images/BlogsImages/django-setup.webp')] bg-cover"
+      "isFeatured": true
+    },
+    {
+      "id": 3,
+      "title": "Dev Tip: How to view localhost web apps on your phone",
+      "blogURL":"view-localhost-on-phone",
+      "description": "A method I use to make testing on mobile devices extremely easy. These instructions are for a Mac environment.",
+      "author": "Ajit Dhdharia",
+      "readTime": "02 mins read",
+      "isFeatured": true
     }
   ]
 }

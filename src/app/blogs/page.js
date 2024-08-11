@@ -52,15 +52,15 @@ function createCard(item, key) {
 const page = () => {
   return (
     <Container className="bg-dot-black/[0.1]">
-      <div className="pt-40 lg:p-20">
-        <div className="text-lg text-center md:text-left sm:text-3xl lg:text-4xl uppercase text-neutral-700 max-w-4xl font-bold mt-5 mb-1">
+      <div className="pt-20 px-8 lg:p-20">
+        <div className="text-lg text-left sm:text-3xl lg:text-4xl uppercase text-neutral-700 max-w-4xl font-bold mt-5 mb-1">
           Writings on software development
         </div>
-        <div className="text-md lg:text-xl text-center md:text-left text-neutral-700 max-w-4xl font-light px-10 md:px-0 pb-5 pt-1 ">
+        <div className="text-md lg:text-xl text-left text-neutral-700 max-w-4xl font-light">
           All of my long-form thoughts on software development, programming,
           coding advice and other fun stuff
         </div>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center py-12">
           {blogsData.BlogsDetails.map((item, i) => createCard(item, i))}
         </div>
       </div>

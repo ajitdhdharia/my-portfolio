@@ -1,11 +1,9 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import Container from "@/components/Container";
 
 import Project from "@/components/Project";
 import data from "@/data/projectDetails.json";
-import thPic from "../../../../public/images/TH.webp";
 
 export default function Page({ params }) {
   const project = data.ProjectDetails.find(
@@ -34,7 +32,7 @@ export default function Page({ params }) {
   };
 
   return (
-    <Container className="bg-dot-black/[0.1]">
+    <Container className="bg-dot-black/[0.1] pb-20">
       <Project project={project} words={wordsTH} />
     </Container>
   );
