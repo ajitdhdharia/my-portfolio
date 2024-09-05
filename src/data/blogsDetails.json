@@ -21,11 +21,20 @@
     },
     {
       "id": 3,
-      "title": "Dev Tip: How to view localhost web apps on your phone",
+      "title": "View localhost web apps on your phone",
       "blogURL":"view-localhost-on-phone",
       "description": "A method I use to make testing on mobile devices extremely easy. These instructions are for a Mac environment.",
       "author": "Ajit Dhdharia",
       "readTime": "02 mins read",
+      "isFeatured": true
+    },
+    {
+      "id": 4,
+      "title": "Data Communication Techniques",
+      "blogURL":"understanding-data-communication-techniques",
+      "description": "A detailed comparison of popular web communication methods.",
+      "author": "Ajit Dhdharia",
+      "readTime": "8 mins read",
       "isFeatured": true
     }
   ]
